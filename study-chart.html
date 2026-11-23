@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>யுகங்களின் படம் — Bible Standard India (prototype)</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+@font-face{font-family:'Senthamil 001';src:url(assets/fonts/Senthamil001.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 015';src:url(assets/fonts/Senthamil015.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 066';src:url(assets/fonts/Senthamil066.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 073';src:url(assets/fonts/Senthamil073.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 076';src:url(assets/fonts/Senthamil076.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 102';src:url(assets/fonts/Senthamil102.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 112';src:url(assets/fonts/Senthamil112.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+body{margin:0;font-synthesis:none}
+footer a:focus-visible{outline-color:#E3B55B}
+a{color:#14284B}a:hover{color:#8B5E1A}
+button{font:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid #14284B;outline-offset:2px}
+.clamp3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.clamp2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+input::placeholder,textarea::placeholder{color:#5E6B7E;opacity:1}
+</style>
+</head>
+<body class="site-page">
+<div id="dc-root"></div>
+<noscript><p style="padding: 24px; font-family: sans-serif;">This prototype needs JavaScript to show its pages.</p></noscript>
+<template id="dc-template">
+<div style="height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; font-family: 'Senthamil 001', 'Mukta Malar', system-ui, sans-serif; color: #14284B; background: #FFFFFF; font-size: 17px; line-height: 1.7;">
+
+<header lang="en" style="flex: none; background: #FFFFFF; border-bottom: 1px solid #E6E1D6; font-family: 'Mukta Malar', system-ui, sans-serif;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 10px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 36px;">
+<a href="index.html" aria-label="Bible Standard India, home" style="display: inline-flex; align-items: center;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 0 22px; flex: 1 1 560px; font-size: 17px;">
+<a href="index.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Home</a>
+<a href="manna.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Manna</a>
+<a href="magazine.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Magazine</a>
+<a href="study.html" aria-current="page" style="padding: 14px 0 10px; color: #14284B; text-decoration: none; font-weight: 700; border-bottom: 3px solid #E3B55B;">Study</a>
+<a href="library.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Library</a>
+<a href="questions.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Q &amp; A</a>
+<a href="events.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Events</a>
+<a href="gallery.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Gallery</a>
+<a href="about.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">About</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 4px;">
+<button type="button" aria-label="Search" style="width: 44px; height: 44px; border: 0; border-radius: 10px; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#14284B" stroke-width="1.8"></circle><path d="M16 16 L21 21" stroke="#14284B" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
+<a href="my-notes.html" style="display: inline-flex; align-items: center; gap: 6px; height: 44px; padding: 0 10px; border-radius: 10px; color: #14284B; text-decoration: none; font-size: 16px; font-weight: 500;"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M6 3.5 H14 L19 8.5 V20.5 H6 Z" fill="none" stroke="#14284B" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 12 H16 M9 15.5 H14" stroke="#14284B" stroke-width="1.6" stroke-linecap="round"></path></svg>My notes</a>
+</div>
+</div>
+</header>
+<div style="flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; background: #FFFFFF;">
+<section style="background: #FBF7EE; border-bottom: 1px solid #EDE6D6;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 22px 32px 40px; display: flex; flex-direction: column; gap: 20px;">
+<nav aria-label="Breadcrumb"><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 15px;"><li><a href="index.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #3F5670; text-decoration: underline; text-underline-offset: 3px;">Home</a></li><li aria-hidden="true" style="color: #8A93A3;">›</li><li><a href="study.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #3F5670; text-decoration: underline; text-underline-offset: 3px;">Study</a></li><li aria-hidden="true" style="color: #8A93A3;">›</li><li><span aria-current="page" lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #14284B; font-weight: 600;">The Chart of the Ages</span></li></ol></nav>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px;">
+<div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 10px;">
+<h1 lang="ta" style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 44px; line-height: 1.25;">யுகங்களின் படம்</h1>
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 20px; font-weight: 600;">The Chart of the Ages</p><p style="margin: 0; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 18px; line-height: 1.65;">“நீ தரிசனத்தை எழுதி அதைக் கடந்தோடுகிறவன் வாசிக்கும்படிப் பலகைகளிலே தீர்க்கமாக வரை.” <span style="font-family: 'Senthamil 102', 'Mukta Malar', sans-serif; color: #4A3410; font-size: 15px; white-space: nowrap;">ஆபகூக் 2:2</span></p>
+</div>
+<div lang="en" style="display: flex; flex-wrap: wrap; gap: 8px 12px;"><a href="#" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 12px; background: #FFFFFF; color: #14284B; border: 2px solid #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px; text-decoration: none; box-sizing: border-box; cursor: pointer;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4 V15 M7 10.5 L12 15.5 L17 10.5 M5 19.5 H19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Large chart, PDF</a><a href="library.html" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 9 V4 H17 V9 M7 17 H5 V10 H19 V17 H17 M7 14 H17 V20 H7 Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"></path></svg>Printed chart</a></div>
+</div>
+</div>
+</section>
+
+<section aria-label="Explore the chart" style="max-width: 1376px; margin: 0 auto; padding: 32px 32px 56px; display: flex; flex-wrap: wrap; gap: 28px 36px; align-items: flex-start;">
+<div style="flex: 999 1 720px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<div style="position: relative; border-radius: 16px; overflow: hidden; background: #FFFFFF; box-shadow: 0 0 0 1px #E6D8B8, 0 10px 28px rgba(20,40,75,0.10);">
+<img src="assets/img/97588df1c75da0e71f3bca1b533899b1.jpg" alt="The Chart of the Ages in Tamil: three dispensations, the ages within them, the harvests, and the Tabernacle" style="display: block; width: 100%; height: auto;">
+<sc-for list="{{rects}}" as="rc" hint-placeholder-count="1">
+<span aria-hidden="true" style="position: absolute; left: {{rc.l}}%; top: {{rc.t}}%; width: {{rc.w}}%; height: {{rc.h}}%; border-radius: 10px; box-shadow: 0 0 0 3px #E3B55B, 0 0 0 6px rgba(20,40,75,0.55); background: rgba(227,181,91,0.14); pointer-events: none;"></span>
+</sc-for>
+</div>
+<div role="group" aria-label="Parts of the chart" style="display: flex; flex-wrap: wrap; gap: 8px;">
+<sc-for list="{{chips}}" as="ch" hint-placeholder-count="10">
+<button type="button" onClick="{{ch.pick}}" aria-pressed="{{ch.pressed}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px 0 6px; border-radius: 999px; border: 1px solid #14284B; background: {{ch.bg}}; color: {{ch.fg}}; cursor: pointer;"><span style="display: inline-flex; align-items: center; justify-content: center; min-width: 30px; height: 30px; border-radius: 999px; background: {{ch.kbg}}; color: {{ch.kfg}}; font-family: 'Mukta Malar', sans-serif; font-weight: 700; font-size: 14px;">{{ch.k}}</span><span style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 15px;">{{ch.t}}</span></button>
+</sc-for>
+</div>
+</div>
+
+<aside aria-live="polite" style="flex: 1 1 340px; min-width: 0; position: sticky; top: 20px; display: flex; flex-direction: column; gap: 14px; padding: 24px; border-radius: 20px; background: #FBF7EE; border: 1px solid #E6D8B8;">
+<div style="display: flex; align-items: center; gap: 12px;">
+<span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; min-width: 44px; height: 44px; padding: 0 6px; box-sizing: border-box; border-radius: 12px; background: #14284B; color: #E3B55B; font-family: 'Mukta Malar', sans-serif; font-size: 20px; font-weight: 700;">{{k}}</span>
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 700; color: #8B5E1A;">{{kind}} · {{pos}}</p>
+</div>
+<h2 style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.3;">{{t}}</h2>
+<p style="margin: 0; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 18px; line-height: 1.75; color: #22324D;">{{d}}</p>
+<sc-if value="{{hasLinks}}" hint-placeholder-val="{{false}}">
+<div style="display: flex; flex-direction: column; gap: 6px; padding-top: 12px; border-top: 1px solid #E6D8B8;">
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; font-weight: 700; color: #3F5670;">Read about it</span>
+<sc-for list="{{links}}" as="ln" hint-placeholder-count="1">
+<a href="#" style="display: flex; flex-direction: column; text-decoration: none; color: #14284B;"><span style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 17px; line-height: 1.45;">{{ln.t}}</span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; color: #3F5670;">The Bible Standard, {{ln.s}}</span></a>
+</sc-for>
+</div>
+</sc-if>
+<div lang="en" style="display: flex; gap: 10px; margin-top: 4px;">
+<button type="button" onClick="{{prev}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 12px; background: #FFFFFF; color: #14284B; border: 2px solid #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px; text-decoration: none; box-sizing: border-box; cursor: pointer; min-height: 44px;">‹ Previous</button>
+<button type="button" onClick="{{next}}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 20px; border-radius: 12px; background: #14284B; color: #FFFFFF; font-family: 'Mukta Malar', sans-serif; font-weight: 700; font-size: 17px; text-decoration: none; border: 0; cursor: pointer; min-height: 44px;">Next ›</button>
+</div>
+<a href="questions.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; align-self: flex-start; display: inline-flex; align-items: center; min-height: 40px; font-weight: 600;">Ask a question about the chart</a>
+</aside>
+</section>
+
+<section aria-labelledby="cp-h" style="background: #14284B; color: #FFFFFF;">
+<div lang="en" style="max-width: 1240px; margin: 0 auto; padding: 40px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 40px; font-family: 'Mukta Malar', sans-serif;">
+<div style="display: flex; flex-direction: column; gap: 6px; max-width: 680px;">
+<h2 id="cp-h" style="margin: 0; font-size: 24px; font-weight: 700;">Study the chart part by part</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #E4E9F2;">Go through the ten parts in order, A to the Tabernacle, with a note for each.</p>
+</div>
+<a href="study.html" style="display: inline-flex; align-items: center; min-height: 46px; padding: 0 18px; border-radius: 12px; background: #FFFFFF; color: #14284B; font-weight: 700; text-decoration: none;">All reading plans</a>
+</div>
+</section>
+<footer style="background: #14284B; color: #FFFFFF;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 32px 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 36px 56px;">
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<span style="align-self: flex-start; display: inline-flex; padding: 10px 14px; border-radius: 14px; background: #FFFFFF;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></span>
+<p style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 600; font-size: 22px; line-height: 1.5;">“உமது வெளிச்சத்தையும், உமது சத்தியத்தையும் அனுப்பியருளும் அவைகள் என்னை நடத்தும்.” <span style="font-family: 'Senthamil 102', 'Mukta Malar', sans-serif; font-weight: 400; font-size: 16px; color: #C9D3E3;">சங்கீதம் 43:3</span></p>
+</div>
+<nav lang="en" aria-label="Footer" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 24px; align-content: start; font-family: 'Mukta Malar', sans-serif; font-size: 17px;">
+<a href="manna.html" style="color: #FFFFFF; padding: 6px 0;">Manna</a>
+<a href="contact.html" style="color: #FFFFFF; padding: 6px 0;">Contact</a>
+<a href="magazine.html" style="color: #FFFFFF; padding: 6px 0;">Magazine</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Request tracts</a>
+<a href="study.html" style="color: #FFFFFF; padding: 6px 0;">Study</a>
+<a href="about.html" style="color: #FFFFFF; padding: 6px 0;">About</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Library</a>
+<a href="#" style="color: #FFFFFF; padding: 6px 0;">YouTube</a>
+<a href="questions.html" style="color: #FFFFFF; padding: 6px 0;">Q &amp; A</a>
+<a href="gallery.html" style="color: #FFFFFF; padding: 6px 0;">Gallery</a>
+</nav>
+</div>
+<div lang="en" style="max-width: 1240px; margin: 0 auto; padding: 18px 32px 36px; border-top: 1px solid rgba(255,255,255,0.18); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-family: 'Mukta Malar', sans-serif; font-size: 15px; color: #C9D3E3;">
+<span>Laymen's Home Missionary Movement – India, Nazareth, Thoothukudi District, Tamil Nadu</span>
+<span>© 2026 Laymen's Home Missionary Movement – India</span>
+</div>
+</footer>
+</div>
+
+</div>
+</template>
+<a class="proto-badge" href="sitemap.html">Prototype · site map</a>
+<script src="assets/js/morphdom-umd.min.js"></script>
+<script src="assets/js/dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { i: 6 };
+}
+renderVals() {
+const parts = [{"k": "A", "kind": "Dispensation 1", "t": "முதல் நேமகம்", "d": "“அப்பொழுது இருந்த உலகம்”. ஜலப்பிரளயம் வரை 1656 வருஷங்கள்.", "rects": [{"l": 5.04, "t": 29.1, "w": 10.92, "h": 8.31}], "links": []}, {"k": "B", "kind": "Dispensation 2", "t": "இரண்டாவது நேமகம்", "d": "“இப்பொழுதிருக்கிற பொல்லாத உலகம்”.", "rects": [{"l": 15.97, "t": 19.95, "w": 39.08, "h": 17.46}], "links": []}, {"k": "C", "kind": "Dispensation 3", "t": "மூன்றாவது நேமகம்", "d": "“இனிவரும் உலகம்”, காலங்களின் நிறைவு (எபே. 1:9).", "rects": [{"l": 54.62, "t": 19.0, "w": 28.15, "h": 18.41}], "links": []}, {"k": "D", "kind": "Age", "t": "ஆதிப்பிதாக்களின் யுகம்", "d": "ஜலப்பிரளயத்துக்குப் பின், இரண்டாவது நேமகத்தின் முதல் யுகம்.", "rects": [{"l": 15.97, "t": 31.47, "w": 6.55, "h": 5.11}], "links": []}, {"k": "E", "kind": "Age", "t": "யூத யுகம்", "d": "யாக்கோபின் மரணம் முதல் “70 வாரங்களின் முடிவு வரை”.", "rects": [{"l": 22.52, "t": 28.27, "w": 12.77, "h": 8.31}], "links": []}, {"k": "F", "kind": "Age", "t": "சுவிசேஷ யுகம்", "d": "இயேசுவின் ஞானஸ்நானம் முதல் “அவருடைய சரீரமாகிய சபை” முழுவதும் மகிமையடைந்து தீருமளவும்.", "rects": [{"l": 35.29, "t": 25.89, "w": 18.66, "h": 10.69}], "links": []}, {"k": "G", "kind": "Age", "t": "மேசியாவின் யுகம்", "d": "கிறிஸ்துவின் அரசாட்சிக்காலம்: “எல்லா சத்துருக்களையும் தமது பாதத்திற்குக் கீழாக்கிப் போடும் வரைக்கும் அவர் ஆளுகை செய்ய வேண்டியது.”", "rects": [{"l": 54.45, "t": 24.35, "w": 23.87, "h": 12.23}], "links": [["ஆயிர வருஷ யுகம் – பல தீர்க்கதரிசனங்களில் ஒன்று", "No. 93"]]}, {"k": "H", "kind": "Ages", "t": "பின்வரும் யுகங்கள்", "d": "மேசியாவின் யுகத்துக்குப் பின் வரும் யுகங்கள்.", "rects": [{"l": 78.15, "t": 29.45, "w": 4.62, "h": 7.13}], "links": []}, {"k": "அ", "kind": "Harvests", "t": "அறுப்பு", "d": "யூத யுகத்தின் முடிவிலும் சுவிசேஷ யுகத்தின் முடிவிலும் உள்ள அறுப்புக் காலங்கள்.", "rects": [{"l": 34.87, "t": 33.25, "w": 5.63, "h": 3.56}, {"l": 52.77, "t": 33.25, "w": 5.38, "h": 3.56}], "links": []}, {"k": "கூ", "kind": "Tabernacle", "t": "ஆசரிப்புக் கூடாரம்", "d": "வனாந்திரத்தில் ஏற்பட்ட ஆசரிப்புக் கூடாரம்: அதின் போதனைகள் யுகங்களின் படத்தோடு பொருந்துகின்றன. பிரகாரம், பரிசுத்த ஸ்தலம், மகா பரிசுத்த ஸ்தலம்.", "rects": [{"l": 82.77, "t": 23.52, "w": 16.81, "h": 51.07}], "links": []}];
+const i = this.state.i;
+const p = parts[i];
+return {
+rects: p.rects,
+chips: parts.map((q, j) => ({
+k: q.k,
+t: q.t,
+pressed: j === i ? 'true' : 'false',
+bg: j === i ? '#14284B' : '#FFFFFF',
+fg: j === i ? '#FFFFFF' : '#14284B',
+kbg: j === i ? '#E3B55B' : '#F4EBD7',
+kfg: '#14284B',
+pick: () => this.setState({ i: j })
+})),
+k: p.k,
+kind: p.kind,
+pos: (i + 1) + ' of ' + parts.length,
+t: p.t,
+d: p.d,
+hasLinks: p.links.length > 0,
+links: p.links.map((l) => ({ t: l[0], s: l[1] })),
+prev: () => this.setState({ i: (i + parts.length - 1) % parts.length }),
+next: () => this.setState({ i: (i + 1) % parts.length })
+};
+}
+}
+</script>
+<script>DCLite.mount(typeof Component !== 'undefined' ? Component : null);</script>
+</body>
+</html>

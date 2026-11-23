@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ஆபத்தை எதிர்கொள்ளுதல் — Bible Standard India (prototype)</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+@font-face{font-family:'Senthamil 001';src:url(assets/fonts/Senthamil001.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 015';src:url(assets/fonts/Senthamil015.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 066';src:url(assets/fonts/Senthamil066.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 073';src:url(assets/fonts/Senthamil073.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 076';src:url(assets/fonts/Senthamil076.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 102';src:url(assets/fonts/Senthamil102.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 112';src:url(assets/fonts/Senthamil112.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+body{margin:0;font-synthesis:none}
+footer a:focus-visible{outline-color:#E3B55B}
+a{color:#14284B}a:hover{color:#8B5E1A}
+button,textarea{font:inherit}
+textarea:focus,button:focus-visible,a:focus-visible{outline:2px solid #14284B;outline-offset:2px}
+.mz-page{position:relative;background:#FFFFFF;box-shadow:0 1px 2px rgba(20,40,75,.10),0 12px 32px rgba(20,40,75,.12);display:flex;flex-direction:column;color:#1B2433}
+.mz-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:28px;padding:28px 44px 16px;align-items:start}
+.mz-col{min-width:0;text-align:justify;line-height:1.5}
+.mz-col p{margin:0 0 .5em;text-indent:1.9em;hyphens:manual;-webkit-hyphens:manual}
+.mz-col p.mz-cont,.mz-col p.mz-first{text-indent:0}
+.mz-col b{font-family:'Senthamil 073','Mukta Malar',sans-serif;font-weight:inherit;color:#14284B}
+.mz-h{margin:.6em 0 .4em;text-align:center;font-family:'Senthamil 073','Mukta Malar',sans-serif;font-weight:700;font-size:1.32em;line-height:1.3;color:#14284B}
+.mz-drop{float:left;margin:.08em .16em 0 0;padding:.12em .14em .04em;border-radius:4px;background:#14284B;color:#FFFFFF;font-family:'Senthamil 073','Mukta Malar',sans-serif;font-size:3.1em;line-height:.9}
+.mz-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.mz-banner{position:relative;margin:34px 44px 0;padding:20px 76px 18px;background:#14284B;color:#FFFFFF;text-align:center}
+.mz-orn{position:absolute;width:44px;height:44px}
+.mz-orn-tl{top:8px;left:8px}.mz-orn-tr{top:8px;right:8px;transform:scaleX(-1)}.mz-orn-bl{bottom:8px;left:8px;transform:scaleY(-1)}.mz-orn-br{bottom:8px;right:8px;transform:scale(-1,-1)}
+.mz-title{margin:0;font-family:'Senthamil 073','Mukta Malar',sans-serif;font-weight:700;font-size:2.6em;line-height:1.2}
+.mz-sub{margin:.15em 0 .55em;font-family:'Mukta Malar',sans-serif;font-size:14px;color:#C9D3E3}
+.mz-epi{margin:0;font-family:'Senthamil 001','Mukta Malar',sans-serif;font-size:.98em;line-height:1.55}
+.mz-ref{font-family:'Senthamil 102','Mukta Malar',sans-serif;color:#E3B55B}
+.mz-fig{margin:0 0 .9em;border:1.5px solid #14284B;background:#FFFFFF}
+.mz-figcap{padding:.3em .5em .25em;text-align:center;font-family:'Senthamil 073','Mukta Malar',sans-serif;font-weight:700;font-size:1.1em;line-height:1.3;color:#14284B}
+.mz-fig img{display:block;width:100%;height:auto}
+.mz-star{margin:0 0 .9em;border:1.5px solid #14284B;background-color:#0B1733;background-position:center;background-size:cover}
+.mz-star figcaption{display:flex;flex-direction:column;align-items:center;gap:.35em;padding:1.1em 1em 1em;text-align:center;color:#FFFFFF;background:rgba(5,12,30,.35)}
+.mz-star-t{font-family:'Senthamil 073','Mukta Malar',sans-serif;font-size:1.5em;line-height:1.2}
+.mz-star-v{font-family:'Senthamil 001','Mukta Malar',sans-serif;font-size:.95em;line-height:1.5}
+.mz-star-r{font-family:'Senthamil 102','Mukta Malar',sans-serif;font-size:.92em;color:#E3B55B}
+.mz-defs{margin:0 0 .9em;padding:.8em .9em .4em;border:1.5px solid #14284B;background:#F4EBD7;text-align:center}
+.mz-defs h3{margin:.15em 0 .1em;font-family:'Senthamil 073','Mukta Malar',sans-serif;font-weight:700;font-size:1.1em;line-height:1.3;color:#14284B}
+.mz-col .mz-defs p{margin:0 0 .5em;text-indent:0;font-size:.9em;line-height:1.5;text-align:center}
+.mz-courtesy{margin:4px 44px 10px;padding:6px 10px;border:1px solid #14284B;font-family:'Mukta Malar',sans-serif;font-size:11px;line-height:1.45;color:#22324D;text-align:justify}
+.mz-foot{margin:auto 44px 26px;display:grid;grid-template-columns:1fr auto auto 1fr;gap:0 48px;align-items:center;padding:5px 12px;background:#14284B;color:#FFFFFF;font-family:'Mukta Malar',sans-serif;font-size:13px;font-weight:600}
+.mz-foot span:last-child{text-align:right}
+</style>
+</head>
+<body class="site-page">
+<div id="dc-root"></div>
+<noscript><p style="padding: 24px; font-family: sans-serif;">This prototype needs JavaScript to show its pages.</p></noscript>
+<template id="dc-template">
+<div style="height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; font-family: 'Senthamil 001', 'Mukta Malar', system-ui, sans-serif; color: #14284B; background: #FFFFFF; font-size: 17px; line-height: 1.7;">
+
+<header lang="en" style="flex: none; background: #FFFFFF; border-bottom: 1px solid #E6E1D6; font-family: 'Mukta Malar', system-ui, sans-serif;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 10px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 36px;">
+<a href="index.html" aria-label="Bible Standard India, home" style="display: inline-flex; align-items: center;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 0 22px; flex: 1 1 560px; font-size: 17px;">
+<a href="index.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Home</a>
+<a href="manna.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Manna</a>
+<a href="magazine.html" aria-current="page" style="padding: 14px 0 10px; color: #14284B; text-decoration: none; font-weight: 700; border-bottom: 3px solid #E3B55B;">Magazine</a>
+<a href="study.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Study</a>
+<a href="library.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Library</a>
+<a href="questions.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Q &amp; A</a>
+<a href="events.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Events</a>
+<a href="gallery.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Gallery</a>
+<a href="about.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">About</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 4px;">
+<button type="button" aria-label="Search" style="width: 44px; height: 44px; border: 0; border-radius: 10px; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#14284B" stroke-width="1.8"></circle><path d="M16 16 L21 21" stroke="#14284B" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
+<a href="my-notes.html" style="display: inline-flex; align-items: center; gap: 6px; height: 44px; padding: 0 10px; border-radius: 10px; color: #14284B; text-decoration: none; font-size: 16px; font-weight: 500;"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M6 3.5 H14 L19 8.5 V20.5 H6 Z" fill="none" stroke="#14284B" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 12 H16 M9 15.5 H14" stroke="#14284B" stroke-width="1.6" stroke-linecap="round"></path></svg>My notes</a>
+</div>
+</div>
+</header>
+<div style="flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; background: #ECE7DD;">
+
+<div style="max-width: 1376px; margin: 0 auto; padding: 18px 32px 0;"><nav aria-label="Breadcrumb"><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 15px;"><li><a href="index.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #3F5670; text-decoration: underline; text-underline-offset: 3px;">Home</a></li><li aria-hidden="true" style="color: #8A93A3;">›</li><li><a href="magazine.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #3F5670; text-decoration: underline; text-underline-offset: 3px;">Magazine</a></li><li aria-hidden="true" style="color: #8A93A3;">›</li><li><a href="magazine-2025.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #3F5670; text-decoration: underline; text-underline-offset: 3px;">2025</a></li><li aria-hidden="true" style="color: #8A93A3;">›</li><li><a href="magazine-96.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #3F5670; text-decoration: underline; text-underline-offset: 3px;">No. 96</a></li><li aria-hidden="true" style="color: #8A93A3;">›</li><li><span aria-current="page" lang="ta" style="font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; color: #14284B; font-weight: 600;">ஆபத்தை எதிர்கொள்ளுதல்</span></li></ol></nav></div>
+<div style="max-width: 1376px; margin: 0 auto; padding: 16px 32px 88px; display: flex; gap: 28px; align-items: flex-start;">
+
+<aside aria-labelledby="issue-h" style="position: sticky; top: 24px; max-height: calc(100vh - 130px); overflow-y: auto; scrollbar-width: thin; flex: 1 1 260px; min-width: 0; max-width: 288px; display: flex; flex-direction: column; gap: 14px;">
+<div aria-hidden="true" style="display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 18px 14px 16px; border-radius: 14px; background: #F4EBD7; border: 1px solid #E6D8B8; text-align: center;">
+<img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="" style="width: 100%; max-width: 200px; height: auto; display: block;">
+<span style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.3; color: #14284B;">ஆபத்தை எதிர்கொள்ளுதல்</span>
+<span style="width: 48px; height: 2px; background: #8B5E1A;"></span>
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; font-weight: 600; color: #4A3410;">No. 96</span>
+</div>
+<p lang="en" style="margin: 2px 0 0; font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 600; color: #8B5E1A;">The Bible Standard, No. 96</p>
+<h2 id="issue-h" style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 21px; line-height: 1.35;">நவம்பர்–டிசம்பர் 2025</h2>
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; font-weight: 600; color: #3F5670;">In this issue</span>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; font-size: 15px; line-height: 1.5;">
+<li><a href="magazine-96-pages.html" aria-current="page" style="display: flex; justify-content: space-between; gap: 8px; padding: 9px 10px; border-radius: 8px; background: #FFFFFF; color: #14284B; font-weight: 600; text-decoration: none;"><span>ஆபத்தை எதிர்கொள்ளுதல்</span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-weight: 400; color: #3F5670;">2</span></a></li>
+<li><a href="#" style="display: flex; justify-content: space-between; gap: 8px; padding: 9px 10px; color: #14284B; text-decoration: none;"><span>நம்முடைய வார்த்தைகள் - தேவனுடைய வார்த்தைகள்</span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #3F5670;">12</span></a></li>
+<li><a href="#" style="display: flex; justify-content: space-between; gap: 8px; padding: 9px 10px; color: #14284B; text-decoration: none;"><span>ஆனால் மாறுபட்ட ஒரு நோக்கத்துடன்</span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #3F5670;">17</span></a></li>
+</ol>
+<nav lang="en" aria-label="Pages" style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-family: 'Mukta Malar', sans-serif; font-size: 14px;">
+<span style="font-weight: 600; color: #3F5670; margin-right: 4px;">Go to page</span>
+<a href="#page-2" style="min-width: 36px; min-height: 36px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; background: #FFFFFF; text-decoration: none;">2</a>
+<a href="#page-3" style="min-width: 36px; min-height: 36px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; background: #FFFFFF; text-decoration: none;">3</a>
+<a href="#page-4" style="min-width: 36px; min-height: 36px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; background: #FFFFFF; text-decoration: none;">4</a>
+<a href="#page-5" style="min-width: 36px; min-height: 36px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; background: #FFFFFF; text-decoration: none;">5</a>
+</nav>
+<section aria-labelledby="notes-h" style="display: flex; flex-direction: column; gap: 10px; padding-top: 14px; border-top: 1px solid #D9D1C0;">
+<h2 id="notes-h" lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 16px; font-weight: 700; color: #3F5670;">Your notes</h2>
+<div style="border-left: 3px solid #E3B55B; padding: 2px 0 2px 10px; font-size: 14px; line-height: 1.6; color: #22324D;">ஆபத்தான சூழ்நிலையின் முன்னிலையில் … சுயத்தை-மறக்கும் மனப்பான்மை</div>
+<label for="note" lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; font-weight: 600;">Note on the highlight</label>
+<textarea id="note" rows="3" value="{{note}}" onChange="{{onNote}}" placeholder="உங்கள் குறிப்பு…" style="width: 100%; box-sizing: border-box; resize: vertical; padding: 10px 12px; border: 1px solid #CFC5B0; border-radius: 8px; background: #FFFFFF; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 15px; line-height: 1.6; color: #14284B;"></textarea>
+<button type="button" onClick="{{save}}" disabled="{{noNote}}" lang="en" style="align-self: flex-start; min-height: 40px; padding: 0 16px; border: 0; border-radius: 8px; background: {{saveBg}}; color: #FFFFFF; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 14px; cursor: pointer;">Save note</button>
+<sc-for list="{{saved}}" as="n" hint-placeholder-count="0">
+<div style="background: #FFFFFF; border-radius: 8px; padding: 10px 12px; font-size: 14px; line-height: 1.6; display: flex; flex-direction: column; gap: 4px;"><span>{{n.text}}</span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 12px; color: #3F5670;">Saved to My notes</span></div>
+</sc-for>
+</section>
+<div lang="en" style="display: flex; flex-direction: column; gap: 6px; padding-top: 12px; border-top: 1px solid #D9D1C0; font-family: 'Mukta Malar', sans-serif; font-size: 14px;">
+<a href="#">Download PDF (3.2 MB)</a>
+<a href="magazine-96.html">This issue: contents and all 20 pages</a>
+<a href="magazine.html">All issues, by year</a>
+</div>
+</aside>
+
+<main style="flex: 0 0 1000px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<div lang="en" role="toolbar" aria-label="Reading tools" style="position: sticky; top: 0; z-index: 2; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 16px; padding: 10px 0; background: #ECE7DD; font-family: 'Mukta Malar', sans-serif; font-size: 15px;">
+<span style="color: #3F5670;"><b style="color: #14284B;">The Bible Standard</b> · Tamil · No. 96 · Pages 2–5 of 20</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+<button type="button" onClick="{{toggleAa}}" aria-expanded="{{aaOpenStr}}" style="min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid #CFC5B0; background: #FFFFFF; color: #14284B; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; background: {{aaBg}};"><span lang="ta" style="font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 13px;">அ</span><span lang="ta" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-size: 18px; margin-left: -4px;">அ</span>Reading settings</button>
+<button type="button" onClick="{{focusNote}}" style="min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid #CFC5B0; background: #FFFFFF; color: #14284B; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">Add note</button>
+<a href="questions.html" style="min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid #CFC5B0; background: #FFFFFF; color: #14284B; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">Ask about this article</a>
+<a href="#" style="min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid #CFC5B0; background: #FFFFFF; color: #14284B; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">Download PDF</a>
+</div>
+</div>
+
+<sc-if value="{{aaOpen}}" hint-placeholder-val="{{false}}">
+<section aria-label="Reading settings" style="border-radius: 12px; padding: 16px 18px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; background: #FFFFFF; box-shadow: 0 8px 24px rgba(19,33,58,0.10);">
+<div style="display: flex; flex-direction: column; gap: 8px; flex: 1 1 520px;">
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; font-weight: 600; color: #3F5670;">Tamil font</span>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px;">
+<sc-for list="{{fontOptions}}" as="opt" hint-placeholder-count="4">
+<button type="button" onClick="{{opt.pick}}" aria-pressed="{{opt.pressed}}" style="{{opt.boxStyle}} border-radius: 10px; padding: 8px 10px; min-height: 60px; text-align: left; cursor: pointer; display: flex; flex-direction: column; gap: 2px; color: #14284B;"><span style="font-family: {{opt.css}}; font-size: 18px; line-height: 1.35;">தைரியம்</span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 12px; color: #3F5670;">{{opt.label}}</span></button>
+</sc-for>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; font-weight: 600; color: #3F5670;">Text size</span>
+<div style="display: flex; align-items: center; gap: 6px;">
+<button type="button" onClick="{{smaller}}" disabled="{{atMin}}" aria-label="Smaller text" style="width: 44px; height: 40px; border: 1px solid #DCD3C0; border-radius: 8px; background: #FFFFFF; color: #14284B; font-size: 14px; cursor: pointer;">அ−</button>
+<span lang="en" style="min-width: 64px; text-align: center; font-family: 'Mukta Malar', sans-serif; font-size: 15px;">{{sizeName}}</span>
+<button type="button" onClick="{{larger}}" disabled="{{atMax}}" aria-label="Larger text" style="width: 44px; height: 40px; border: 1px solid #DCD3C0; border-radius: 8px; background: #FFFFFF; color: #14284B; font-size: 18px; cursor: pointer;">அ+</button>
+</div>
+</div>
+</section>
+</sc-if>
+
+<div style="display: flex; flex-direction: column; gap: 28px; font-family: {{readFont}}; font-size: {{readSize}}px;">
+<section class="mz-page" id="page-2" aria-label="Page 2">
+<header class="mz-banner">
+<svg class="mz-orn mz-orn-tl" viewBox="0 0 60 60" aria-hidden="true"><path d="M4 56 V22 C4 10 10 4 22 4 H56" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M12 56 V26 C12 17 17 12 26 12 H56" fill="none" stroke="#FFFFFF" stroke-width="1"/><path d="M22 22 c8 -10 20 -6 18 4 c-2 8 -12 6 -12 0 c0 -4 6 -5 7 -1" fill="none" stroke="#E3B55B" stroke-width="1.6" stroke-linecap="round"/><circle cx="22" cy="22" r="2.2" fill="#E3B55B"/></svg><svg class="mz-orn mz-orn-tr" viewBox="0 0 60 60" aria-hidden="true"><path d="M4 56 V22 C4 10 10 4 22 4 H56" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M12 56 V26 C12 17 17 12 26 12 H56" fill="none" stroke="#FFFFFF" stroke-width="1"/><path d="M22 22 c8 -10 20 -6 18 4 c-2 8 -12 6 -12 0 c0 -4 6 -5 7 -1" fill="none" stroke="#E3B55B" stroke-width="1.6" stroke-linecap="round"/><circle cx="22" cy="22" r="2.2" fill="#E3B55B"/></svg><svg class="mz-orn mz-orn-bl" viewBox="0 0 60 60" aria-hidden="true"><path d="M4 56 V22 C4 10 10 4 22 4 H56" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M12 56 V26 C12 17 17 12 26 12 H56" fill="none" stroke="#FFFFFF" stroke-width="1"/><path d="M22 22 c8 -10 20 -6 18 4 c-2 8 -12 6 -12 0 c0 -4 6 -5 7 -1" fill="none" stroke="#E3B55B" stroke-width="1.6" stroke-linecap="round"/><circle cx="22" cy="22" r="2.2" fill="#E3B55B"/></svg><svg class="mz-orn mz-orn-br" viewBox="0 0 60 60" aria-hidden="true"><path d="M4 56 V22 C4 10 10 4 22 4 H56" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M12 56 V26 C12 17 17 12 26 12 H56" fill="none" stroke="#FFFFFF" stroke-width="1"/><path d="M22 22 c8 -10 20 -6 18 4 c-2 8 -12 6 -12 0 c0 -4 6 -5 7 -1" fill="none" stroke="#E3B55B" stroke-width="1.6" stroke-linecap="round"/><circle cx="22" cy="22" r="2.2" fill="#E3B55B"/></svg>
+<h1 class="mz-title">ஆபத்தை எதிர்கொள்ளுதல்</h1>
+<p class="mz-sub" lang="en">Facing Danger</p>
+<p class="mz-epi">“நீங்கள் திடமனதாயிருந்து காரியங்களை நடத்துங்கள்,<br>உத்தமனுக்குக் கர்த்தர் துணை என்றான்.” <span class="mz-ref">(2 நாளா. 19:11)</span></p>
+</header>
+<div class="mz-body">
+<div class="mz-col">
+<p class="mz-first"><span class="mz-drop" aria-hidden="true">அ</span><span class="mz-sr">அ</span>ப்போஸ்­தல­னாகிய பேதுரு ‘Virtue’ தைரியம் என்ற வார்த்தையை 2பேதுரு 1:5-ல் பயன்­படு­த்து­வதைப் போல, தைரியமானது நம்பிக்கை என்ற அர்த்­தத்தில் ஒரு உயர்நிலை முதன்மை கிருபை ஆகும்; ஆனால் வீரம்/ துணிவு என்ற அர்த்­தத்தில் அது ஒரு இரண்டாம் நிலை கிருபை ஆகும்; அந்த வகையில் இது உயர்நிலை முதன்மை கிருபைகள் ஒருவனைக் கட்டு­ப்ப­டுத்தும் ஜாக்கி­ரதை­யுணர்வு அல்லது பயத்தின் முயற்சிகளை அடக்­குவதால் உருவாகிறது. ஆகையால் நமது பாடத்தில் இதனை ஒரு இரண்டாம் நிலை கிருபையாகவே விவரிக்க விரும்­புகிறோம். மிகைப்­படு­த்த­ப்பட்ட எச்ச­ரிக்­கையு­ணர்வு, பயத்தின் ஆவி, மனித குடும்­பத்தில் பலரை எவ்வாறு கட்டு­ப்ப­டுத்­துகிறது என்பதையும், தேவனுடைய ஜனங்கள் அநேகருடைய விஷயத்தில் எப்படி வாழ்நாள் முழுவதும் அதனுடன் போராட வேண்டி­யதி­ருக்­கிறது என்பதையும் நாம் கருத்தில் கொள்ளும்போது, அதற்கு நேர்மாறான துணிச்சல்/வீரம் என்ற கருத்தில் தைரியமானது, தேவனுடைய ஜனங்கள் கற்றுக் கொள்ளவும் மற்றும் நடைமு­றைப்­படு­த்தவும் தகுதியான பாடமா­யிரு­க்கும் என்று அறிந்து கொள்ள­ப்படும்.</p>
+<p>ஆனால் மற்ற பல கிருபைகளைப் போலவே, தைரிய­த்திலும் போலியா­னவைகள்  உள்ளன, பெரும்பாலும் அவையே அதன் உண்மையான பொருளாகக் கருத­ப்ப­டுகி­ன்றன. அத்தகைய போலியா­னவை­களில் ஒன்று ‘அதீதத் துணிவாக’ இருக்கிறது, அது “தேவதூ­தர்கள் காலடிவைக்க அஞ்சுகிற இடத்திலும் விரைந்து செல்லும்” இயல்புடைய மனப்­பான்­மையாகும். மற்றொரு போலியானது ‘அசட்டுத் துணிவாக’ இருக்கிறது; சூழ்நிலையில் உள்ள காரணிகளை, அதாவது, சூழ்நிலையைச் சமாளிக்கும் திறன், அதன் சிரமங்கள், அதன் ஆபத்துகள், அதன் எதிரான காரணிகள் போன்ற­வற்றைக் கணக்கில் எடுத்துக் கொள்ளாமல் ஆபத்தான செயல்களை சிந்த­னையற்ற முறையில் மேற்கொள்ளும் குணம். மூன்றாவது போலியானது ‘அனுமானமாக’ இருக்கிறது, அதாவது ஆபத்­துகளைச் சமாளிக்கும் ஒருவரின் சொந்த திறன்களை மிகைப்­படு­த்திக் கொள்வது, அது ஒருவன் தன்னை மலை உச்சி­யிலி­ருந்து தள்ளி விடுவதைப் போன்றது. அது முட்டா­ள்த­னமான துணிவு­களுக்கு வெகுமதியாக இயற்கையின் விதிகள் ஒருவரின் நலன்­களு­க்காக இடைநி­றுத்­தப்­படும் என்று எதிர்­பார்­க்கிறது.</p>
+</div>
+<div class="mz-col">
+<figure class="mz-fig"><figcaption class="mz-figcap">பயத்தை மேற்கொள்ளும் விசுவாசம்</figcaption><img src="assets/img/a104e741b99348ddf2cc8e8e11867987.jpg" alt="A lion standing in tall grass on the savanna"></figure>
+<p>நிச்சயமாக, இதுபோன்ற ஒரு சோதனையில் நம்முடைய இரட்­சகரின் தெளிவான மனநி­லையை­க்கொ­ண்டி­ருக்­காத­வர்கள், யதார்­த்த­த்தின் பாறைகள் மற்றும் கற்களின் மீது விழும்போது அவர்­களுடைய மதியீ­னத்தின் விளைவாகப் பெரிதும் காயம­டைகி­றார்கள். கோலியாத், பெனாதாத் மற்றும் அப்போ­ஸ்தலர் பேதுரு ஆகியோரின் தற்பெ­ருமையும் மற்றும் அதைத் தொடர்ந்து வந்த அவர்­களுடைய வீழ்ச்சியும் நிரூபி­ப்பதைப் போல, அது ‘தற்பெ­ருமையான தைரியம்’அல்ல. தெளிந்த புத்தியுள்ள ஆவியை ஓரளவு வளர்த்துக் கொண்ட தேவனுடைய ஜனங்­களுக்கு, கொஞ்சம் சிந்தித்தாலே, இவை தைரியத்தின் வெறும் போலிகள் என்று நிச்ச­யமாகப் புரிந்து கொள்ள முடியும்.</p>
+<h2 class="mz-h">தைரியத்தின் விளக்கம்</h2>
+<p>அதீத துணிவு, அசட்டுத் துணிவு, அனுமானம், தற்பெருமை பேசுதல் ஆகியவற்றை தைரியம் என்று புரிந்து கொள்ளப்பட வேண்டும் என்று வேதாகமம் கருதவில்லை என்றால், உண்மையில் தைரியம் என்றால் என்ன? இதனை ஆபத்தான சூழ்நிலையின் முன்னிலையில் மனம், இருதயம் மற்றும் சித்தத்தின் நிதானமான, அச்சமற்ற, துணிச்சலான மற்றும் சுயத்தை-மறக்கும் மனப்பான்மை என்று வரைய­றுக்­கலாம். ஒரு சூழ்நிலையில் ஆபத்து இல்லா­மலி­ருந்து, அந்த பொருத்தமான சூழ்நிலையை எதிர்­கொள்ளும் ஒருவரைத் தைரிய­மானவர் என நாம் நிச்சயமாக நினைக்க மாட்டோம். உதாரணமாக, உண்பது, குளிப் பது, உடுப்பது, தூங்குவது போன்றவற்றை யார் தைரியமான செயல்கள் என்று நினைப்­பார்கள்? அவை தைரியமான செயல்­களாகக் கருத­ப்ப­டாத­தற்கான காரணம், பொதுவாக ஆபத்து அவற்றுடன் தொடர்­புப­டுத்­தப்­பட­வில்லை என்பதாகும்.</p>
+</div>
+</div>
+<aside class="mz-courtesy" lang="en"><b>COURTESY BY:</b> THE BIBLE STANDARD (ISSN: 1556-8555). Publisher, the Laymen’s Home Missionary Movement – Bible Standard Ministries, 1156 St. Matthews Road, Chester Springs, PA 19425-2700, U.S.A. Editor, Leon Snyder. Periodicals postage paid at Kutztown, PA. Postmaster: send address corrections to The Bible Standard, 1156 St. Matthews Road, Chester Springs, PA 19425-2700. Rates: one year’s subscription $12.00 (6 issues); single issues $2.50 each. Web site: www.biblestandard.com</aside>
+<footer class="mz-foot" lang="en"><span>LHMM - India</span><span>2</span><span>1690</span><span>BS Tamil Version - 96</span></footer>
+</section>
+<section class="mz-page" id="page-3" aria-label="Page 3">
+<div class="mz-body"><div class="mz-col">
+<p>இதன்படி, அச்சு­றுத்தும் ஆபத்து தைரியத்தின் ஒரு முன் அனுமானமாக இருக்கிறது, சரியான கோட்பாடுகள் இதைக் கோரும்போது, தைரியம் எப்போதும் ஒரு ஆபத்தான சூழ்நிலையை சந்தே­கத்­திற்­கிட­மின்றி எதிர்­கொள்ளும். கோலியாத், சவுல், அப்சலோம் போன்ற­வர்­களி­டமி­ருந்து தாவீது எதிர்கொண்ட ஆபத்­துக­ளிலி­ருந்து தாவீது பின்வாங் காததைப் போலவே, இதுவும், அதிலிருந்து தப்பி ஓடாது, தவிர்க்க முடியாததாக இருக்­குமே­யானால் அதிலிருந்து பின்வாங்காது. ஆபத்தான சூழ்நி­லைகளைப் பற்றிய சிந்தனையைப் பொறுத்தவரை இது மனதின் ஒரு குணமாக இருக்கிறது. இது இருத­யத்தின் விருப்­பங்­களில் ஒன்றா­யிரு­க்கிறது; இது முதன்மையாக, ஆபத்தின் முன்னிலையில் தைரியமாக இருப்பதைத் தீர்மா­னிக்கும் முதன்மையான ஒன்றா­யிரு­க்கிறது.</p>
+<p>மனதில், தைரியம் ஒரு நிதானமான பண்பாக உள்ளது; ஏனெனில் அது ஆபத்து குறித்த ஒருவரின் திறன்களைக் கணக்கில் எடுத்­துக்­கொள்­கிறது. மேலும் அது ஆபத்தையும் கணக்கில் எடுத்­துக்­கொள்­கிறது; 20,000 வீரர்­களுடன் தனக்கு விரோதமாக வரும் எதிரி ராஜாவை தனது 10,000 வீரர்­களுடன் சந்திக்க முடியுமா என்று கருதிய ராஜாவைப் போல, எதிரிகளால் ஆபத்து ஏற்பட்டால், அது எதிராளியின் திறன்­களுடன் ஒப்பிட்டுப் பார்த்து ஒருவரின் சொந்த திறன்­களையும் ஆய்வு செய்கிறது. இருத­யத்தில், தைரியம் அச்ச­மற்­றதா­யிரு­க்கிறது. இது, பயம், திகில், கலக்கம் அல்லது நடுக்கம் போன்ற ஆபத்து குறித்த உணர்வுகள் கட்டு­ப்ப­டுத்த அனும­திக்காது. சித்தத்தில் அது துணிச்­சலானது - அதாவது, ஆபத்தை எதிர்­கொள்ளும் சண்டையில் தைரிய­மாகவும், தற்காப்பு ரீதியாகவும் ஈடுப­டுகிறது. சுயநலமாக பாதுகா­க்க­ப்ப­டுவதைப் பொருட்­படு­த்தாமல், ஆபத்தில் ஒருவரை தற்காக்க முற்ப­டுகிறது மற்றும் சண்டையில் வெற்றி பெறவேண்டும் என்ற உறுதி­தளராத தீவிரம் நிறைந்­திரு­ப்ப­தனால் யுத்தத்தில் வெற்றி பெற கடுமையான மற்றும் பயனுள்ள தாக்கு­தல்களை மேற்கொ­ள்கிறது.</p>
+<p>எனவே, உண்மையான தைரியத்தில் நிதானமின்மை இல்லை. அது ஆபத்தை எதிர்­கொள்ளும் போது ஒருவரின் சொந்தத் திறன்களைக் குறைவாக மதிப்­பிடுவதோ அல்லது மிகையாக மதிப்­பிடுவதோ இல்லை, ஆபத்தையும் குறைவாக மதிப்­பிடுவதோ அல்லது மிகையாக மதிப்­பிடுவதோ இல்லை, அதனுடன் தொடர்புடைய சிரமங்கள், பகைவர்கள் மற்றும் பிரச்­சினை­களையும் குறைவாக மதிப்­பிடுவதோ அல்லது மிகையாக மதிப்­பிடுவதோ இல்லை. தைரியத்தில் பயம், கலக்கம், நடுக்கம் அல்லது திகில் போன்ற­வற்றின் அறிகுறி இருப்­பதில்லை. ஏனெனில் இவை அதன் இயல்பு மற்றும் அமைப்பிற்கு முரணானவை.</p>
+<p>பகைமை­யுண­ர்வுடன் செயல்படும் இறுமா­ப்புடைய தற்பெ­ருமை­க்கா­ரரின் முன்னிலையில் தைரியம் பின்வாங்காது. இரத்­தசா­ட்சியாக மரணத்தை எதிர்கொள்ள ஆவலு­டனி­ருக்­கிறேன். ஆம், அதை விருப்­பத்­துடன் எதிர்கொள்ள தன்னால் முடியும் என்று பெருமை­யடி­த்துக்</p>
+</div><div class="mz-col">
+<p class="mz-cont">கொண்டு, ஆனால், அதற்கான சூழ்நிலையின் முன்னிலையிலோ கிறிஸ்துவை மறுதலித்து தனது சொந்த ஜீவனைக் காப்பாற்றிக் கொண்ட துறவி ஒருவரைப் போல் அது இருக்காது. முழு உலகமும் அவரை மறுத­லித்­தாலும், கிறிஸ்துவைப் பற்றிய தனது அறிக்கைக்கு விசுவாசப் பற்று­றுதி­யுடன் நிற்கத் தயாராக இருப்பதாக தன்னையே புகழ்ந்து கொண்ட பெருமை பேசும் பேதுருவைப் போலவும் இது செயல்படாது. சுய-மேன்மைக்காக திரளான ஜனங்களை வியப்பில் ஆழ்த்தி அவர்களின் மனத்­தோற்­றத்தை ஈர்ப்­பத­ற்கான அதீத துணிவின் முயற்சியாக தன்னைத் தானே ஒரு கோபுர உச்சி­யிலி­ருந்து கீழே தள்ளிக் கொள்ளும் அனுமா­னத்தின் ஒரு துளி கூட, உண்மையான தைரியத்தில் இல்லை. இந்த குணங்கள் அனைத்தும் அதற்கு நேர் எதிரானவை அல்லது போலியானவை. எனவே, இந்த குணங்களில் எதையும் தைரிய­த்திற்கு உரியது என்று நம்மில் எவரும் தவறாகக் கருத­க்கூடாது; ஏனென்றால் அவைகளின் ஒரு பங்கு அதற்கு எதிரானவை மற்றும் ஒரு பங்கு அதன் போலியானவை. ஆபத்தின் முன்னிலையில் நிதானம், பயமின்மை மற்றும் துணிச்சல் ஆகிய­வற்றைக் கொண்டி­ருக்கும் தைரியத்தின் கூறுகளை நாம் நினைவில் வைத்தி­ருந்தால், அத்தகைய தவறான கருத்­துக்­களுக்கு நாம் குற்ற­வாளியாக மாட்டோம்.</p>
+<h2 class="mz-h">தைரியத்தின் வகைகள்</h2>
+<p>இப்போது சில சுவார­ஸ்யமான தைரியத்தின் வகைகளை ஆராய்வோம். இவற்றில், நான்கு வகைகளைப் பற்றி விசேஷமாகக் குறிப்பிட வேண்டும்: <b>(1)</b> சரீரம், <b>(2) </b>மனம், <b>(3)</b> சன்மா­ர்க்கம்/ஒழுக்கநெறி மற்றும் <b>(4)</b> மதம். இந்த நான்கு வகைகளில் மிகவும் பொதுவானது சரீர ரீதியான ஆபத்தைத் துணிவுடன் எதிர்­கொள்ளும் சரீர ரீதியான தைரியம். தேவனுடைய வார்த்தை, சரீர ரீதியான தைரிய­த்திற்கு சம்கார் (நியாயா­திப­திகள் 3:31) மற்றும் சிம்சோன் (நியாயா­திப­திகள் அதிகாரம் 15) போன்ற­வர்­களின் சிறந்த உதார­ணங்­களைத் தெரிவி­க்கிறது.</p>
+<p>மன தைரியம் என்பது மதசா­ர்பற்ற அல்லது மத ரீதியான மன சிரம­ங்களைத் துணிவுடன் எதிர்­கொள்ளும் இயல்பாகும். சிந்தனையின் முன்னோடிகள் என்பதை நிரூபித்த அனைத்து சிறந்த சிந்த­னையா­ளர்­களும் இந்த வகையான தைரியத்தை அவர்­களுடைய துறைகளில் வெளிப்­படு­த்தி­யுள்­ளனர். வனாந்­தர­த்தில் தெய்வீக வெளிப்­பாட்டின் இரக­சிய­ங்களை ஆராய்ந்த நம்முடைய ஆண்டவர் மன தைரிய­த்திற்கு மிகச்­சிறந்த எடுத்­துக்­காட்டாக இருக்கிறார். நியாய­ப்பி­ரமாணம் மற்றும் கிருபையின் உடன்­படி­க்கைகள், மனிதனுடைய ஆக்கி­னைத்­தீர்ப்பு, மீட்பு, நீதிமானாக எண்ண­ப்ப­டுதல் மற்றும் மெய்யான நீதிமா­னாக்­கப்­படுதல், கிறிஸ்­துவி­னுடைய இரட்­சிப்பின் வேலையின் இரண்டு மாபெரும் வெளிப்­பாடுகள் - தேர்ந்­தெடு­க்க­ப்ப­ட்ட­வர்­களுக் கான இரட்சிப்பு மற்றும் இழந்து போனதைத் திரும்­பக்­கொடு­த்தல் - போன்ற­வற்றோடு தொடர்புடைய சிரமங் களுடன், – பவுலின் போராட்டம் மன தைரிய­த்திற்கு சிறந்த எடுத்­துக்­காட்­டுக­ளாகும்.</p>
+</div></div>
+<footer class="mz-foot" lang="en"><span>LHMM - India</span><span>3</span><span>1691</span><span>BS Tamil Version - 96</span></footer>
+</section>
+<section class="mz-page" id="page-4" aria-label="Page 4">
+<div class="mz-body"><div class="mz-col">
+<aside class="mz-defs" aria-label="The four kinds of courage">
+<h3>சரீர ரீதியான தைரியம்</h3><p>உறுதிப்பாடு, சமநிலை மற்றும் விழிப்புணர்வுடன் தொடர்ந்து முன்னேறுவதற்கும்.</p>
+<h3>மன ரீதியான தைரியம்</h3><p>திறந்த மற்றும் நெகிழ்வான இணக்கமுள்ள மனதுடன் கற்பதற்கும், கற்றதை மறப்பதற்கும் மற்றும் மறுகற்றலுக்கும்.</p>
+<h3>சன்மார்க்க ரீதியான தைரியம்</h3><p>விரும்பத்தகாததாக இருந்தாலும் கூட சரியானதைச் செய்தல்.</p>
+<h3>மத ரீதியான தைரியம்</h3><p>தேவனுடைய அழைப்பு மற்றும் நோக்கங்களுக்கு உறுதியுடனும் கீழ்ப்படிதலுடனும் இருந்து அவர் மீதான விசுவாசம் மற்றும் நம்பிக்கையின் முக்கியத்துவத்தை வலியுறுத்தும்போது, பயம், துன்பம் அல்லது ஆபத்தை எதிர்கொள்ளும் பெலன் வேண்டும்.</p>
+</aside>
+<p>லுத்தர் கோட்பாட்டு ரீதியாகவும் நடைமுறை ரீதியாகவும், ரோமன் கத்தோ­லிக்­கத்தின் புண்ணிய கிரியை­களினால் நீதிமா­னாகுதல் என்ற கொள்கையின் குழப்­பங்­களின் ஊடாகக் கடந்து விசுவா­சத்­தினால் மட்டுமே நீதிமா­னாக்­கப்பட முடியும் என்ற தெளிவை அடையும் வரை, கிட்ட­த்தட்ட மிக உயர்ந்த மன தைரியத்தை வெளிப்­படு­த்தினார். இதன் மூலம், அவர் ரோமன் கத்தோலிக்க இறையி­யலா­ளர்­களின் விரிவான கொள்கைகளை கந்தை­க்கீ­ற்று­களாகக் கிழித்து, ரோமன் கத்தோ­லிக்­கர்­களின் மரித்­துப்போன சடங்­குக­ளிலி­ருந்து சுவிசேஷத்தை ஜீவனுள்ள புத்து­ணர்­ச்சி­யுடன் வெளியே கொண்டு வந்தார்.</p>
+<p>ஒரு வீரனின் துணிச்சலான செயலால் அவனுடைய, படைத்­தலைவன் தனது பணப்பையை அவனிடம் வீசும்படித் தூண்ட­ப்ப­ட்டார். அதில் தங்கம் மட்டுமல்ல, இரண்டு மிகவும் மதிப்­புமிக்க வைர மோதிர­ங்களும் இருந்தன. மிகுந்த உற்சா­கத்­துடன் பாராட்­டும்­விதமாக தன்னுடைய படைத்­தலைவன் தனக்கு மோதிரங்களை அல்ல, தங்கம்தான் கொடுக்க விரும்பினார் என்று உணர்ந்தான். சன்மா­ர்க்கம்/ ஒழுக்கநெறி தைரியம் அவற்றை படைத்­தலை­வனிடம் திருப்பிக் கொடுக்கச் செய்தது - ஆம், அவர் உண்மையில், மோதிரங்களை அவனுக்குக் கொடுக்க விரும்­பவில்லை. ஆனால் அவற்றைத் திருப்பித் தந்ததில் அவனது மனசா­ட்சியைப் பாராட்டிய படைத்­தலைவன், அதை அவனுக்கு வெகும­தியாகக் கொடுத்தான்.</p>
+<p>ஒழுக்கநெறி சார்ந்த தைரியம், மழை பெய்யும்போது வெளியே இருக்கக் கூடாது என்ற தனது தாயின் கட்ட­ளைக்குக் கீழ்ப்­படிந்து, தனது தோழர்களை விட்டுவிட்டு வீட்டிற்குச் செல்ல ஒரு சிறுவனைத் தூண்டியது, அவர்கள் அவனது கீழ்ப்­படி­தலு­க்காக அவனைக் கேலி செய்து, தங்கள் சொந்தக் கீழ்ப்­படி­யாமையைப் பெருமை­ப்ப­டுத்திய போது, “உங்கள் நட்பை இழந்தாலும், நான் கீழ்ப்படியா மலிருக்கவோ, என் தாயை அவம­திக்கவோ மாட்டேன்” என்று அருமையாகப் பதில­ளித்­தபோது அவன் ஒழுக்க நெறியின் தைரியத்தை வெளிப்­படு­த்தினான்.</p>
+<p>மிக உயர்ந்த வகையான தைரியம் மத ரீதியான தைரியமாகும்! வேதாகமமும் சபை வரலாறும் இந்த</p>
+</div><div class="mz-col">
+<p class="mz-cont">வகையான தைரிய­த்திற்கு நேர்த்தியான அநேக உதார­ணங்களை நமக்கு வழங்­குகி­ன்றன. சாமுவேல் ஏலிக்கு தேவனுடைய செய்தியை அறிவி­த்ததில் இதை விளக்­குகிறார். தாவீதின் பாவத்தை நாத்தான் கண்டி­த்ததில் இதைக் காண்பி­க்கிறார். மூன்று எபிரெய வாலிபர்கள் நேபுகாத் நேச்சாரின் கட்ட­ளைக்குப் பணிந்து விக்கிரக ஆராத­னையா­ளர்­களா­வதற்கு மறுத்து, மாறாக, அக்கினிச் சூளையில் துணிச்­சலுடன் அதை வெளிப்­படு­த்தினர். தானியேல், ராஜாவின் கட்டளைக்கு எதிராக இருந்­தபோ­திலும் தேவனி­டத்தில் இடைவிடாமல் ஜெபித்து, தனது மனசா­ட்சி­யினி­மித்தம் சிங்கத்தின் குகையில் தள்ள­ப்ப­டுவ­தற்கு ஒப்பு­க்கொண்டு, அதை செயலில் வெளிப்­படு­த்தினார். தேவனுடைய பிரமா­ணங்களை மீறுவ­தற்கான அந்தி­யோக்கஸ் எப்பி­ஃபே­னஸின் (Antiochus Epiphanes’s) கட்ட­ளைக்குக் கீழ்ப்படிய மறுக்­கும்படி எபிரெய தாய்மார்கள் தங்கள் விசுவாச உண்மை­த்து­வமுள்ள மகன்களை ஊக்கு­வித்தது அதற்கு அற்புதமான எடுத்­துக்­காட்­டுக­ளாகும். இரத்த சாட்சிகளின் வரலாறு மத ரீதியான தைரியத்தின் நிகழ்­வுகளால் நிரம்­பியு­ள்ளது. நிச்சயமாக, இயேசு, ஸ்தேவான் மற்றும் பவுல் ஆகியோர்கள் தேவனுக்கும் அவருடைய ஜனங்­களு­க்கும் அவர்­களுடைய அர்ப்­பணி­ப்பி­னிமி­த்தம் மரணத்தைத் துணிச்­சலுடன் எதிர்­கொண்­டதில் மத ரீதியான தைரியத்தின் மிகச்­சிறந்த உதார­ணங்­களாவர்.</p>
+<p>சபை வரலாற்றில் தைரிய­த்தி­ற்குரிய பல அற்புதமான உதார­ணங்கள் நமக்கு உள்ளன. கிறிஸ்­தவத்தை அழிக்க முயன்ற ரோமானியப் பேரரசரான மார்க்கஸ் ஆரேலியஸின் (Marcus Aurelius) நாட்களில், ரோமானிய உயர்­குடியைச் சேர்ந்த தலைமை செவிலியும் விதவையுமான ஃபெலிசிடாஸ் (Felicitas) என்பவர், தன்னையும் தனது ஏழு மகன்­களையும் அவன் கிறிஸ்துவை மறுத­லிக்­கும்படி செய்ய முயற்சித்த போது, இந்த குணப்பண்பை வெளிப்­படு­த்தினாள், அவளுடைய மகன்களை அவளுக்கு முன்பாகவும், ஒவ்வொ­ருவரின் கண்களுக்கு முன்பாகவும் ஒருவர் பின் ஒருவராக கொடூரமாகச் சித்தி­ரவதைச் செய்து கொன்றான், அவர்களின் சித்தி­ரவ­தைக­ளுக்கு மத்தியிலும், விசுவா­சத்தில் உறுதியாக இருக்­கும்படி அவர்களை ஊக்கு­வித்தாள், அவர்களும் அதையே செய்தார்கள், அவர்­களு­க்குப் பின் அவர்கள் அவளை மரணம் வரை கொடுமை­ப்ப­டுத்­திய­போதும், அவளை தனது கர்த்தரை  மறுத­லிக்­கும்­படிச் செய்ய முடியவில்லை.</p>
+<p>ஜாண் ஹஸ்ஸின் (John Huss) விசேஷித்த உதவி­யாளரான பிராகுவைச் சேர்ந்த ஜெரோம் (Jerome of Prague) அவருடைய விசுவா­சத்­திற்காக, கழும­ரத்தில் கட்டி எரிக்­கப்­பட்டார். மரண­தண்­டனையை நிறைவே­ற்று­பவர் அவருடைய பார்வைக்கு மறைவாக பின்புறம் நெருப்பைப் பற்ற வைக்க முயன்றபோது, ஜெரோம் அவர் காணும் வகையில் அவருக்கு முன்புறம் அதைப் பற்ற வைக்கும்படி கூறினார்; நெருப்பு பற்ற­வைக்­கப்­பட்­டதும், அவர் ஒரு பாடலைப் பாடத் தொடங்கினார், மேலும் பாடலை முடிக்க அவரைத் தடைபண்ணிய தீப்பி­ழம்­புகள் அவரது வாய்ப் பகுதியை அடையும் வரை அதைப் பாடினார்.</p>
+</div></div>
+<footer class="mz-foot" lang="en"><span>LHMM - India</span><span>4</span><span>1692</span><span>BS Tamil Version - 96</span></footer>
+</section>
+<section class="mz-page" id="page-5" aria-label="Page 5">
+<div class="mz-body"><div class="mz-col">
+<p>கிரான்மரின் (Cranmer) விசேஷித்த உதவி­யாளரான ஹியுக் லாடிமர் (Hugh Latimer), இந்த வகையான தைரிய­த்திற்கு மற்றொரு உதாரணம். அவரைக் கைது செய்வ­தற்கான இயக்­கத்தைப் பற்றி அறிந்­துக்­கொண்ட அவர், கைது செய்யும் அதிகாரியைச் சந்தித்து அவருடன் செல்லத் தயாரானார், தப்பித்துச் செல்ல அவருக்கு நீண்ட கால வாய்ப்பை அவர் வழங்கினார். இந்த வாய்ப்பை ஏற்க மறுத்து, அந்த அதிகா­ரியுடன் சென்று, ஹென்றி VIII மற்றும் ஜார்ஜ் V ஆகியோருக்கு முன்பாக, முன்பு பிரச­ங்கி­த்ததைப் போலவே, “இரத்த வெறிப்­பிடித்த” மேரியின் முன் தனது விசுவாசத்தை அறிக்­கையிடத் தயாராக இருந்தார். ஒரு மதவி­ரோதியாக கழும­ரத்தில் கட்டி எரிக்­கும்படி தீர்ப்­பளி­க்க­ப்ப­ட்டார். அவருக்கும் ரிட்லிக்கும் (Ridley) கீழே நெருப்பு எரியும்போது, அவர், பிந்தை­யவ­ரிடம், “டாக்டர் ரிட்லி, திடன்­கொள்­ளுங்கள், மன உறுதி­யுட­னிரு­ங்கள். தேவனுடைய கிருபையால் இன்று இங்கி­லாந்தில் அத்தகைய மெழுகு­வர்­த்தியை ஏற்றி வைப்போம், அது ஒருபோதும் அணைக்­கப்­படாது என்று நான் நம்புகிறேன்” என்று கூறினார்; பின்னர் அவர் ஜெயங் கொண்டவராக மரித்தார். மத ரீதியான தைரியத்தை விளக்கும் ஆயிர­க்க­ணக்கான நிகழ்­வுகளில் இவை சில மட்டுமே.</p>
+<h2 class="mz-h">தைரியத்தின் களங்கள்</h2>
+<p>தைரியமானது மதச்­சார்­பற்ற மற்றும் மத ரீதியிலான களங்களில் செயல்­படு­கிறது. இது குடும்­பத்தில் மதச்­சார்­பற்ற களத்தில் செயல்­படு­கிறது. பல சந்த­ர்ப்­பங்­களில் மனைவி­யானவள் நியாயமற்ற மற்றும் கொடுங்­கோன்­மையுள்ள கணவரின் எதிர்­ப்புக்கு எதிராகக் கர்த்­தருடைய சித்தத்தைச் செய்வ­தற்கான தைரியத்தை உபயோகிக்க வேண்டும். சண்டைக்காரி அடங்­காப்­பிடா­ரியான மனைவியின் அபக­ரிப்­புக­ளுக்கு எதிராகத் தனது தலைமை­த்து­வத்தைக் காத்துக் கொள்ள பல சந்த­ர்ப்­பங்­களில் கணவர் தைரியத்தை வெளிப்­படுத்த வேண்டும். நிச்சயமாக, சகோ. வெஸ்லியும் சகோ. ரஸலும் சண்டை­க்கா­ரியான மனைவியின் எதிர்ப்பைச் சந்திக்க தைரியமாக இருக்க வேண்டி­யிரு­ந்தது. பல பெற்றோர்கள் எதிர்க்கிற பிள்ளைகளின் அபக­ரிப்­புகள் மற்றும் கீழ்ப்­படி­யாமை­களுக்கு எதிராகத் தைரியத்தை வெளிப்­படுத்த வேண்டும். சத்தியத்தை வெறுக்கும் மற்றும் அநீதியான தகப்பன் அல்லது தாயின் அபக­ரிப்­புகள் மற்றும் கொடுங்­கோன்­மைகளை மேற்கொள்ள பல பிள்ளைகள் துணிவுடன் இருக்க வேண்டும். மேலும் பல சகோத­ரர்கள் அல்லது சகோதரிகள் மாம்சப் பிரகாரமான சகோத­ரர்கள் அல்லது சகோத­ரிகளின் எதிர்ப்பை வெல்ல மிகவும் தைரியமாக இருக்க வேண்டி­யிரு­க்கிறது.</p>
+<p>குடும்­பத்தில், வாழ்க்கைத் துணை, பெற்றோர், பிள்ளைகள், சகோதர சகோதரிகள் ஒன்று சேர்ந்து சத்தி­யத்­திற்கு தங்கள் எதிர்ப்பை மிகவும் அன்பான மனநி­லையுடன் வெளிப்­படு­த்து­ம்போது தைரியம் முக்கி­யமாகத் தேவைப்­படு­கிறது; ஏனெனில் அப்ப­டிப்­பட்ட சூழ்நி­லைகளில், சத்திய குடும்­பத்தின் உறுப்பினர் எதிர்ப்பைக் கைவிடுவது எளிது. மேலே குறிப்­பிட­ப்பட்ட கருத்­துக்­களில் அடங்­கியுள்ள இதுபோன்ற நிகழ்வுகளை நாங்கள் கவனி­த்து­ள்ளோம், மேலும் அவற்றில் தைரியம் தேவை என்பதையும் அறிந்­துள்ளோம்.</p>
+</div><div class="mz-col">
+<figure class="mz-star" style="background-image: url(assets/img/f6f1b3eefc26031b56ed3f6389398fb9.jpg);">
+<figcaption><span class="mz-star-t">பலங்கொண்டு<br>திடமனதாயிரு</span><span class="mz-star-v">“திகையாதே, கலங்காதே, நீ போகும் இடமெல்லாம் உன் தேவனாகிய கர்த்தர் உன்னோடே இருக்கிறார்” <span lang="en">(NKJ)</span></span><span class="mz-star-r">யோசுவா 1:9</span></figcaption>
+</figure>
+<p>தொழில் உலகில் கழுத்­தறு­க்கும் கடுமையான போட்டி, தவறான சித்தரிப்பு, நியாயமற்ற நடைமுறைகள் மற்றும் அந்நி­யப்­படு­த்த­ப்ப­டுத­ல்கள் ஆகியவை தொழில் பாதைகளில் தேவனுடைய பிள்ளைக்கும், ஊழிய­க்கா­ரனு­க்கும் அடிக்கடி ஏற்ப­டுத்தும் எதிர்ப்பை எதிர்­கொள்­கையில், சரியானதைச் செய்வ­தற்கும், அதற்காக நிலை நிற்ப­தற்கும் மிகுந்த தைரியம் தேவைப்­படு­கிறது.</p>
+<p>தேசத்தில், கர்த்­தருடைய வார்த்தைக்கு முரணான சில அரசாங்க நடவ­டிக்­கைக­ளுக்கு எதிராக, சத்தியம், நீதி மற்றும் பரிசுத்தம் ஆகிய­வற்­றுக்காக நிற்பதற்கு அடிக்கடி அதிக தைரியம் தேவைப்­படு­கிறது; உதாரணமாக, தெய்வீகமாக தடைசெ­ய்ய­ப்பட்ட வழிகளில் செயல்படும் அரசாங்கம் மற்றும் சபையின் கூட்டு­றவிற்கு எதிராகப் போராடுவது, போரில் யுத்தம் செய்வதற்கு மனசா­ட்சி­யினி­மித்தம் ஆட்சேபனை தெரிவிப்பது மற்றும் அரசாங்க தரப்பிலான ஒடுக்­குத­லுக்கு எதிர்ப்பு தெரிவிப்பது போன்ற­வைக­ளுக்கு அதிக தைரியம் தேவைப்­படு­கிறது.</p>
+<p>உலகப் போரின் இரு கட்ட­ங்க­ளிலும், அதைத் தொடர்ந்து வந்த யுத்த­ங்க­ளிலும், கர்த்­தருடைய ஜனங்களில் அநேகர் தங்கள் கொள்கை­களு­க்காக தாங்கள் உட்ப­டுத்­தப்­பட்ட கட்டா­யப்­படு­த்துதல், ஏளனம் மற்றும் புறக்­கணிப்பு ஆகியவற்றை எதிர்த்து, கர்த்­தருடைய வார்த்தைக்கு விசுவாசப் பற்று­றுதி­யுடன் இருப்­பத­ற்காக, யுத்தத்தின் வேதனையுடன் போராட வேண்டி­யிரு­ந்தது. உண்மையாகவே, இயேசுவின் இரத்­தசா­ட்சிகள் மற்றும் அவரை அறிக்­கையி­ட்ட­வர்­களின் வரலாறு முழுவதும், யூத மதம், புறஜாதி மதம், ரோமின் போப்பு­மார்­க்கம் மற்றும் புராட்­டஸ்­டண்ட் அமைப்பின் பிரிவி­னைவாதம் போன்ற­வற்­றினுடைய செல்வாக்கின் கீழிருந்த தேசங்கள் துன்பு­றுத்­தியதன் மூலம் அவர்கள் மீது கொண்டு­வர­ப்பட்ட பாடுகளால் நிறைந் துள்ளது; மேலும் எதிர்ப்பில் முதல் தரமான தைரியம் பயன்­படுத்த வேண்டி­யிரு­ந்தது.</p>
+<p>மத ரீதியான களத்தில், எதிர்ப்பை முறியடிக்க உயர் தரமான தைரியம் வெளிக்­காட்­டப்பட வேண்டும். கிறிஸ்தவ பாதையின் துவக்­கத்­திலி­ருப்­பவ­ர்கள் பாவத்­திலி­ருந்து நீதிக்கும், இரட்­சகராக கிறிஸ்துவை விசுவா­சிப்­பத­ற்கும் திரும்­பும்போது பெரும்பாலும் எப்போதும் நிந்தனை, கேலி மற்றும் புறக்­கணி­ப்புக்கு ஆளாகி­றார்கள். ஒருவர் பிரதிஷ்டை செய்து விசுவாச உண்மை­த்து­வத்­துடன், அந்த பிரதிஷ்டையை நிறைவேற்ற முற்ப­டும்போது இவைகளுடன் பிற துன்பு­றுத்­தல்­களும் அதிக­ரிக்­கின்றன. அந்த பிரதிஷ்டையை நிறைவேற்ற முற்படும் ஒருவருக்கு, குறிப்பாக சத்தியத்தை ஆராய்ந்து, தப்பறைக்கு எதிராக சத்தி­யத்­திற்காக சாட்சி</p>
+</div></div>
+<footer class="mz-foot" lang="en"><span>LHMM - India</span><span>5</span><span>1693</span><span>BS Tamil Version - 96</span></footer>
+</section>
+</div>
+
+<div lang="en" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 0; font-family: 'Mukta Malar', sans-serif; font-size: 15px;">
+<span style="color: #3F5670;">The article continues on pages 6–11.</span>
+<a href="#" style="min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid #CFC5B0; background: #FFFFFF; color: #14284B; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; background: #14284B; color: #FFFFFF; border-color: #14284B; font-weight: 600;">Next pages: 6–7</a>
+</div>
+</main>
+
+</div>
+
+<footer style="background: #14284B; color: #FFFFFF;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 32px 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 36px 56px;">
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<span style="align-self: flex-start; display: inline-flex; padding: 10px 14px; border-radius: 14px; background: #FFFFFF;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></span>
+<p style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 600; font-size: 22px; line-height: 1.5;">“உமது வெளிச்சத்தையும், உமது சத்தியத்தையும் அனுப்பியருளும் அவைகள் என்னை நடத்தும்.” <span style="font-family: 'Senthamil 102', 'Mukta Malar', sans-serif; font-weight: 400; font-size: 16px; color: #C9D3E3;">சங்கீதம் 43:3</span></p>
+</div>
+<nav lang="en" aria-label="Footer" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 24px; align-content: start; font-family: 'Mukta Malar', sans-serif; font-size: 17px;">
+<a href="manna.html" style="color: #FFFFFF; padding: 6px 0;">Manna</a>
+<a href="contact.html" style="color: #FFFFFF; padding: 6px 0;">Contact</a>
+<a href="magazine.html" style="color: #FFFFFF; padding: 6px 0;">Magazine</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Request tracts</a>
+<a href="study.html" style="color: #FFFFFF; padding: 6px 0;">Study</a>
+<a href="about.html" style="color: #FFFFFF; padding: 6px 0;">About</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Library</a>
+<a href="#" style="color: #FFFFFF; padding: 6px 0;">YouTube</a>
+<a href="questions.html" style="color: #FFFFFF; padding: 6px 0;">Q &amp; A</a>
+<a href="gallery.html" style="color: #FFFFFF; padding: 6px 0;">Gallery</a>
+</nav>
+</div>
+<div lang="en" style="max-width: 1240px; margin: 0 auto; padding: 18px 32px 36px; border-top: 1px solid rgba(255,255,255,0.18); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-family: 'Mukta Malar', sans-serif; font-size: 15px; color: #C9D3E3;">
+<span>Laymen's Home Missionary Movement – India, Nazareth, Thoothukudi District, Tamil Nadu</span>
+<span>© 2026 Laymen's Home Missionary Movement – India</span>
+</div>
+</footer>
+
+</div>
+</div>
+</template>
+<a class="proto-badge" href="sitemap.html">Prototype · site map</a>
+<script src="assets/js/morphdom-umd.min.js"></script>
+<script src="assets/js/dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { font: 's001', size: 1, aaOpen: false, note: '', saved: [] };
+}
+renderVals() {
+const fonts = [
+{ id: 's001', label: 'Senthamil 001', css: "'Senthamil 001', 'Mukta Malar', sans-serif", strong: "'Senthamil 001', 'Mukta Malar', sans-serif", johnson: "'Senthamil 076', 'Mukta Malar', sans-serif" },
+{ id: 's076', label: 'Senthamil 076', css: "'Senthamil 076', 'Mukta Malar', sans-serif", strong: "'Senthamil 001', 'Mukta Malar', sans-serif", johnson: "'Senthamil 076', 'Mukta Malar', sans-serif" },
+{ id: 's102', label: 'Senthamil 102', css: "'Senthamil 102', 'Mukta Malar', sans-serif", strong: "'Senthamil 001', 'Mukta Malar', sans-serif", johnson: "'Senthamil 102', 'Mukta Malar', sans-serif" },
+{ id: 's015', label: 'Senthamil 015', css: "'Senthamil 015', 'Mukta Malar', sans-serif", strong: "'Senthamil 001', 'Mukta Malar', sans-serif", johnson: "'Senthamil 015', 'Mukta Malar', sans-serif" }
+];
+const sizes = [15, 17, 19];
+const names = ['Small', 'Medium', 'Large'];
+const s = this.state;
+const cur = fonts.find((f) => f.id === s.font) || fonts[0];
+const hasNote = s.note.trim().length > 0;
+return {
+aaOpen: s.aaOpen,
+aaOpenStr: s.aaOpen ? 'true' : 'false',
+aaBg: s.aaOpen ? '#F7F1E4' : '#FFFFFF',
+toggleAa: () => this.setState({ aaOpen: !s.aaOpen }),
+readFont: cur.css,
+readSize: sizes[s.size],
+sizeName: names[s.size],
+atMin: s.size === 0,
+atMax: s.size === sizes.length - 1,
+smaller: () => this.setState({ size: Math.max(0, s.size - 1) }),
+larger: () => this.setState({ size: Math.min(sizes.length - 1, s.size + 1) }),
+fontOptions: fonts.map((f) => ({
+label: f.label,
+css: f.css,
+pressed: f.id === s.font ? 'true' : 'false',
+boxStyle: f.id === s.font ? 'border: 2px solid #14284B; background: #F7F1E4;' : 'border: 1px solid #E2D9C6; background: #FFFFFF;',
+pick: () => this.setState({ font: f.id })
+})),
+focusNote: () => { const el = typeof document !== 'undefined' ? document.getElementById('note') : null; if (el) el.focus(); },
+note: s.note,
+onNote: (e) => this.setState({ note: e.target.value }),
+noNote: !hasNote,
+saveBg: hasNote ? '#14284B' : '#9AA3B0',
+save: () => { if (hasNote) this.setState({ saved: [{ text: s.note.trim() }].concat(s.saved), note: '' }); },
+saved: s.saved
+};
+}
+}
+</script>
+<script>DCLite.mount(typeof Component !== 'undefined' ? Component : null);</script>
+</body>
+</html>

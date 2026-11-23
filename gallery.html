@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Gallery — Bible Standard India (prototype)</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+@font-face{font-family:'Senthamil 001';src:url(assets/fonts/Senthamil001.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 015';src:url(assets/fonts/Senthamil015.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 066';src:url(assets/fonts/Senthamil066.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 073';src:url(assets/fonts/Senthamil073.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 076';src:url(assets/fonts/Senthamil076.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 102';src:url(assets/fonts/Senthamil102.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 112';src:url(assets/fonts/Senthamil112.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+body{margin:0;font-synthesis:none}
+footer a:focus-visible{outline-color:#E3B55B}
+a{color:#14284B}a:hover{color:#8B5E1A}
+button{font:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid #14284B;outline-offset:2px}
+</style>
+</head>
+<body class="site-page">
+<div id="dc-root"></div>
+<noscript><p style="padding: 24px; font-family: sans-serif;">This prototype needs JavaScript to show its pages.</p></noscript>
+<template id="dc-template">
+<div style="height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; font-family: 'Senthamil 001', 'Mukta Malar', system-ui, sans-serif; color: #14284B; background: #FFFFFF; font-size: 17px; line-height: 1.7;">
+
+<header lang="en" style="flex: none; background: #FFFFFF; border-bottom: 1px solid #E6E1D6; font-family: 'Mukta Malar', system-ui, sans-serif;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 10px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 36px;">
+<a href="index.html" aria-label="Bible Standard India, home" style="display: inline-flex; align-items: center;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 0 22px; flex: 1 1 560px; font-size: 17px;">
+<a href="index.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Home</a>
+<a href="manna.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Manna</a>
+<a href="magazine.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Magazine</a>
+<a href="study.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Study</a>
+<a href="library.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Library</a>
+<a href="questions.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Q &amp; A</a>
+<a href="events.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Events</a>
+<a href="gallery.html" aria-current="page" style="padding: 14px 0 10px; color: #14284B; text-decoration: none; font-weight: 700; border-bottom: 3px solid #E3B55B;">Gallery</a>
+<a href="about.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">About</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 4px;">
+<button type="button" aria-label="Search" style="width: 44px; height: 44px; border: 0; border-radius: 10px; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#14284B" stroke-width="1.8"></circle><path d="M16 16 L21 21" stroke="#14284B" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
+<a href="my-notes.html" style="display: inline-flex; align-items: center; gap: 6px; height: 44px; padding: 0 10px; border-radius: 10px; color: #14284B; text-decoration: none; font-size: 16px; font-weight: 500;"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M6 3.5 H14 L19 8.5 V20.5 H6 Z" fill="none" stroke="#14284B" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 12 H16 M9 15.5 H14" stroke="#14284B" stroke-width="1.6" stroke-linecap="round"></path></svg>My notes</a>
+</div>
+</div>
+</header>
+<div style="flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain;">
+<main lang="en" style="max-width: 1240px; margin: 0 auto; padding: 40px 32px 72px; display: flex; flex-direction: column; gap: 24px; font-family: 'Mukta Malar', sans-serif;">
+
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px;">
+<h1 style="margin: 0; font-weight: 700; font-size: 48px; line-height: 1.1;">Gallery</h1>
+<nav aria-label="Gallery" style="display: flex; gap: 6px; padding: 4px; border-radius: 12px; background: #F7F1E4;">
+<a href="gallery.html" aria-current="page" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 9px; background: #14284B; color: #FFFFFF; font-weight: 700; text-decoration: none;">Photos</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 20px; border-radius: 9px; color: #14284B; font-weight: 600; text-decoration: none;"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.8"></rect><path d="M10 9.2 L15 12 L10 14.8 Z" fill="currentColor"></path></svg>Videos on YouTube ↗</a>
+</nav>
+</div>
+
+<section aria-labelledby="album-h" style="display: flex; flex-direction: column; gap: 16px;">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px;">
+<h2 id="album-h" style="margin: 0; font-weight: 700; font-size: 26px; line-height: 1.3;">LHMM General Convention of India</h2>
+<span style="font-size: 17px; color: #3F5670;">October 2016, 7 photos</span>
+</div>
+
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px;">
+<div style="position: relative; height: 560px; border-radius: 20px; background: #0E1C36; overflow: hidden;">
+<img src="{{cur.src}}" alt="{{cur.alt}}" style="display: block; width: 100%; height: 100%; object-fit: contain;">
+<button type="button" onClick="{{prev}}" aria-label="Previous photo" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 52px; height: 52px; border: 0; border-radius: 999px; background: rgba(255,255,255,0.92); color: #14284B; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+<button type="button" onClick="{{next}}" aria-label="Next photo" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 52px; height: 52px; border: 0; border-radius: 999px; background: rgba(255,255,255,0.92); color: #14284B; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+</div>
+<figcaption style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; font-size: 17px;"><span>{{cur.alt}}</span><span aria-live="polite" style="color: #3F5670;">{{position}}</span></figcaption>
+</figure>
+
+<div role="list" aria-label="All photos in this album" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px;">
+<sc-for list="{{thumbs}}" as="t" hint-placeholder-count="7">
+<div role="listitem"><button type="button" onClick="{{t.pick}}" aria-pressed="{{t.pressed}}" aria-label="{{t.alt}}" style="display: block; width: 100%; padding: 0; border: 0; border-radius: 12px; background: transparent; cursor: pointer; {{t.ring}}"><img src="{{t.src}}" alt="" style="display: block; width: 100%; height: 100px; object-fit: cover; border-radius: 10px;"></button></div>
+</sc-for>
+</div>
+</section>
+
+</main>
+<footer style="background: #14284B; color: #FFFFFF;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 32px 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 36px 56px;">
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<span style="align-self: flex-start; display: inline-flex; padding: 10px 14px; border-radius: 14px; background: #FFFFFF;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></span>
+<p style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 600; font-size: 22px; line-height: 1.5;">“உமது வெளிச்சத்தையும், உமது சத்தியத்தையும் அனுப்பியருளும் அவைகள் என்னை நடத்தும்.” <span style="font-family: 'Senthamil 102', 'Mukta Malar', sans-serif; font-weight: 400; font-size: 16px; color: #C9D3E3;">சங்கீதம் 43:3</span></p>
+</div>
+<nav lang="en" aria-label="Footer" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 24px; align-content: start; font-family: 'Mukta Malar', sans-serif; font-size: 17px;">
+<a href="manna.html" style="color: #FFFFFF; padding: 6px 0;">Manna</a>
+<a href="contact.html" style="color: #FFFFFF; padding: 6px 0;">Contact</a>
+<a href="magazine.html" style="color: #FFFFFF; padding: 6px 0;">Magazine</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Request tracts</a>
+<a href="study.html" style="color: #FFFFFF; padding: 6px 0;">Study</a>
+<a href="about.html" style="color: #FFFFFF; padding: 6px 0;">About</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Library</a>
+<a href="#" style="color: #FFFFFF; padding: 6px 0;">YouTube</a>
+<a href="questions.html" style="color: #FFFFFF; padding: 6px 0;">Q &amp; A</a>
+<a href="gallery.html" style="color: #FFFFFF; padding: 6px 0;">Gallery</a>
+</nav>
+</div>
+<div lang="en" style="max-width: 1240px; margin: 0 auto; padding: 18px 32px 36px; border-top: 1px solid rgba(255,255,255,0.18); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-family: 'Mukta Malar', sans-serif; font-size: 15px; color: #C9D3E3;">
+<span>Laymen's Home Missionary Movement – India, Nazareth, Thoothukudi District, Tamil Nadu</span>
+<span>© 2026 Laymen's Home Missionary Movement – India</span>
+</div>
+</footer>
+</div>
+
+</div>
+</template>
+<a class="proto-badge" href="sitemap.html">Prototype · site map</a>
+<script src="assets/js/morphdom-umd.min.js"></script>
+<script src="assets/js/dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { idx: 0 };
+}
+renderVals() {
+const photos = [
+{ src: 'assets/img/02438eea3283154c86d6ee05507c0f01.jpg', alt: 'A brother preaching to the full hall, with his Tamil interpreter' },
+{ src: 'assets/img/13ed545bc095f7226ce2d48d565c5773.jpg', alt: 'Speaker and interpreter at the lectern' },
+{ src: 'assets/img/a34b990cd80134b0d7b56112ab97e342.jpg', alt: 'The congregation listening' },
+{ src: 'assets/img/75329a79f9b2a948728eea92cb67d99c.jpg', alt: 'Answering questions in front of the Chart of the Ages' },
+{ src: 'assets/img/eadb7138f576c3628276bbe08673e795.jpg', alt: 'The convention hall' },
+{ src: 'assets/img/706fa6bdc599d7ae83b18e79ff626b4e.jpg', alt: 'Brothers and sisters following in their Bibles' },
+{ src: 'assets/img/0ad93945cca14882b4146becbd1aa8e7.jpg', alt: 'The front rows' }
+];
+const n = photos.length;
+const i = this.state.idx;
+return {
+cur: photos[i],
+position: (i + 1) + ' of ' + n,
+prev: () => this.setState({ idx: (i + n - 1) % n }),
+next: () => this.setState({ idx: (i + 1) % n }),
+thumbs: photos.map((p, k) => ({
+src: p.src,
+alt: p.alt,
+pressed: k === i ? 'true' : 'false',
+ring: k === i ? 'outline: 3px solid #E3B55B; outline-offset: 2px;' : '',
+pick: () => this.setState({ idx: k })
+}))
+};
+}
+}
+</script>
+<script>DCLite.mount(typeof Component !== 'undefined' ? Component : null);</script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>2025 — Bible Standard India (prototype)</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+@font-face{font-family:'Senthamil 001';src:url(assets/fonts/Senthamil001.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 015';src:url(assets/fonts/Senthamil015.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 066';src:url(assets/fonts/Senthamil066.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 073';src:url(assets/fonts/Senthamil073.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 076';src:url(assets/fonts/Senthamil076.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 102';src:url(assets/fonts/Senthamil102.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 112';src:url(assets/fonts/Senthamil112.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+body{margin:0;font-synthesis:none}
+footer a:focus-visible{outline-color:#E3B55B}
+a{color:#14284B}a:hover{color:#8B5E1A}
+button{font:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid #14284B;outline-offset:2px}
+.clamp3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.clamp2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+input::placeholder,textarea::placeholder{color:#5E6B7E;opacity:1}
+</style>
+</head>
+<body class="site-page">
+<div id="dc-root"></div>
+<noscript><p style="padding: 24px; font-family: sans-serif;">This prototype needs JavaScript to show its pages.</p></noscript>
+<template id="dc-template">
+<div style="height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; font-family: 'Senthamil 001', 'Mukta Malar', system-ui, sans-serif; color: #14284B; background: #FFFFFF; font-size: 17px; line-height: 1.7;">
+
+<header lang="en" style="flex: none; background: #FFFFFF; border-bottom: 1px solid #E6E1D6; font-family: 'Mukta Malar', system-ui, sans-serif;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 10px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 36px;">
+<a href="index.html" aria-label="Bible Standard India, home" style="display: inline-flex; align-items: center;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 0 22px; flex: 1 1 560px; font-size: 17px;">
+<a href="index.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Home</a>
+<a href="manna.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Manna</a>
+<a href="magazine.html" aria-current="page" style="padding: 14px 0 10px; color: #14284B; text-decoration: none; font-weight: 700; border-bottom: 3px solid #E3B55B;">Magazine</a>
+<a href="study.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Study</a>
+<a href="library.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Library</a>
+<a href="questions.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Q &amp; A</a>
+<a href="events.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Events</a>
+<a href="gallery.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Gallery</a>
+<a href="about.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">About</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 4px;">
+<button type="button" aria-label="Search" style="width: 44px; height: 44px; border: 0; border-radius: 10px; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#14284B" stroke-width="1.8"></circle><path d="M16 16 L21 21" stroke="#14284B" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
+<a href="my-notes.html" style="display: inline-flex; align-items: center; gap: 6px; height: 44px; padding: 0 10px; border-radius: 10px; color: #14284B; text-decoration: none; font-size: 16px; font-weight: 500;"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M6 3.5 H14 L19 8.5 V20.5 H6 Z" fill="none" stroke="#14284B" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 12 H16 M9 15.5 H14" stroke="#14284B" stroke-width="1.6" stroke-linecap="round"></path></svg>My notes</a>
+</div>
+</div>
+</header>
+<div style="flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; background: #FFFFFF;">
+<section style="background: #FBF7EE; border-bottom: 1px solid #EDE6D6;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 22px 32px 40px; display: flex; flex-direction: column; gap: 20px;">
+<nav aria-label="Breadcrumb"><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 15px;"><li><a href="index.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #3F5670; text-decoration: underline; text-underline-offset: 3px;">Home</a></li><li aria-hidden="true" style="color: #8A93A3;">›</li><li><a href="magazine.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #3F5670; text-decoration: underline; text-underline-offset: 3px;">Magazine</a></li><li aria-hidden="true" style="color: #8A93A3;">›</li><li><span aria-current="page" lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #14284B; font-weight: 600;">2025</span></li></ol></nav>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px;">
+<div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 10px;">
+<h1 lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 48px; font-weight: 700; line-height: 1.1;">2025</h1>
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 17px; line-height: 1.6; color: #3F5670;">The Bible Standard, Tamil · issues 91–96, with every article and the page it starts on.</p>
+</div>
+<nav aria-label="Other years" lang="en" style="display: flex; gap: 10px; font-family: 'Mukta Malar', sans-serif;"><a href="#" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 12px; background: #FFFFFF; color: #14284B; border: 2px solid #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px; text-decoration: none; box-sizing: border-box; cursor: pointer; min-height: 44px;">‹ 2024</a><span aria-disabled="true" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 12px; background: #FFFFFF; color: #14284B; border: 2px solid #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px; text-decoration: none; box-sizing: border-box; cursor: pointer; min-height: 44px; border-color: #C9C2B3; color: #6B7686;">2026 ›</span></nav>
+</div>
+</div>
+</section>
+<div style="max-width: 1240px; margin: 0 auto; padding: 40px 32px 72px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+<nav aria-labelledby="rail-h" lang="en" style="position: sticky; top: 20px; flex: 1 1 200px; max-width: 230px; display: flex; flex-direction: column; gap: 10px; font-family: 'Mukta Malar', sans-serif; font-size: 16px;">
+<h2 id="rail-h" style="margin: 0; font-size: 18px; font-weight: 700;">Issues by year</h2>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 2px;"><li><a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #14284B;"><span>2026</span><span style="font-size: 13px; color: #3F5670;">none yet</span></a></li>
+<li><a href="magazine-2025.html" aria-current="page" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 10px; text-decoration: none; background: #14284B; color: #FFFFFF; font-weight: 700;"><span>2025</span><span style="font-size: 13px; color: #E3E8F0;">91–96</span></a></li>
+<li><a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #14284B;"><span>2024</span><span style="font-size: 13px; color: #3F5670;">82–90</span></a></li>
+<li><a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #14284B;"><span>2023</span><span style="font-size: 13px; color: #3F5670;">76–81</span></a></li>
+<li><a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #14284B;"><span>2022</span><span style="font-size: 13px; color: #3F5670;">70–75</span></a></li>
+<li><a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #14284B;"><span>2021</span><span style="font-size: 13px; color: #3F5670;">64–69</span></a></li>
+<li><a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #14284B;"><span>2020</span><span style="font-size: 13px; color: #3F5670;">58–63</span></a></li>
+<li><a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #14284B;"><span>2019</span><span style="font-size: 13px; color: #3F5670;">52–57</span></a></li>
+<li><a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #14284B;"><span>2018</span><span style="font-size: 13px; color: #3F5670;">45–51</span></a></li>
+<li><a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #14284B;"><span>2017</span><span style="font-size: 13px; color: #3F5670;">39–44</span></a></li>
+<li><a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #14284B;"><span>2016</span><span style="font-size: 13px; color: #3F5670;">33–38</span></a></li>
+<li><a href="#" style="display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 10px; text-decoration: none; color: #14284B;"><span>Older</span><span style="font-size: 13px; color: #3F5670;">1–32</span></a></li></ol>
+<a href="magazine.html" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 12px; font-weight: 600;">All issues</a>
+</nav>
+<div style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column;">
+<form role="search" lang="en" style="display: flex; gap: 8px; margin-bottom: 8px;">
+<label for="y-q" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);">Search 2025 issues</label>
+<input id="y-q" type="search" placeholder="Search the 2025 issues" style="flex: 1 1 auto; min-width: 0; min-height: 48px; box-sizing: border-box; padding: 0 14px; border: 1px solid #B9AF9B; border-radius: 12px; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 16px; color: #14284B;">
+<button type="submit" aria-label="Search" style="flex: none; width: 48px; height: 48px; border: 0; border-radius: 12px; background: #14284B; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; cursor: pointer;"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle><path d="M16 16 L21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
+</form>
+<article aria-labelledby="y96" style="display: flex; flex-wrap: wrap; gap: 20px 36px; padding: 30px 0; border-top: 1px solid #E6E1D6;">
+<div style="flex: 0 0 200px;"><a href="magazine-96.html" aria-hidden="true" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; height: 250px; box-sizing: border-box; padding: 16px 18px; border-radius: 16px; background: #F4EBD7; border: 1px solid #E6D8B8; text-align: center; text-decoration: none;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="" style="width: 140px; height: auto; display: block;"><span class="clamp3" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 17px; line-height: 1.35; color: #14284B;">ஆபத்தை எதிர்கொள்ளுதல்</span><span style="width: 40px; height: 2px; background: #8B5E1A;"></span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; font-weight: 600; color: #4A3410;">No. 96</span></a></div>
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 8px;">
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 700; color: #8B5E1A;">No. 96 · 20 pages</p>
+<h2 id="y96" style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 28px; line-height: 1.3;"><a href="magazine-96.html" style="color: #14284B; text-decoration: none;">நவம்பர்–டிசம்பர் 2025</a></h2>
+<ol style="margin: 4px 0 0; padding: 0; list-style: none; border-bottom: 1px solid #EDE6D6;"><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="magazine-96-pages.html" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">ஆபத்தை எதிர்கொள்ளுதல்</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 2</span></li><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="magazine-96.html" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">நம்முடைய வார்த்தைகள் – தேவனுடைய வார்த்தைகள்</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 12</span></li><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="magazine-96.html" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">ஆனால் மாறுபட்ட ஒரு நோக்கத்துடன்</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 17</span></li></ol>
+<div lang="en" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 8px;">
+<a href="magazine-96.html" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 12px; background: #FFFFFF; color: #14284B; border: 2px solid #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px; text-decoration: none; box-sizing: border-box; cursor: pointer; min-height: 44px;">Open the issue</a>
+<a href="magazine-96-pages.html" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;">Read from page 2</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4 V15 M7 10.5 L12 15.5 L17 10.5 M5 19.5 H19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>PDF, 3.2 MB</a>
+</div>
+</div>
+</article>
+<article aria-labelledby="y95" style="display: flex; flex-wrap: wrap; gap: 20px 36px; padding: 30px 0; border-top: 1px solid #E6E1D6;">
+<div style="flex: 0 0 200px;"><a href="#" aria-hidden="true" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; height: 250px; box-sizing: border-box; padding: 16px 18px; border-radius: 16px; background: #F4EBD7; border: 1px solid #E6D8B8; text-align: center; text-decoration: none;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="" style="width: 140px; height: auto; display: block;"><span class="clamp3" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 17px; line-height: 1.35; color: #14284B;">தவித்துக் கொண்டிருக்கும் ஒவ்வொருவருக்குமான விடுதலை</span><span style="width: 40px; height: 2px; background: #8B5E1A;"></span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; font-weight: 600; color: #4A3410;">No. 95</span></a></div>
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 8px;">
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 700; color: #8B5E1A;">No. 95 · 20 pages</p>
+<h2 id="y95" style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 28px; line-height: 1.3;"><a href="#" style="color: #14284B; text-decoration: none;">செப்டம்பர்–அக்டோபர் 2025</a></h2>
+<ol style="margin: 4px 0 0; padding: 0; list-style: none; border-bottom: 1px solid #EDE6D6;"><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">தவித்துக் கொண்டிருக்கும் ஒவ்வொருவருக்குமான விடுதலை</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 2</span></li><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">இயேசு மற்றும் அவருடைய ஜனங்களுடன் உள்ள ஐக்கியத்தின் நம்பிக்கை</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 9</span></li><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">வேதாகமத்தைப் புரிந்து கொள்வது எப்படி?</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 13</span></li></ol>
+<div lang="en" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 8px;">
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 12px; background: #FFFFFF; color: #14284B; border: 2px solid #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px; text-decoration: none; box-sizing: border-box; cursor: pointer; min-height: 44px;">Open the issue</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;">Read from page 2</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4 V15 M7 10.5 L12 15.5 L17 10.5 M5 19.5 H19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>PDF, 2.9 MB</a>
+</div>
+</div>
+</article>
+<article aria-labelledby="y94" style="display: flex; flex-wrap: wrap; gap: 20px 36px; padding: 30px 0; border-top: 1px solid #E6E1D6;">
+<div style="flex: 0 0 200px;"><a href="#" aria-hidden="true" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; height: 250px; box-sizing: border-box; padding: 16px 18px; border-radius: 16px; background: #F4EBD7; border: 1px solid #E6D8B8; text-align: center; text-decoration: none;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="" style="width: 140px; height: auto; display: block;"><span class="clamp3" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 17px; line-height: 1.35; color: #14284B;">உம்முடைய வசனம் முழுவதும் சத்தியம்</span><span style="width: 40px; height: 2px; background: #8B5E1A;"></span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; font-weight: 600; color: #4A3410;">No. 94</span></a></div>
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 8px;">
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 700; color: #8B5E1A;">No. 94 · 20 pages</p>
+<h2 id="y94" style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 28px; line-height: 1.3;"><a href="#" style="color: #14284B; text-decoration: none;">ஜூலை–ஆகஸ்ட் 2025</a></h2>
+<ol style="margin: 4px 0 0; padding: 0; list-style: none; border-bottom: 1px solid #EDE6D6;"><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">உம்முடைய வசனம் முழுவதும் சத்தியம்</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 2</span></li><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">இழந்து போனதும், திரும்பப் பெற்றுக் கொண்டதுமான ஆளுகை</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 13</span></li><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">தேவனுடைய விசேஷித்த ஜனங்களின் சிறப்பியல்புகள்</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 18</span></li><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">வேதாகம வினா: உங்கள் அழைப்பின் ஒரே நம்பிக்கை</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 19</span></li></ol>
+<div lang="en" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 8px;">
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 12px; background: #FFFFFF; color: #14284B; border: 2px solid #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px; text-decoration: none; box-sizing: border-box; cursor: pointer; min-height: 44px;">Open the issue</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;">Read from page 2</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4 V15 M7 10.5 L12 15.5 L17 10.5 M5 19.5 H19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>PDF, 2.8 MB</a>
+</div>
+</div>
+</article>
+<article aria-labelledby="y93" style="display: flex; flex-wrap: wrap; gap: 20px 36px; padding: 30px 0; border-top: 1px solid #E6E1D6;">
+<div style="flex: 0 0 200px;"><a href="#" aria-hidden="true" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; height: 250px; box-sizing: border-box; padding: 16px 18px; border-radius: 16px; background: #F4EBD7; border: 1px solid #E6D8B8; text-align: center; text-decoration: none;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="" style="width: 140px; height: auto; display: block;"><span class="clamp3" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 17px; line-height: 1.35; color: #14284B;">ஆவியினால்-ஜெனிப்பிக்கப்படாத பிரதிஷ்டை செய்த ஊழியர்கள் பரிசுத்த ஆவியையுடையவர்களாயிருக்கிறார்கள்</span><span style="width: 40px; height: 2px; background: #8B5E1A;"></span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; font-weight: 600; color: #4A3410;">No. 93</span></a></div>
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 8px;">
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 700; color: #8B5E1A;">No. 93 · 20 pages</p>
+<h2 id="y93" style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 28px; line-height: 1.3;"><a href="#" style="color: #14284B; text-decoration: none;">மே–ஜூன் 2025</a></h2>
+<ol style="margin: 4px 0 0; padding: 0; list-style: none; border-bottom: 1px solid #EDE6D6;"><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">ஆவியினால்-ஜெனிப்பிக்கப்படாத பிரதிஷ்டை செய்த ஊழியர்கள் பரிசுத்த ஆவியையுடையவர்களாயிருக்கிறார்கள்</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 2</span></li><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">ஆயிர வருஷ யுகம் – பல தீர்க்கதரிசனங்களில் ஒன்று</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 6</span></li><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">தேவனால் அடிக்கப்பட்டு – வாதிக்கப்பட்டார்</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 14</span></li></ol>
+<div lang="en" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 8px;">
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 12px; background: #FFFFFF; color: #14284B; border: 2px solid #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px; text-decoration: none; box-sizing: border-box; cursor: pointer; min-height: 44px;">Open the issue</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;">Read from page 2</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4 V15 M7 10.5 L12 15.5 L17 10.5 M5 19.5 H19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>PDF, 4.4 MB</a>
+</div>
+</div>
+</article>
+<article aria-labelledby="y92" style="display: flex; flex-wrap: wrap; gap: 20px 36px; padding: 30px 0; border-top: 1px solid #E6E1D6;">
+<div style="flex: 0 0 200px;"><a href="#" aria-hidden="true" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; height: 250px; box-sizing: border-box; padding: 16px 18px; border-radius: 16px; background: #F4EBD7; border: 1px solid #E6D8B8; text-align: center; text-decoration: none;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="" style="width: 140px; height: auto; display: block;"><span class="clamp3" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 17px; line-height: 1.35; color: #14284B;">இயேசுவின் பரமேறுதல்</span><span style="width: 40px; height: 2px; background: #8B5E1A;"></span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; font-weight: 600; color: #4A3410;">No. 92</span></a></div>
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 8px;">
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 700; color: #8B5E1A;">No. 92 · 20 pages</p>
+<h2 id="y92" style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 28px; line-height: 1.3;"><a href="#" style="color: #14284B; text-decoration: none;">மார்ச்–ஏப்ரல் 2025</a></h2>
+<ol style="margin: 4px 0 0; padding: 0; list-style: none; border-bottom: 1px solid #EDE6D6;"><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">இயேசுவின் பரமேறுதல்</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 2</span></li><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">பதிவு செய்யப்பட்ட முதல் ஜெபம்</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 10</span></li><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">கேள்வி – பதில்: தீர்க்கதரிசிகள் மற்றும் நீதிமான்களின் பலன்கள்</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 20</span></li></ol>
+<div lang="en" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 8px;">
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 12px; background: #FFFFFF; color: #14284B; border: 2px solid #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px; text-decoration: none; box-sizing: border-box; cursor: pointer; min-height: 44px;">Open the issue</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;">Read from page 2</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4 V15 M7 10.5 L12 15.5 L17 10.5 M5 19.5 H19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>PDF, 2.7 MB</a>
+</div>
+</div>
+</article>
+<article aria-labelledby="y91" style="display: flex; flex-wrap: wrap; gap: 20px 36px; padding: 30px 0; border-top: 1px solid #E6E1D6;">
+<div style="flex: 0 0 200px;"><a href="#" aria-hidden="true" tabindex="-1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; height: 250px; box-sizing: border-box; padding: 16px 18px; border-radius: 16px; background: #F4EBD7; border: 1px solid #E6D8B8; text-align: center; text-decoration: none;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="" style="width: 140px; height: auto; display: block;"><span class="clamp3" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 17px; line-height: 1.35; color: #14284B;">எச்சரிக்கையாயிரு</span><span style="width: 40px; height: 2px; background: #8B5E1A;"></span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; font-weight: 600; color: #4A3410;">No. 91</span></a></div>
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 8px;">
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 700; color: #8B5E1A;">No. 91 · 20 pages</p>
+<h2 id="y91" style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 28px; line-height: 1.3;"><a href="#" style="color: #14284B; text-decoration: none;">ஜனவரி–பிப்ரவரி 2025</a></h2>
+<ol style="margin: 4px 0 0; padding: 0; list-style: none; border-bottom: 1px solid #EDE6D6;"><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">எச்சரிக்கையாயிரு</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 2</span></li><li style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #EDE6D6;"><a href="#" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; line-height: 1.45; color: #14284B; text-decoration: none;">யூதர்கள் யூதர்களாகவே நிலைத்து இருக்க வேண்டும்</a><span lang="en" style="font-family: 'Mukta Malar', sans-serif; flex: none; font-size: 15px; color: #3F5670;">page 11</span></li></ol>
+<div lang="en" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 8px;">
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 12px; background: #FFFFFF; color: #14284B; border: 2px solid #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px; text-decoration: none; box-sizing: border-box; cursor: pointer; min-height: 44px;">Open the issue</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;">Read from page 2</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4 V15 M7 10.5 L12 15.5 L17 10.5 M5 19.5 H19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>PDF, 4.6 MB</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+<footer style="background: #14284B; color: #FFFFFF;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 32px 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 36px 56px;">
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<span style="align-self: flex-start; display: inline-flex; padding: 10px 14px; border-radius: 14px; background: #FFFFFF;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></span>
+<p style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 600; font-size: 22px; line-height: 1.5;">“உமது வெளிச்சத்தையும், உமது சத்தியத்தையும் அனுப்பியருளும் அவைகள் என்னை நடத்தும்.” <span style="font-family: 'Senthamil 102', 'Mukta Malar', sans-serif; font-weight: 400; font-size: 16px; color: #C9D3E3;">சங்கீதம் 43:3</span></p>
+</div>
+<nav lang="en" aria-label="Footer" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 24px; align-content: start; font-family: 'Mukta Malar', sans-serif; font-size: 17px;">
+<a href="manna.html" style="color: #FFFFFF; padding: 6px 0;">Manna</a>
+<a href="contact.html" style="color: #FFFFFF; padding: 6px 0;">Contact</a>
+<a href="magazine.html" style="color: #FFFFFF; padding: 6px 0;">Magazine</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Request tracts</a>
+<a href="study.html" style="color: #FFFFFF; padding: 6px 0;">Study</a>
+<a href="about.html" style="color: #FFFFFF; padding: 6px 0;">About</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Library</a>
+<a href="#" style="color: #FFFFFF; padding: 6px 0;">YouTube</a>
+<a href="questions.html" style="color: #FFFFFF; padding: 6px 0;">Q &amp; A</a>
+<a href="gallery.html" style="color: #FFFFFF; padding: 6px 0;">Gallery</a>
+</nav>
+</div>
+<div lang="en" style="max-width: 1240px; margin: 0 auto; padding: 18px 32px 36px; border-top: 1px solid rgba(255,255,255,0.18); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-family: 'Mukta Malar', sans-serif; font-size: 15px; color: #C9D3E3;">
+<span>Laymen's Home Missionary Movement – India, Nazareth, Thoothukudi District, Tamil Nadu</span>
+<span>© 2026 Laymen's Home Missionary Movement – India</span>
+</div>
+</footer>
+</div>
+
+</div>
+</template>
+<a class="proto-badge" href="sitemap.html">Prototype · site map</a>
+<script src="assets/js/morphdom-umd.min.js"></script>
+<script src="assets/js/dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+<script>DCLite.mount(typeof Component !== 'undefined' ? Component : null);</script>
+</body>
+</html>

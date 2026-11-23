@@ -1,0 +1,121 @@
+/* Mukta Malar, SIL Open Font License 1.1 (assets/fonts/OFL-MuktaMalar.txt) */
+@font-face {
+  font-family: 'Mukta Malar';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(../fonts/mukta-malar-tamil-400-normal.woff2) format('woff2');
+  unicode-range: U+0964-0965,U+0B82-0BFA,U+200C-200D,U+20B9,U+25CC;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(../fonts/mukta-malar-latin-ext-400-normal.woff2) format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(../fonts/mukta-malar-latin-400-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(../fonts/mukta-malar-tamil-500-normal.woff2) format('woff2');
+  unicode-range: U+0964-0965,U+0B82-0BFA,U+200C-200D,U+20B9,U+25CC;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(../fonts/mukta-malar-latin-ext-500-normal.woff2) format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(../fonts/mukta-malar-latin-500-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url(../fonts/mukta-malar-tamil-600-normal.woff2) format('woff2');
+  unicode-range: U+0964-0965,U+0B82-0BFA,U+200C-200D,U+20B9,U+25CC;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url(../fonts/mukta-malar-latin-ext-600-normal.woff2) format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url(../fonts/mukta-malar-latin-600-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(../fonts/mukta-malar-tamil-700-normal.woff2) format('woff2');
+  unicode-range: U+0964-0965,U+0B82-0BFA,U+200C-200D,U+20B9,U+25CC;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(../fonts/mukta-malar-latin-ext-700-normal.woff2) format('woff2');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Mukta Malar';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(../fonts/mukta-malar-latin-700-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* Review build: page frame and prototype badge */
+html, body { margin: 0; }
+body { background: #FFFFFF; font-synthesis: none; }
+body.phone-page { background: #E9E4D8; }
+
+.proto-badge {
+  position: fixed; left: 12px; bottom: 12px; z-index: 50;
+  display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px;
+  border-radius: 999px; background: #14284B; color: #FFFFFF;
+  font: 600 14px/1 'Mukta Malar', system-ui, sans-serif; text-decoration: none;
+  box-shadow: 0 6px 18px rgba(20, 40, 75, 0.28);
+}
+.proto-badge:hover { background: #1E3866; }
+.proto-badge:focus-visible { outline: 3px solid #E3B55B; outline-offset: 2px; }
+
+/* Phones: logo and tools on one row, the menu on a second row that scrolls sideways */
+@media (max-width: 760px) {
+  body.site-page header[lang="en"] > div { padding: 6px 16px !important; column-gap: 8px !important; justify-content: space-between; }
+  body.site-page header[lang="en"] > div > a img { height: 44px !important; }
+  body.site-page header nav[aria-label="Main"] { order: 3; flex: 1 1 100% !important; flex-wrap: nowrap !important; overflow-x: auto; gap: 0 18px !important; scrollbar-width: none; }
+  body.site-page header nav[aria-label="Main"]::-webkit-scrollbar { display: none; }
+  body.site-page header nav[aria-label="Main"] a { white-space: nowrap; }
+}

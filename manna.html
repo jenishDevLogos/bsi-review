@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Manna, 27 October — Bible Standard India (prototype)</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+@font-face{font-family:'Senthamil 001';src:url(assets/fonts/Senthamil001.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 015';src:url(assets/fonts/Senthamil015.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 066';src:url(assets/fonts/Senthamil066.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 073';src:url(assets/fonts/Senthamil073.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 076';src:url(assets/fonts/Senthamil076.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 102';src:url(assets/fonts/Senthamil102.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 112';src:url(assets/fonts/Senthamil112.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+body{margin:0;font-synthesis:none}
+footer a:focus-visible{outline-color:#E3B55B}
+a{color:#14284B}a:hover{color:#8B5E1A}
+button,textarea{font:inherit}
+textarea:focus,button:focus-visible,a:focus-visible{outline:2px solid #14284B;outline-offset:2px}
+</style>
+</head>
+<body class="site-page">
+<div id="dc-root"></div>
+<noscript><p style="padding: 24px; font-family: sans-serif;">This prototype needs JavaScript to show its pages.</p></noscript>
+<template id="dc-template">
+<div style="height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; font-family: 'Senthamil 001', 'Mukta Malar', system-ui, sans-serif; color: #14284B; background: #FFFFFF; font-size: 17px; line-height: 1.7;">
+
+<header lang="en" style="flex: none; background: #FFFFFF; border-bottom: 1px solid #E6E1D6; font-family: 'Mukta Malar', system-ui, sans-serif;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 10px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 36px;">
+<a href="index.html" aria-label="Bible Standard India, home" style="display: inline-flex; align-items: center;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 0 22px; flex: 1 1 560px; font-size: 17px;">
+<a href="index.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Home</a>
+<a href="manna.html" aria-current="page" style="padding: 14px 0 10px; color: #14284B; text-decoration: none; font-weight: 700; border-bottom: 3px solid #E3B55B;">Manna</a>
+<a href="magazine.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Magazine</a>
+<a href="study.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Study</a>
+<a href="library.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Library</a>
+<a href="questions.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Q &amp; A</a>
+<a href="events.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Events</a>
+<a href="gallery.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Gallery</a>
+<a href="about.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">About</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 4px;">
+<button type="button" aria-label="Search" style="width: 44px; height: 44px; border: 0; border-radius: 10px; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#14284B" stroke-width="1.8"></circle><path d="M16 16 L21 21" stroke="#14284B" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
+<a href="my-notes.html" style="display: inline-flex; align-items: center; gap: 6px; height: 44px; padding: 0 10px; border-radius: 10px; color: #14284B; text-decoration: none; font-size: 16px; font-weight: 500;"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M6 3.5 H14 L19 8.5 V20.5 H6 Z" fill="none" stroke="#14284B" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 12 H16 M9 15.5 H14" stroke="#14284B" stroke-width="1.6" stroke-linecap="round"></path></svg>My notes</a>
+</div>
+</div>
+</header>
+
+<div lang="en" style="flex: none; border-bottom: 1px solid #E6E1D6; background: #FBF7EE; font-family: 'Mukta Malar', sans-serif;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 10px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; font-size: 14px;">
+<nav aria-label="Days" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px;">
+<a href="#" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 10px; color: #14284B; text-decoration: none;">← 26 Oct</a>
+<span style="font-weight: 600; padding: 0 6px;">Tuesday, 27 October</span>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 10px; color: #14284B; text-decoration: none;">28 Oct →</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 16px; color: #3F5670;">
+<span>Day 300 of 365</span>
+<button type="button" style="display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid #DCD3C0; background: #FFFFFF; color: #14284B; cursor: pointer;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2" fill="none" stroke="#14284B" stroke-width="1.6"></rect><path d="M3.5 9.5 H20.5 M8 3 V6.5 M16 3 V6.5" stroke="#14284B" stroke-width="1.6" stroke-linecap="round"></path></svg>Choose a day</button>
+</div>
+</div>
+</div>
+
+<div style="flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain;">
+<section aria-labelledby="manna-verse" style="background: #F5E6CC;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 40px; align-items: center;">
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<p style="margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px;"><span style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 600; font-size: 22px;">அக்டோபர் 27</span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 600; color: #FFFFFF; background: #14284B; border-radius: 999px; padding: 2px 12px;">Daily Heavenly Manna</span></p>
+<h1 id="manna-verse" style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 800; font-size: 54px; line-height: 1.22; color: #14284B;">“என் காலங்கள் உமது கரத்திலிருக்கிறது.”</h1>
+<p style="font-family: 'Senthamil 102', 'Mukta Malar', sans-serif; margin: 0; font-size: 19px; font-weight: 600; color: #4A3410;">சங்கீதம் 31:15</p>
+</div>
+<img src="assets/img/08e218cbacdc0c564aed6fac0fb867a7.jpg" alt="" style="display: block; width: 100%; height: 360px; object-fit: cover; object-position: 12% 50%; border-radius: 300px 300px 20px 20px / 200px 200px 20px 20px;">
+</div>
+</section>
+
+<div style="max-width: 1240px; margin: 0 auto; padding: 40px 32px 88px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start;">
+
+<main style="flex: 999 1 640px; min-width: 0; max-width: 720px; display: flex; flex-direction: column; gap: 32px;">
+
+<header style="display: flex; flex-direction: column; gap: 12px;">
+<div lang="en" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 4px; font-family: 'Mukta Malar', sans-serif; font-size: 16px;">
+<button type="button" onClick="{{toggleAa}}" aria-expanded="{{aaOpenStr}}" style="display: inline-flex; align-items: baseline; gap: 2px; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid #DCD3C0; background: {{aaBg}}; color: #14284B; cursor: pointer;"><span lang="ta" style="font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 13px;">அ</span><span lang="ta" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-size: 18px; font-weight: 600;">அ</span><span style="margin-left: 8px;">Reading settings</span></button>
+<a href="#reflect-h" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">Add reflection</a>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">Share</a>
+</div>
+<sc-if value="{{aaOpen}}" hint-placeholder-val="{{false}}">
+<section aria-label="Reading settings" style="border: 1px solid #DCD3C0; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 8px 24px rgba(19,33,58,0.08);">
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 600; color: #3F5670;">Tamil font</span>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 8px;">
+<sc-for list="{{fontOptions}}" as="opt" hint-placeholder-count="4">
+<button type="button" onClick="{{opt.pick}}" aria-pressed="{{opt.pressed}}" style="{{opt.boxStyle}} border-radius: 10px; padding: 10px 12px; min-height: 64px; text-align: left; cursor: pointer; display: flex; flex-direction: column; gap: 2px; color: #14284B;"><span style="font-family: {{opt.css}}; font-size: 19px; line-height: 1.35;">காலங்கள்</span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 12px; color: #3F5670;">{{opt.label}}</span></button>
+</sc-for>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px;">
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 600; color: #3F5670;">Text size</span>
+<div style="display: flex; align-items: center; gap: 6px;">
+<button type="button" onClick="{{smaller}}" disabled="{{atMin}}" aria-label="Smaller text" style="width: 44px; height: 40px; border: 1px solid #DCD3C0; border-radius: 8px; background: #FFFFFF; color: #14284B; font-size: 14px; cursor: pointer;">அ−</button>
+<span lang="en" style="min-width: 64px; text-align: center; font-family: 'Mukta Malar', sans-serif; font-size: 16px;">{{sizeName}}</span>
+<button type="button" onClick="{{larger}}" disabled="{{atMax}}" aria-label="Larger text" style="width: 44px; height: 40px; border: 1px solid #DCD3C0; border-radius: 8px; background: #FFFFFF; color: #14284B; font-size: 18px; cursor: pointer;">அ+</button>
+</div>
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 15px; color: #3F5670;">Saved on this device</span>
+</div>
+</section>
+</sc-if>
+</header>
+
+<article aria-label="இன்றைய மன்னா" style="display: flex; flex-direction: column; gap: 1.1em; font-family: {{readFont}}; font-size: {{readSize}}px; line-height: 1.85; color: #22324D;">
+<div role="group" aria-label="Pastor Russell" style="display: flex; flex-direction: column; gap: 1.1em; font-family: {{strongFont}}; font-weight: 700; color: #14284B;">
+<p style="margin: 0;">பிரதிஷ்டை செய்த தேவனுடைய எல்லா ஊழியக்காரர்களும் ஆட்டுக் குட்டியானவரைப் பின்பற்றுகிறவர்களான போது தங்கள் ஜீவனைப் பலியிட அர்ப்பணித்திருக்கிறார்கள். அவர்கள் இடைவிடாது தங்கள் பிரதிஷ்டையை உணர்ந்தறியக் கூடியவர்களாயிருந்தால் மட்டுமே எந்த நேரத்திலும் தேவனுடைய விருப்பம்போலும் எந்தெந்த வகையில் அல்லது வழியில் அவருடைய கிருபை அனுமதிக்குமோ அந்த வகையில் நிறைவேற்ற அவர்கள் ஆயத்தமாயிருப்பார்கள்.</p>
+<p style="margin: 0;">தேவனுக்கென்று பிரதிஷ்டை செய்தவர்கள், தங்கள் பிதா அறியாமலும் அவருடைய அனுமதி இல்லாமலும் தங்கள் தலையிலுள்ள ஒரு மயிரும் விழாதென்பதை நினைவுகூர வேண்டும். தலையான நமது அருமை மீட்பர் “என் பிதா எனக்குக் கொடுத்த பாத்திரத்தில் நான் பானம் பண்ணாதிருப்பேனா?” என்று சொன்னது போல் அவர்களுடைய மனநிலையும் இருக்க வேண்டும்.</p>
+<blockquote style="margin: 0.2em 0; padding: 0.2em 0 0.2em 1.1em; border-left: 3px solid #E3B55B; color: #14284B; font-family: 'Senthamil 112', 'Mukta Malar', sans-serif; font-weight: 400;">
+<p style="margin: 0;">“என் தேவன் என்னை நடத்துகிறார்.<br>ஆதலால் நான் காணும் என் பங்கு ஏதானாலும் திருப்திதான்”</p>
+</blockquote>
+<p style="margin: 0;">என்று ஒரு கவிஞன் கூறியது போல் அவர்கள் இருதயத்தின் வாசகமும் இருக்க வேண்டும்.</p>
+<p lang="en" style="margin: -0.2em 0 0; display: flex; align-items: center; gap: 12px; font-family: 'Mukta Malar', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.4; color: #3F5670;"><span><span style="color: #14284B; font-weight: 600;">Pastor Russell</span>, The Watch Tower, 1904<br>Z ’04, 237 (R 3407)</span></p>
+</div>
+<p aria-hidden="true" style="margin: 0.2em 0; text-align: center; letter-spacing: 0.6em; color: #8B5E1A;">* * *</p>
+<div role="group" aria-label="Pastor Johnson" style="display: flex; flex-direction: column; gap: 1.1em; font-family: {{johnsonFont}}; color: #22324D;">
+<p style="margin: 0;">சபை முழுவதற்கும், அதன் தனிப்பட்ட ஒவ்வொரு அங்கத்தினர் சம்பந்தமாகவும் இந்த வாசகம் உண்மையானது. தமது திட்டத்தில் சம்பந்தப்பட்ட எல்லாக் காரியங்களுக்கும் தேவன் ஏற்றதோர் காலத்தை வைத்திருக்கிறார். அப்படியே சபையின் அனுபவங்களைக் குறிப்பிடும் அதிசயமான கால நிகழ்ச்சிகளை நாம் பார்க்கிறோம். இணைக்காலப் பகுதிகள் விசேஷமாக அநேக வகைகளில் இதை நிரூபிக்கிறது. குறித்தநேரம் ஒருநாள்கூடப் பிசகாமல் நுணுக்கமாகக் கண்டறியப் பட்டுள்ளது.</p>
+<p style="margin: 0;">இவ்வாறு சபையின் சம்பந்தமான கால நிகழ்ச்சிகளில் எவ்வித தவறுகளுக்கும் தேவன் இடம் கொடுக்கிறதில்லை. அதன் தனிப்பட்ட அங்கத்தினர் சம்பந்தமாகவும் அவர் அதே விதமான கவனமுள்ளவராயிருக்கிறார். அவருடைய மகிமைக்கும் அவர்களுடைய நலனுக்கும் ஏற்ற நேரத்தில் ஒவ்வொரு அனுபவத்தையும், தேர்ச்சியையும், வேலையையும், சிலாக்கியத்தையும் அவர் ஒழுங்குபடுத்துகிறார்.</p>
+<p lang="en" style="margin: -0.2em 0 0; display: flex; align-items: center; gap: 12px; font-family: 'Mukta Malar', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.4; color: #3F5670;"><span><span style="color: #14284B; font-weight: 600;">Pastor Johnson</span>, The Present Truth, 1932<br>P ’32, 150</span></p>
+</div>
+</article>
+
+<section aria-labelledby="pp-h" style="display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 1px solid #E6E1D6;">
+<h2 id="pp-h" style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.35;">ஒத்தவாக்கியங்கள்</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 15px;">
+<a href="#" style="display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">கலா. 4:5</a>
+<a href="#" style="font-family: 'Senthamil 066', 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">ரோம. 5:6</a>
+<a href="#" style="font-family: 'Senthamil 066', 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">தானி. 9:24–27</a>
+<a href="#" style="font-family: 'Senthamil 066', 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">தானி. 12:11–13</a>
+<a href="#" style="font-family: 'Senthamil 066', 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">லூக். 23:46</a>
+<a href="#" style="font-family: 'Senthamil 066', 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">யோவா. 13:1</a>
+<a href="#" style="font-family: 'Senthamil 066', 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">யோவா. 17:1, 2</a>
+<a href="#" style="font-family: 'Senthamil 066', 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">அப். 1:6</a>
+<a href="#" aria-current="true" style="font-family: 'Senthamil 066', 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #14284B; background: #14284B; color: #FFFFFF; text-decoration: none;">1 தீமோ. 2:6</a>
+<a href="#" style="font-family: 'Senthamil 066', 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">1 தீமோ. 6:15</a>
+<a href="#" style="font-family: 'Senthamil 066', 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">1 பேது. 2:23</a>
+<a href="#" style="font-family: 'Senthamil 066', 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">வெளி. 6:11</a>
+<a href="#" style="font-family: 'Senthamil 066', 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">வெளி. 11:2, 3</a>
+<a href="#" style="font-family: 'Senthamil 066', 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 999px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none;">வெளி. 14:15</a>
+</div>
+<blockquote style="margin: 4px 0 0; padding: 16px 20px; border-radius: 10px; background: #FBF7EE; border: 1px solid #E6D8B8; display: flex; flex-direction: column; gap: 4px;">
+<p style="margin: 0; font-size: 18px; line-height: 1.75;">“அவர் எல்லாரையும் மீட்கும் பொருளாகத் தம்மை ஒப்புக் கொடுத்தார். இதற்குரிய சாட்சி ஏற்ற காலங்களில் விளங்கி வருகிறது.”</p>
+<footer style="font-family: 'Senthamil 102', 'Mukta Malar', sans-serif; font-size: 15px; color: #3F5670;">1 தீமோத்தேயு 2:6</footer>
+</blockquote>
+</section>
+
+<section aria-label="Also for today" style="display: flex; flex-direction: column; gap: 0; padding-top: 24px; border-top: 1px solid #E6E1D6;">
+<dl style="margin: 0; display: grid; grid-template-columns: minmax(0, 180px) minmax(0, 1fr); gap: 0; font-size: 16px; line-height: 1.6;">
+<dt style="padding: 12px 16px 12px 0; border-bottom: 1px solid #EDE6D6; font-weight: 600; color: #14284B;">பாமாலைகள்</dt>
+<dd style="margin: 0; padding: 12px 0; border-bottom: 1px solid #EDE6D6; display: flex; flex-wrap: wrap; gap: 6px;"><a href="#" style="display: inline-flex; align-items: center; min-width: 40px; justify-content: center; min-height: 32px; padding: 0 8px; border-radius: 6px; background: #F7F1E4; color: #14284B; text-decoration: none; font-family: 'Mukta Malar', sans-serif; font-size: 16px;">186</a><a href="#" style="display: inline-flex; align-items: center; min-width: 40px; justify-content: center; min-height: 32px; padding: 0 8px; border-radius: 6px; background: #F7F1E4; color: #14284B; text-decoration: none; font-family: 'Mukta Malar', sans-serif; font-size: 16px;">99</a><a href="#" style="display: inline-flex; align-items: center; min-width: 40px; justify-content: center; min-height: 32px; padding: 0 8px; border-radius: 6px; background: #F7F1E4; color: #14284B; text-decoration: none; font-family: 'Mukta Malar', sans-serif; font-size: 16px;">333</a><a href="#" style="display: inline-flex; align-items: center; min-width: 40px; justify-content: center; min-height: 32px; padding: 0 8px; border-radius: 6px; background: #F7F1E4; color: #14284B; text-decoration: none; font-family: 'Mukta Malar', sans-serif; font-size: 16px;">110</a><a href="#" style="display: inline-flex; align-items: center; min-width: 40px; justify-content: center; min-height: 32px; padding: 0 8px; border-radius: 6px; background: #F7F1E4; color: #14284B; text-decoration: none; font-family: 'Mukta Malar', sans-serif; font-size: 16px;">293</a><a href="#" style="display: inline-flex; align-items: center; min-width: 40px; justify-content: center; min-height: 32px; padding: 0 8px; border-radius: 6px; background: #F7F1E4; color: #14284B; text-decoration: none; font-family: 'Mukta Malar', sans-serif; font-size: 16px;">328</a><a href="#" style="display: inline-flex; align-items: center; min-width: 40px; justify-content: center; min-height: 32px; padding: 0 8px; border-radius: 6px; background: #F7F1E4; color: #14284B; text-decoration: none; font-family: 'Mukta Malar', sans-serif; font-size: 16px;">63</a></dd>
+<dt style="padding: 12px 16px 12px 0; border-bottom: 1px solid #EDE6D6; font-weight: 600; color: #14284B;">அருணோதய கீதம்</dt>
+<dd style="margin: 0; padding: 12px 0; border-bottom: 1px solid #EDE6D6;"><a href="#" style="color: #14284B;">105 – என் காலங்கள் உமது கரத்திலிருக்கிறது.</a></dd>
+<dt style="padding: 12px 16px 12px 0; font-weight: 600; color: #14284B;">கோபுர வாசிப்பு</dt>
+<dd style="margin: 0; padding: 12px 0; font-family: 'Mukta Malar', sans-serif; font-size: 15px;"><a href="#" style="color: #14284B;">Z ’14, 230 (R 5508)</a></dd>
+</dl>
+</section>
+
+<section aria-labelledby="reflect-h" style="display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 12px; background: #F7F1E4;">
+<h2 id="reflect-h" lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 20px;">Your reflection</h2>
+<div style="display: flex; flex-direction: column; gap: 4px;">
+<span style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 18px; color: #14284B;">வினாக்கள்</span>
+<label for="reflection" style="font-size: 17px; line-height: 1.7; color: #22324D;">இந்த வசனத்தின் சம்பந்தமாக இந்த வார அனுபவங்கள் என்ன? அவை எவ்வாறு சந்திக்கப்பட்டன? அவற்றின் பலன் என்ன?</label>
+</div>
+<textarea id="reflection" rows="5" value="{{note}}" onChange="{{onNote}}" style="width: 100%; box-sizing: border-box; resize: vertical; padding: 14px 16px; border: 1px solid #CFC5B0; border-radius: 8px; background: #FFFFFF; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 17px; line-height: 1.7; color: #14284B;"></textarea>
+<div lang="en" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; font-family: 'Mukta Malar', sans-serif;">
+<button type="button" onClick="{{save}}" disabled="{{noNote}}" style="min-height: 44px; padding: 0 20px; border: 0; border-radius: 8px; background: {{saveBg}}; color: #FFFFFF; font-weight: 600; cursor: pointer;">Save to My notes</button>
+<span aria-live="polite" style="font-size: 14px; color: #2F4A21;">{{savedMsg}}</span>
+<span style="font-size: 14px; color: #3F5670;">Only you can see your notes.</span>
+</div>
+</section>
+
+<div lang="en" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; font-family: 'Mukta Malar', sans-serif;">
+<button type="button" onClick="{{toggleRead}}" aria-pressed="{{readStr}}" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 20px; border-radius: 8px; border: 1px solid #14284B; background: {{readBg}}; color: {{readFg}}; font-weight: 600; cursor: pointer;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12.5 L10 17 L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>{{readLabel}}</button>
+<a href="#" style="font-weight: 600;">Next: 28 Oct →</a>
+</div>
+</main>
+
+<aside lang="en" style="position: sticky; top: 24px; max-height: calc(100vh - 192px); overflow-y: auto; scrollbar-width: thin; flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 28px; font-family: 'Mukta Malar', sans-serif; font-size: 15px;">
+<section aria-labelledby="week-h" style="display: flex; flex-direction: column; gap: 12px;">
+<h2 id="week-h" style="margin: 0; font-size: 18px; font-weight: 700; color: #3F5670;">This week</h2>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; text-align: center; font-size: 13px;">
+<li style="display: flex; flex-direction: column; gap: 4px; padding: 8px 0; border-radius: 8px; background: #F7F1E4;"><span style="color: #3F5670;">Sun</span><span style="font-weight: 600;">25</span><span aria-label="read" style="color: #2F4A21;">●</span></li>
+<li style="display: flex; flex-direction: column; gap: 4px; padding: 8px 0; border-radius: 8px; background: #F7F1E4;"><span style="color: #3F5670;">Mon</span><span style="font-weight: 600;">26</span><span aria-label="read" style="color: #2F4A21;">●</span></li>
+<li aria-current="date" style="display: flex; flex-direction: column; gap: 4px; padding: 8px 0; border-radius: 8px; background: #14284B; color: #FFFFFF;"><span>Tue</span><span style="font-weight: 600;">27</span><span aria-label="{{todayDotLabel}}">{{todayDot}}</span></li>
+<li style="display: flex; flex-direction: column; gap: 4px; padding: 8px 0;"><span style="color: #3F5670;">Wed</span><span>28</span><span aria-hidden="true">&nbsp;</span></li>
+<li style="display: flex; flex-direction: column; gap: 4px; padding: 8px 0;"><span style="color: #3F5670;">Thu</span><span>29</span><span aria-hidden="true">&nbsp;</span></li>
+<li style="display: flex; flex-direction: column; gap: 4px; padding: 8px 0;"><span style="color: #3F5670;">Fri</span><span>30</span><span aria-hidden="true">&nbsp;</span></li>
+<li style="display: flex; flex-direction: column; gap: 4px; padding: 8px 0;"><span style="color: #3F5670;">Sat</span><span>31</span><span aria-hidden="true">&nbsp;</span></li>
+</ol>
+</section>
+<section aria-labelledby="cal-h" style="display: flex; flex-direction: column; gap: 10px; padding-top: 24px; border-top: 1px solid #E6E1D6;">
+<h2 id="cal-h" style="margin: 0; font-size: 18px; font-weight: 700; color: #3F5670;">Any day of the year</h2>
+<span style="color: #22324D; line-height: 1.55;">All 366 days of the Manna, with the 2026 motto.</span>
+<a href="manna-calendar.html" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid #14284B; color: #14284B; font-weight: 600; text-decoration: none;">Choose a day</a>
+</section>
+</aside>
+</div>
+
+<footer style="background: #14284B; color: #FFFFFF;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 32px 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 36px 56px;">
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<span style="align-self: flex-start; display: inline-flex; padding: 10px 14px; border-radius: 14px; background: #FFFFFF;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></span>
+<p style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 600; font-size: 22px; line-height: 1.5;">“உமது வெளிச்சத்தையும், உமது சத்தியத்தையும் அனுப்பியருளும் அவைகள் என்னை நடத்தும்.” <span style="font-family: 'Senthamil 102', 'Mukta Malar', sans-serif; font-weight: 400; font-size: 16px; color: #C9D3E3;">சங்கீதம் 43:3</span></p>
+</div>
+<nav lang="en" aria-label="Footer" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 24px; align-content: start; font-family: 'Mukta Malar', sans-serif; font-size: 17px;">
+<a href="manna.html" style="color: #FFFFFF; padding: 6px 0;">Manna</a>
+<a href="contact.html" style="color: #FFFFFF; padding: 6px 0;">Contact</a>
+<a href="magazine.html" style="color: #FFFFFF; padding: 6px 0;">Magazine</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Request tracts</a>
+<a href="study.html" style="color: #FFFFFF; padding: 6px 0;">Study</a>
+<a href="about.html" style="color: #FFFFFF; padding: 6px 0;">About</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Library</a>
+<a href="#" style="color: #FFFFFF; padding: 6px 0;">YouTube</a>
+<a href="questions.html" style="color: #FFFFFF; padding: 6px 0;">Q &amp; A</a>
+<a href="gallery.html" style="color: #FFFFFF; padding: 6px 0;">Gallery</a>
+</nav>
+</div>
+<div lang="en" style="max-width: 1240px; margin: 0 auto; padding: 18px 32px 36px; border-top: 1px solid rgba(255,255,255,0.18); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-family: 'Mukta Malar', sans-serif; font-size: 15px; color: #C9D3E3;">
+<span>Laymen's Home Missionary Movement – India, Nazareth, Thoothukudi District, Tamil Nadu</span>
+<span>© 2026 Laymen's Home Missionary Movement – India</span>
+</div>
+</footer>
+
+</div>
+</div>
+</template>
+<a class="proto-badge" href="sitemap.html">Prototype · site map</a>
+<script src="assets/js/morphdom-umd.min.js"></script>
+<script src="assets/js/dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { font: 's001', size: 1, aaOpen: false, note: '', saved: false, read: false };
+}
+renderVals() {
+const fonts = [
+{ id: 's001', label: 'Senthamil 001', css: "'Senthamil 001', 'Mukta Malar', sans-serif", strong: "'Senthamil 001', 'Mukta Malar', sans-serif", johnson: "'Senthamil 076', 'Mukta Malar', sans-serif" },
+{ id: 's076', label: 'Senthamil 076', css: "'Senthamil 076', 'Mukta Malar', sans-serif", strong: "'Senthamil 001', 'Mukta Malar', sans-serif", johnson: "'Senthamil 076', 'Mukta Malar', sans-serif" },
+{ id: 's102', label: 'Senthamil 102', css: "'Senthamil 102', 'Mukta Malar', sans-serif", strong: "'Senthamil 001', 'Mukta Malar', sans-serif", johnson: "'Senthamil 102', 'Mukta Malar', sans-serif" },
+{ id: 's015', label: 'Senthamil 015', css: "'Senthamil 015', 'Mukta Malar', sans-serif", strong: "'Senthamil 001', 'Mukta Malar', sans-serif", johnson: "'Senthamil 015', 'Mukta Malar', sans-serif" }
+];
+const sizes = [16, 19, 22];
+const names = ['Small', 'Medium', 'Large'];
+const s = this.state;
+const cur = fonts.find((f) => f.id === s.font) || fonts[0];
+const hasNote = s.note.trim().length > 0;
+return {
+aaOpen: s.aaOpen,
+aaOpenStr: s.aaOpen ? 'true' : 'false',
+aaBg: s.aaOpen ? '#F7F1E4' : '#FFFFFF',
+toggleAa: () => this.setState({ aaOpen: !s.aaOpen }),
+readFont: cur.css,
+strongFont: cur.strong,
+johnsonFont: cur.johnson,
+readSize: sizes[s.size],
+sizeName: names[s.size],
+atMin: s.size === 0,
+atMax: s.size === sizes.length - 1,
+smaller: () => this.setState({ size: Math.max(0, s.size - 1) }),
+larger: () => this.setState({ size: Math.min(sizes.length - 1, s.size + 1) }),
+fontOptions: fonts.map((f) => ({
+label: f.label,
+css: f.css,
+pressed: f.id === s.font ? 'true' : 'false',
+boxStyle: f.id === s.font ? 'border: 2px solid #14284B; background: #F7F1E4;' : 'border: 1px solid #E2D9C6; background: #FFFFFF;',
+pick: () => this.setState({ font: f.id })
+})),
+note: s.note,
+onNote: (e) => this.setState({ note: e.target.value, saved: false }),
+noNote: !hasNote,
+saveBg: hasNote ? '#14284B' : '#9AA3B0',
+save: () => { if (hasNote) this.setState({ saved: true }); },
+savedMsg: s.saved ? 'Saved to My notes, linked to சங்கீதம் 31:15' : '',
+toggleRead: () => this.setState({ read: !s.read }),
+readStr: s.read ? 'true' : 'false',
+readLabel: s.read ? 'Read today' : 'Mark today as read',
+readBg: s.read ? '#14284B' : '#FFFFFF',
+readFg: s.read ? '#FFFFFF' : '#14284B',
+todayDot: s.read ? '●' : ' ',
+todayDotLabel: s.read ? 'read' : 'not read yet'
+};
+}
+}
+</script>
+<script>DCLite.mount(typeof Component !== 'undefined' ? Component : null);</script>
+</body>
+</html>

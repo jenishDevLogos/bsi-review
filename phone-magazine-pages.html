@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ஆபத்தை எதிர்கொள்ளுதல் — Bible Standard India (phone) (prototype)</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+@font-face{font-family:'Senthamil 001';src:url(assets/fonts/Senthamil001.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 015';src:url(assets/fonts/Senthamil015.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 066';src:url(assets/fonts/Senthamil066.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 073';src:url(assets/fonts/Senthamil073.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 076';src:url(assets/fonts/Senthamil076.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 102';src:url(assets/fonts/Senthamil102.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 112';src:url(assets/fonts/Senthamil112.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+body{margin:0;font-synthesis:none}
+footer a:focus-visible{outline-color:#E3B55B}
+a{color:#14284B}
+button,textarea{font:inherit}
+textarea:focus,button:focus-visible,a:focus-visible{outline:2px solid #14284B;outline-offset:2px}
+.mz-banner{position:relative;padding:16px 40px 14px;background:#14284B;color:#FFFFFF;text-align:center}
+.mz-orn{position:absolute;width:28px;height:28px}
+.mz-orn-tl{top:6px;left:6px}.mz-orn-tr{top:6px;right:6px;transform:scaleX(-1)}.mz-orn-bl{bottom:6px;left:6px;transform:scaleY(-1)}.mz-orn-br{bottom:6px;right:6px;transform:scale(-1,-1)}
+.mz-title{margin:0;font-family:'Senthamil 073','Mukta Malar',sans-serif;font-weight:700;font-size:28px;line-height:1.25}
+.mz-sub{margin:2px 0 8px;font-family:'Mukta Malar',sans-serif;font-size:13px;color:#C9D3E3}
+.mz-epi{margin:0;font-family:'Senthamil 001','Mukta Malar',sans-serif;font-size:15px;line-height:1.55}
+.mz-ref{font-family:'Senthamil 102','Mukta Malar',sans-serif;color:#E3B55B}
+.mz-art p{margin:0;text-indent:1.6em;text-align:justify;hyphens:manual;-webkit-hyphens:manual}
+.mz-art p.mz-first{text-indent:0}
+.mz-drop{float:left;margin:.08em .16em 0 0;padding:.12em .14em .04em;border-radius:4px;background:#14284B;color:#FFFFFF;font-family:'Senthamil 073','Mukta Malar',sans-serif;font-size:3em;line-height:.9}
+.mz-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.mz-h{margin:.5em 0 0;text-align:center;font-family:'Senthamil 073','Mukta Malar',sans-serif;font-weight:700;font-size:1.3em;line-height:1.3;color:#14284B}
+.mz-fig{margin:.3em 0;border:1.5px solid #14284B;background:#FFFFFF}
+.mz-figcap{padding:.3em .5em .25em;text-align:center;font-family:'Senthamil 073','Mukta Malar',sans-serif;font-weight:700;font-size:1.05em;line-height:1.3;color:#14284B}
+.mz-fig img{display:block;width:100%;height:auto}
+.mz-foot{display:flex;justify-content:space-between;padding:5px 10px;background:#14284B;color:#FFFFFF;font-family:'Mukta Malar',sans-serif;font-size:12px;font-weight:600}
+</style>
+</head>
+<body class="phone-page">
+<div id="dc-root"></div>
+<noscript><p style="padding: 24px; font-family: sans-serif;">This prototype needs JavaScript to show its pages.</p></noscript>
+<template id="dc-template">
+<div style="height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; width: 100%; max-width: 430px; margin: 0 auto; font-family: 'Senthamil 001', 'Mukta Malar', system-ui, sans-serif; color: #14284B; background: #FFFFFF; font-size: 17px; line-height: 1.7; min-height: 100%;">
+
+<header lang="en" style="flex: none; background: #FFFFFF; border-bottom: 1px solid #E6E1D6; font-family: 'Mukta Malar', system-ui, sans-serif;">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 8px 6px 16px;">
+<a href="index.html" aria-label="Bible Standard India, home" style="display: inline-flex; align-items: center;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 44px; width: auto; display: block;"></a>
+<div style="display: flex; align-items: center;">
+<button type="button" aria-label="Search" style="width: 44px; height: 44px; border: 0; border-radius: 8px; background: transparent; display: inline-flex; align-items: center; justify-content: center; cursor: pointer;"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#14284B" stroke-width="1.8"></circle><path d="M16 16 L21 21" stroke="#14284B" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
+<button type="button" aria-label="Menu" style="width: 44px; height: 44px; border: 0; border-radius: 8px; background: transparent; display: inline-flex; align-items: center; justify-content: center; cursor: pointer;"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 7 H20 M4 12 H20 M4 17 H20" stroke="#14284B" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
+</div>
+</div>
+</header>
+
+<div style="flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain;">
+<main style="padding: 20px 20px 24px; display: flex; flex-direction: column; gap: 20px;">
+
+<nav lang="en" aria-label="Breadcrumb" style="font-family: 'Mukta Malar', sans-serif; font-size: 13px; color: #3F5670; display: flex; flex-wrap: wrap; gap: 6px;">
+<a href="magazine-96-pages.html" style="color: #3F5670;">Magazine</a><span aria-hidden="true">/</span><span>No. 96 · <span lang="ta" style="font-family: 'Senthamil 001', 'Mukta Malar', sans-serif;">நவம்பர்–டிசம்பர் 2025</span></span>
+</nav>
+
+<header class="mz-banner">
+<svg class="mz-orn mz-orn-tl" viewBox="0 0 60 60" aria-hidden="true"><path d="M4 56 V22 C4 10 10 4 22 4 H56" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M22 22 c8 -10 20 -6 18 4 c-2 8 -12 6 -12 0 c0 -4 6 -5 7 -1" fill="none" stroke="#E3B55B" stroke-width="2.2" stroke-linecap="round"/><circle cx="22" cy="22" r="2.6" fill="#E3B55B"/></svg><svg class="mz-orn mz-orn-tr" viewBox="0 0 60 60" aria-hidden="true"><path d="M4 56 V22 C4 10 10 4 22 4 H56" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M22 22 c8 -10 20 -6 18 4 c-2 8 -12 6 -12 0 c0 -4 6 -5 7 -1" fill="none" stroke="#E3B55B" stroke-width="2.2" stroke-linecap="round"/><circle cx="22" cy="22" r="2.6" fill="#E3B55B"/></svg><svg class="mz-orn mz-orn-bl" viewBox="0 0 60 60" aria-hidden="true"><path d="M4 56 V22 C4 10 10 4 22 4 H56" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M22 22 c8 -10 20 -6 18 4 c-2 8 -12 6 -12 0 c0 -4 6 -5 7 -1" fill="none" stroke="#E3B55B" stroke-width="2.2" stroke-linecap="round"/><circle cx="22" cy="22" r="2.6" fill="#E3B55B"/></svg><svg class="mz-orn mz-orn-br" viewBox="0 0 60 60" aria-hidden="true"><path d="M4 56 V22 C4 10 10 4 22 4 H56" fill="none" stroke="#FFFFFF" stroke-width="2.4"/><path d="M22 22 c8 -10 20 -6 18 4 c-2 8 -12 6 -12 0 c0 -4 6 -5 7 -1" fill="none" stroke="#E3B55B" stroke-width="2.2" stroke-linecap="round"/><circle cx="22" cy="22" r="2.6" fill="#E3B55B"/></svg>
+<h1 class="mz-title">ஆபத்தை எதிர்கொள்ளுதல்</h1>
+<p class="mz-sub" lang="en">Facing Danger</p>
+<p class="mz-epi">“நீங்கள் திடமனதாயிருந்து காரியங்களை நடத்துங்கள், உத்தமனுக்குக் கர்த்தர் துணை என்றான்.” <span class="mz-ref">(2 நாளா. 19:11)</span></p>
+</header>
+
+<div lang="en" role="toolbar" aria-label="Reading tools" style="position: sticky; top: 0; z-index: 2; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 8px 0; background: #FFFFFF; font-family: 'Mukta Malar', sans-serif; font-size: 14px;">
+<button type="button" onClick="{{openAa}}" aria-expanded="{{aaStr}}" style="min-height: 44px; border-radius: 10px; border: 1px solid {{aaBorder}}; background: {{aaBg}}; color: #14284B; display: inline-flex; align-items: center; justify-content: center; gap: 6px; cursor: pointer;"><span lang="ta" style="font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 13px;">அ</span><span lang="ta" style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-size: 17px; font-weight: 600; margin-left: -4px;">அ</span>Text</button>
+<button type="button" onClick="{{openNote}}" aria-expanded="{{noteStr}}" style="min-height: 44px; border-radius: 10px; border: 1px solid {{noteBorder}}; background: {{noteBg}}; color: #14284B; display: inline-flex; align-items: center; justify-content: center; gap: 6px; cursor: pointer;"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M6 3.5 H14 L19 8.5 V20.5 H6 Z" fill="none" stroke="#14284B" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 12 H16 M9 15.5 H14" stroke="#14284B" stroke-width="1.6" stroke-linecap="round"></path></svg>Note{{noteCount}}</button>
+<a href="questions.html" style="min-height: 44px; border-radius: 10px; border: 1px solid #DCD3C0; color: #14284B; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 6px;"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M4 5.5 H20 V16 H11 L6.5 20 V16 H4 Z" fill="none" stroke="#14284B" stroke-width="1.6" stroke-linejoin="round"></path></svg>Ask</a>
+</div>
+
+<sc-if value="{{showAa}}" hint-placeholder-val="{{true}}">
+<section aria-label="Reading settings" style="margin-top: -8px; border: 1px solid #DCD3C0; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 10px 28px rgba(19,33,58,0.10);">
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 13px; font-weight: 600; color: #3F5670;">Tamil font</span>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;">
+<sc-for list="{{fontOptions}}" as="opt" hint-placeholder-count="4">
+<button type="button" onClick="{{opt.pick}}" aria-pressed="{{opt.pressed}}" style="{{opt.boxStyle}} border-radius: 10px; padding: 8px 10px; min-height: 60px; text-align: left; cursor: pointer; display: flex; flex-direction: column; gap: 2px; color: #14284B;"><span style="font-family: {{opt.css}}; font-size: 18px; line-height: 1.35;">தைரியம்</span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 11px; color: #3F5670;">{{opt.label}}</span></button>
+</sc-for>
+</div>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 13px; font-weight: 600; color: #3F5670;">Text size</span>
+<div style="display: flex; align-items: center; gap: 6px;">
+<button type="button" onClick="{{smaller}}" disabled="{{atMin}}" aria-label="Smaller text" style="width: 44px; height: 44px; border: 1px solid #DCD3C0; border-radius: 10px; background: #FFFFFF; color: #14284B; font-size: 14px; cursor: pointer;">அ−</button>
+<span lang="en" style="min-width: 60px; text-align: center; font-family: 'Mukta Malar', sans-serif; font-size: 14px;">{{sizeName}}</span>
+<button type="button" onClick="{{larger}}" disabled="{{atMax}}" aria-label="Larger text" style="width: 44px; height: 44px; border: 1px solid #DCD3C0; border-radius: 10px; background: #FFFFFF; color: #14284B; font-size: 18px; cursor: pointer;">அ+</button>
+</div>
+</div>
+<button type="button" onClick="{{closeSheet}}" lang="en" style="min-height: 44px; border: 0; border-radius: 10px; background: #14284B; color: #FFFFFF; font-family: 'Mukta Malar', sans-serif; font-weight: 600; cursor: pointer;">Done</button>
+</section>
+</sc-if>
+
+<sc-if value="{{showNote}}" hint-placeholder-val="{{false}}">
+<section aria-label="Your note" style="margin-top: -8px; border: 1px solid #DCD3C0; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 10px 28px rgba(19,33,58,0.10);">
+<div style="border-left: 3px solid #E3B55B; padding: 2px 0 2px 10px; font-size: 15px; line-height: 1.6; color: #22324D;">ஆபத்தான சூழ்நிலையின் முன்னிலையில் … சுயத்தை-மறக்கும் மனப்பான்மை</div>
+<label for="m-note" lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 14px; font-weight: 600;">Note on the highlight</label>
+<textarea id="m-note" rows="4" value="{{note}}" onChange="{{onNote}}" placeholder="உங்கள் குறிப்பு…" style="width: 100%; box-sizing: border-box; resize: vertical; padding: 12px; border: 1px solid #CFC5B0; border-radius: 10px; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 16px; line-height: 1.6; color: #14284B;"></textarea>
+<div lang="en" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-family: 'Mukta Malar', sans-serif;">
+<button type="button" onClick="{{closeSheet}}" style="min-height: 44px; border: 1px solid #DCD3C0; border-radius: 10px; background: #FFFFFF; color: #14284B; cursor: pointer;">Close</button>
+<button type="button" onClick="{{save}}" disabled="{{noNote}}" style="min-height: 44px; border: 0; border-radius: 10px; background: {{saveBg}}; color: #FFFFFF; font-weight: 600; cursor: pointer;">Save note</button>
+</div>
+<sc-for list="{{saved}}" as="n" hint-placeholder-count="0">
+<div style="background: #F7F1E4; border-radius: 10px; padding: 10px 12px; font-size: 15px; line-height: 1.6; display: flex; flex-direction: column; gap: 2px;"><span>{{n.text}}</span><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 12px; color: #3F5670;">Saved to My notes</span></div>
+</sc-for>
+</section>
+</sc-if>
+
+<article class="mz-art" style="display: flex; flex-direction: column; gap: 0.55em; font-family: {{readFont}}; font-size: {{readSize}}px; line-height: 1.7; color: #1B2433;">
+<p class="mz-first" style="margin: 0;"><span class="mz-drop" aria-hidden="true">அ</span><span class="mz-sr">அ</span>ப்போஸ்தலனாகிய பேதுரு ‘Virtue’ தைரியம் என்ற வார்த்தையை 2 பேதுரு 1:5-ல் பயன்படுத்துவதைப் போல, தைரியமானது நம்பிக்கை என்ற அர்த்தத்தில் ஒரு உயர்நிலை முதன்மை கிருபை ஆகும்; ஆனால் வீரம்/துணிவு என்ற அர்த்தத்தில் அது ஒரு இரண்டாம் நிலை கிருபை ஆகும்; அந்த வகையில் இது உயர்நிலை முதன்மை கிருபைகள் ஒருவனைக் கட்டுப்படுத்தும் ஜாக்கிரதையுணர்வு அல்லது பயத்தின் முயற்சிகளை அடக்குவதால் உருவாகிறது. ஆகையால் நமது பாடத்தில் இதனை ஒரு இரண்டாம் நிலை கிருபையாகவே விவரிக்க விரும்புகிறோம்.</p>
+<p style="margin: 0;">மிகைப்படுத்தப்பட்ட எச்சரிக்கையுணர்வு, பயத்தின் ஆவி, மனித குடும்பத்தில் பலரை எவ்வாறு கட்டுப்படுத்துகிறது என்பதையும், தேவனுடைய ஜனங்கள் அநேகருடைய விஷயத்தில் எப்படி வாழ்நாள் முழுவதும் அதனுடன் போராட வேண்டியதிருக்கிறது என்பதையும் நாம் கருத்தில் கொள்ளும்போது, அதற்கு நேர்மாறான துணிச்சல்/வீரம் என்ற கருத்தில் தைரியமானது, தேவனுடைய ஜனங்கள் கற்றுக் கொள்ளவும் மற்றும் நடைமுறைப்படுத்தவும் தகுதியான பாடமாயிருக்கும் என்று அறிந்து கொள்ளப்படும்.</p>
+<p style="margin: 0;">ஆனால் மற்ற பல கிருபைகளைப் போலவே, தைரியத்திலும் போலியானவைகள் உள்ளன, பெரும்பாலும் அவையே அதன் உண்மையான பொருளாகக் கருதப்படுகின்றன. அத்தகைய போலியானவைகளில் ஒன்று ‘அதீதத் துணிவாக’ இருக்கிறது, அது “தேவதூதர்கள் காலடி வைக்க அஞ்சுகிற இடத்திலும் விரைந்து செல்லும்” இயல்புடைய மனப்பான்மையாகும்.</p>
+
+<figure class="mz-fig"><figcaption class="mz-figcap">பயத்தை மேற்கொள்ளும் விசுவாசம்</figcaption><img src="assets/img/a104e741b99348ddf2cc8e8e11867987.jpg" alt="A lion standing in tall grass on the savanna"></figure>
+
+<h2 class="mz-h">தைரியத்தின் விளக்கம்</h2>
+<p style="margin: 0;">அதீத துணிவு, அசட்டுத் துணிவு, அனுமானம், தற்பெருமை பேசுதல் ஆகியவற்றை தைரியம் என்று புரிந்து கொள்ளப்பட வேண்டும் என்று வேதாகமம் கருதவில்லை என்றால், உண்மையில் தைரியம் என்றால் என்ன? <mark style="background: #F6E7B8; color: inherit; padding: 0 2px; border-radius: 3px;">இதனை ஆபத்தான சூழ்நிலையின் முன்னிலையில் மனம், இருதயம் மற்றும் சித்தத்தின் நிதானமான, அச்சமற்ற, துணிச்சலான மற்றும் சுயத்தை-மறக்கும் மனப்பான்மை என்று வரையறுக்கலாம்.</mark></p>
+<p style="margin: 0;">உதாரணமாக, உண்பது, குளிப்பது, உடுப்பது, தூங்குவது போன்றவற்றை யார் தைரியமான செயல்கள் என்று நினைப்பார்கள்? அவை தைரியமான செயல்களாகக் கருதப்படாததற்கான காரணம், பொதுவாக ஆபத்து அவற்றுடன் தொடர்புபடுத்தப்படவில்லை என்பதாகும்.</p>
+</article>
+<footer class="mz-foot" lang="en" aria-label="Printed page 2"><span>LHMM - India</span><span>2 · 1690</span><span>BS Tamil Version - 96</span></footer>
+
+<div lang="en" style="display: flex; flex-direction: column; gap: 8px; padding-top: 16px; border-top: 1px solid #E6E1D6; font-family: 'Mukta Malar', sans-serif; font-size: 14px;">
+<span style="color: #3F5670;">Continues: types of courage</span>
+<a href="#" style="display: flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 10px; background: #14284B; color: #FFFFFF; font-weight: 600; text-decoration: none;">Next page</a>
+</div>
+
+<section aria-labelledby="m-issue-h" style="display: flex; flex-direction: column; gap: 8px; padding: 16px; border-radius: 12px; background: #F7F1E4;">
+<h2 id="m-issue-h" lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 17px; font-weight: 700; color: #3F5670;">In this issue</h2>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; font-size: 16px; line-height: 1.5;">
+<li><a href="magazine-96-pages.html" aria-current="page" style="display: block; padding: 10px 0; color: #14284B; font-weight: 600; text-decoration: none; border-bottom: 1px solid #E6E1D6;">ஆபத்தை எதிர்கொள்ளுதல்</a></li>
+<li><a href="#" style="display: block; padding: 10px 0; color: #14284B; text-decoration: none; border-bottom: 1px solid #E6E1D6;">நம்முடைய வார்த்தைகள் - தேவனுடைய வார்த்தைகள்</a></li>
+<li><a href="#" style="display: block; padding: 10px 0; color: #14284B; text-decoration: none;">ஆனால் மாறுபட்ட ஒரு நோக்கத்துடன்</a></li>
+</ol>
+<div lang="en" style="display: flex; flex-wrap: wrap; gap: 4px 16px; font-family: 'Mukta Malar', sans-serif; font-size: 14px; padding-top: 4px;">
+<a href="#">Download PDF · 3.2 MB</a>
+</div>
+</section>
+</main>
+
+</div>
+
+<nav lang="en" aria-label="Sections" style="flex: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid #E6E1D6; background: #FFFFFF; font-family: 'Mukta Malar', sans-serif; font-size: 12px; text-align: center;">
+<a href="index.html" style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0 10px; color: #3F5670; text-decoration: none;"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 11 L12 4.5 L20 11 V20 H14.5 V14.5 H9.5 V20 H4 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg>Home</a>
+<a href="manna.html" style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0 10px; color: #3F5670; text-decoration: none;"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"></circle><path d="M12 3 V5.5 M12 18.5 V21 M3 12 H5.5 M18.5 12 H21 M5.6 5.6 L7.4 7.4 M16.6 16.6 L18.4 18.4 M5.6 18.4 L7.4 16.6 M16.6 7.4 L18.4 5.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>Manna</a>
+<a href="magazine-96-pages.html" aria-current="page" style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0 10px; color: #14284B; font-weight: 600; text-decoration: none;"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 5 H10.5 C11.4 5 12 5.6 12 6.5 V20 C12 19.2 11.4 18.5 10.5 18.5 H4 Z M20 5 H13.5 C12.6 5 12 5.6 12 6.5 V20 C12 19.2 12.6 18.5 13.5 18.5 H20 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path></svg>Magazine</a>
+<a href="study-reading.html" style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0 10px; color: #3F5670; text-decoration: none;"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"></rect><path d="M8 9 H16 M8 12.5 H16 M8 16 H13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>Study</a>
+<a href="#" style="display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0 10px; color: #3F5670; text-decoration: none;"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 3.5 H14 L19 8.5 V20.5 H6 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 12 H16 M9 15.5 H14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>My notes</a>
+</nav>
+
+</div>
+</template>
+
+<script src="assets/js/morphdom-umd.min.js"></script>
+<script src="assets/js/dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { font: 's001', size: 1, sheet: 'aa', note: '', saved: [] };
+}
+renderVals() {
+const fonts = [
+{ id: 's001', label: 'Senthamil 001', css: "'Senthamil 001', 'Mukta Malar', sans-serif", strong: "'Senthamil 001', 'Mukta Malar', sans-serif", johnson: "'Senthamil 076', 'Mukta Malar', sans-serif" },
+{ id: 's076', label: 'Senthamil 076', css: "'Senthamil 076', 'Mukta Malar', sans-serif", strong: "'Senthamil 001', 'Mukta Malar', sans-serif", johnson: "'Senthamil 076', 'Mukta Malar', sans-serif" },
+{ id: 's102', label: 'Senthamil 102', css: "'Senthamil 102', 'Mukta Malar', sans-serif", strong: "'Senthamil 001', 'Mukta Malar', sans-serif", johnson: "'Senthamil 102', 'Mukta Malar', sans-serif" },
+{ id: 's015', label: 'Senthamil 015', css: "'Senthamil 015', 'Mukta Malar', sans-serif", strong: "'Senthamil 001', 'Mukta Malar', sans-serif", johnson: "'Senthamil 015', 'Mukta Malar', sans-serif" }
+];
+const sizes = [16, 19, 22];
+const names = ['Small', 'Medium', 'Large'];
+const s = this.state;
+const cur = fonts.find((f) => f.id === s.font) || fonts[0];
+const hasNote = s.note.trim().length > 0;
+const isAa = s.sheet === 'aa';
+const isNote = s.sheet === 'note';
+return {
+showAa: isAa,
+showNote: isNote,
+aaStr: isAa ? 'true' : 'false',
+noteStr: isNote ? 'true' : 'false',
+aaBg: isAa ? '#F7F1E4' : '#FFFFFF',
+aaBorder: isAa ? '#14284B' : '#DCD3C0',
+noteBg: isNote ? '#F7F1E4' : '#FFFFFF',
+noteBorder: isNote ? '#14284B' : '#DCD3C0',
+noteCount: s.saved.length ? ' · ' + s.saved.length : '',
+openAa: () => this.setState({ sheet: isAa ? null : 'aa' }),
+openNote: () => this.setState({ sheet: isNote ? null : 'note' }),
+closeSheet: () => this.setState({ sheet: null }),
+readFont: cur.css,
+readSize: sizes[s.size],
+sizeName: names[s.size],
+atMin: s.size === 0,
+atMax: s.size === sizes.length - 1,
+smaller: () => this.setState({ size: Math.max(0, s.size - 1) }),
+larger: () => this.setState({ size: Math.min(sizes.length - 1, s.size + 1) }),
+fontOptions: fonts.map((f) => ({
+label: f.label,
+css: f.css,
+pressed: f.id === s.font ? 'true' : 'false',
+boxStyle: f.id === s.font ? 'border: 2px solid #14284B; background: #F7F1E4;' : 'border: 1px solid #E2D9C6; background: #FFFFFF;',
+pick: () => this.setState({ font: f.id })
+})),
+note: s.note,
+onNote: (e) => this.setState({ note: e.target.value }),
+noNote: !hasNote,
+saveBg: hasNote ? '#14284B' : '#9AA3B0',
+save: () => { if (hasNote) this.setState({ saved: [{ text: s.note.trim() }].concat(s.saved), note: '' }); },
+saved: s.saved
+};
+}
+}
+</script>
+<script>DCLite.mount(typeof Component !== 'undefined' ? Component : null);</script>
+</body>
+</html>

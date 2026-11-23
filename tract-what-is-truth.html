@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>எது சத்தியம்? — Bible Standard India (prototype)</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+@font-face{font-family:'Senthamil 001';src:url(assets/fonts/Senthamil001.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 015';src:url(assets/fonts/Senthamil015.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 066';src:url(assets/fonts/Senthamil066.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 073';src:url(assets/fonts/Senthamil073.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 076';src:url(assets/fonts/Senthamil076.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 102';src:url(assets/fonts/Senthamil102.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 112';src:url(assets/fonts/Senthamil112.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+body{margin:0;font-synthesis:none}
+footer a:focus-visible{outline-color:#E3B55B}
+a{color:#14284B}a:hover{color:#8B5E1A}
+button{font:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid #14284B;outline-offset:2px}
+.clamp3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.clamp2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+input::placeholder,textarea::placeholder{color:#5E6B7E;opacity:1}
+</style>
+</head>
+<body class="site-page">
+<div id="dc-root"></div>
+<noscript><p style="padding: 24px; font-family: sans-serif;">This prototype needs JavaScript to show its pages.</p></noscript>
+<template id="dc-template">
+<div style="height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; font-family: 'Senthamil 001', 'Mukta Malar', system-ui, sans-serif; color: #14284B; background: #FFFFFF; font-size: 17px; line-height: 1.7;">
+
+<header lang="en" style="flex: none; background: #FFFFFF; border-bottom: 1px solid #E6E1D6; font-family: 'Mukta Malar', system-ui, sans-serif;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 10px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 36px;">
+<a href="index.html" aria-label="Bible Standard India, home" style="display: inline-flex; align-items: center;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 0 22px; flex: 1 1 560px; font-size: 17px;">
+<a href="index.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Home</a>
+<a href="manna.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Manna</a>
+<a href="magazine.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Magazine</a>
+<a href="study.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Study</a>
+<a href="library.html" aria-current="page" style="padding: 14px 0 10px; color: #14284B; text-decoration: none; font-weight: 700; border-bottom: 3px solid #E3B55B;">Library</a>
+<a href="questions.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Q &amp; A</a>
+<a href="events.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Events</a>
+<a href="gallery.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Gallery</a>
+<a href="about.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">About</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 4px;">
+<button type="button" aria-label="Search" style="width: 44px; height: 44px; border: 0; border-radius: 10px; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#14284B" stroke-width="1.8"></circle><path d="M16 16 L21 21" stroke="#14284B" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
+<a href="my-notes.html" style="display: inline-flex; align-items: center; gap: 6px; height: 44px; padding: 0 10px; border-radius: 10px; color: #14284B; text-decoration: none; font-size: 16px; font-weight: 500;"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M6 3.5 H14 L19 8.5 V20.5 H6 Z" fill="none" stroke="#14284B" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 12 H16 M9 15.5 H14" stroke="#14284B" stroke-width="1.6" stroke-linecap="round"></path></svg>My notes</a>
+</div>
+</div>
+</header>
+<div style="flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; background: #FFFFFF;">
+<section style="background: #FBF7EE; border-bottom: 1px solid #EDE6D6;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 22px 32px 48px; display: flex; flex-direction: column; gap: 26px;">
+<nav aria-label="Breadcrumb"><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 15px;"><li><a href="index.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #3F5670; text-decoration: underline; text-underline-offset: 3px;">Home</a></li><li aria-hidden="true" style="color: #8A93A3;">›</li><li><a href="library.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #3F5670; text-decoration: underline; text-underline-offset: 3px;">Library</a></li><li aria-hidden="true" style="color: #8A93A3;">›</li><li><a href="library.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; color: #3F5670; text-decoration: underline; text-underline-offset: 3px;">Tracts</a></li><li aria-hidden="true" style="color: #8A93A3;">›</li><li><span aria-current="page" lang="ta" style="font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; color: #14284B; font-weight: 600;">எது சத்தியம்?</span></li></ol></nav>
+<div style="display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: center;">
+<div style="flex: 0 1 320px; width: 100%; max-width: 320px;"><div aria-hidden="true" style="position: relative; height: 300px; border-radius: 16px; background: #F5E6CC; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+<div style="position: relative; width: 190px; height: 250px; transform: rotate(-4deg); border-radius: 6px; background: #FFFFFF; box-shadow: 0 12px 26px rgba(20,40,75,0.22); display: flex; flex-direction: column; overflow: hidden;">
+<div style="height: 14px; background: #14284B; box-shadow: inset 0 -3px 0 #E3B55B;"></div>
+<div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 16px;">
+<img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="" style="width: 120px; height: auto;">
+<span style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 26px; color: #14284B;">எது சத்தியம்?</span>
+<span style="width: 36px; height: 2px; background: #8B5E1A;"></span>
+</div>
+</div>
+</div></div>
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 14px;">
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 700; color: #8B5E1A;">Tract · short read</p>
+<h1 style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 44px; line-height: 1.25;">எது சத்தியம்?</h1>
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 15px; color: #3F5670; font-size: 16px;">5 pages · read it here, download it, or order copies to give to others</p>
+<div lang="en" style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-top: 4px;">
+<a href="#read" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 20px; border-radius: 12px; background: #14284B; color: #FFFFFF; font-family: 'Mukta Malar', sans-serif; font-weight: 700; font-size: 17px; text-decoration: none; border: 0; cursor: pointer;">Read it here</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 12px; background: #FFFFFF; color: #14284B; border: 2px solid #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px; text-decoration: none; box-sizing: border-box; cursor: pointer;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4 V15 M7 10.5 L12 15.5 L17 10.5 M5 19.5 H19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>PDF</a>
+<a href="#give" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; color: #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 9 V4 H17 V9 M7 17 H5 V10 H19 V17 H17 M7 14 H17 V20 H7 Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"></path></svg>Order copies to give</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div style="max-width: 1240px; margin: 0 auto; padding: 48px 32px 72px; display: flex; flex-wrap: wrap; gap: 40px 56px; align-items: flex-start;">
+<section id="read" aria-labelledby="rd-h" style="flex: 999 1 560px; min-width: 0; max-width: 760px; display: flex; flex-direction: column; gap: 20px;">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px;">
+<h2 id="rd-h" lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 24px; font-weight: 700;">The tract</h2>
+<a href="study.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; display: inline-flex; align-items: center; min-height: 40px; font-weight: 600;">Read it in a plan</a>
+</div>
+<div style="padding: 36px 40px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E6E1D6; display: flex; flex-direction: column; gap: 24px;">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 4px;"><h3 style="margin: 0; text-align: center; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 32px;">எது சத்தியம்?</h3><span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: #3F5670;">What is Truth?</span></div>
+<p style="margin: 0; padding: 14px 18px; border-radius: 12px; background: #FBF7EE; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 17px; line-height: 1.75;">“வேத வாக்கியங்களெல்லாம் தேவ ஆவியினால் அருளப்பட்டிருக்கிறது. தேவனுடைய மனுஷன் தேறினவனாகவும், எந்த நற்கிரியையுஞ் செய்யத் தகுதியுள்ளவனாகவும் இருக்கும்படியாக, அவைகள் உபதேசத்துக்கும், கடிந்து கொள்ளுதலுக்கும், சீர்திருத்தலுக்கும், நீதியைப் படிப்பிக்குதலுக்கும் பிரயோஜனமுள்ளவைகளாயிருக்கிறது.” <span style="font-family: 'Senthamil 102', 'Mukta Malar', sans-serif; color: #4A3410; font-size: 15px; white-space: nowrap;">2 தீமோ. 3:16, 17</span></p>
+<h4 style="margin: 6px 0 0; text-align: center; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 23px;">புத்தகங்களுக்கெல்லாம் புத்தகம்</h4>
+<p style="margin: 0; text-indent: 1.9em; text-align: justify; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 18px; line-height: 1.8; color: #22324D;">“நீதியின்மேல் (சரியானதும், உண்மையானதும், நன்மையுமானவை) பசிதாகமுள்ளவர்கள் பாக்கியவான்கள், அவர்கள் (வேறு யாருமல்ல) திருப்தியடைவார்கள்.” “கேளுங்கள் அப்பொழுது உங்களுக்குக் கொடுக்கப்படும்; தேடுங்கள், அப்பொழுது கண்டடைவீர்கள்; தட்டுங்கள், அப்பொழுது உங்களுக்குத் திறக்கப்படும்.” “சத்தியத்தையும் அறிவீர்கள், சத்தியம் உங்களை (பாவம், தப்பறை, அறியாமை …) விடுதலையாக்கும்” என்று இயேசு வாக்குத்தத்தஞ் செய்கிறார். <span style="font-family: 'Senthamil 102', 'Mukta Malar', sans-serif; color: #4A3410; font-size: 15px;">(மத். 5:6; லூக். 11:9, 10; யோவா. 8:32)</span></p>
+<h4 style="margin: 6px 0 0; text-align: center; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 23px;">சத்தியத்தை நாம் எங்கே கண்டுபிடிப்போம்?</h4>
+<p style="margin: 0; text-indent: 1.9em; text-align: justify; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 18px; line-height: 1.8; color: #22324D;">ஆகையால், தெய்வீக சத்தியத்தை தேடுகையில், எவரும் சாத்தானால் ஏவப்பட்ட மனிதனுடைய கோட்பாடுகளிலும், விசுவாசப் பிரமாணங்களிலும் தேடக்கூடாது. சத்தியமல்லாதவையாயினும் சத்தியமென உரிமை கொண்டாடும் இவைகள் மனுஷரால் எவ்வளவு விரும்பப்பட்டவைகளாயினும் கவலையில்லை; இவைகளில் சத்தியத்தைத் தேடாது பரிசுத்த வேதாகமத்தில் தேட வேண்டும். (வேதாகமத்திலுள்ள அநேக உள்ளான, புறம்பான அத்தாட்சிகள் அது தேவனுடைய வாக்கு, சத்தியம் என நிரூபிக்கிறது.) இதைக் குறித்து இயேசு, “உம்முடைய சத்தியத்தினாலே அவர்களைப் பரிசுத்தமாக்கும்; உம்முடைய வசனமே சத்தியம்” என்று கூறினார். <span style="font-family: 'Senthamil 102', 'Mukta Malar', sans-serif; color: #4A3410; font-size: 15px;">(யோவா. 17:17; 6:63)</span></p>
+</div>
+<div lang="en" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font-family: 'Mukta Malar', sans-serif;">
+<span style="font-size: 15px; color: #3F5670;">Page 1 of 5</span>
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 12px; background: #FFFFFF; color: #14284B; border: 2px solid #14284B; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 17px; text-decoration: none; box-sizing: border-box; cursor: pointer; min-height: 44px;">Next page ›</a>
+</div>
+</section>
+
+<aside aria-label="Related" style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 18px;">
+<section id="give" aria-labelledby="gv-h" style="display: flex; flex-direction: column; gap: 10px; padding: 20px 22px; border-radius: 18px; background: #F5E6CC;">
+<h2 id="gv-h" lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 20px; font-weight: 700;">Give this tract</h2>
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 16px; line-height: 1.55; color: #22324D;">Tracts are made to be handed on. Order printed copies for your family, church or town.</p>
+<div role="group" aria-label="Copies" lang="en" style="display: flex; gap: 6px; font-family: 'Mukta Malar', sans-serif;">
+<sc-for list="{{qty}}" as="q" hint-placeholder-count="4">
+<button type="button" onClick="{{q.pick}}" aria-pressed="{{q.pressed}}" style="flex: 1; min-height: 44px; border-radius: 10px; border: 1px solid #14284B; background: {{q.bg}}; color: {{q.fg}}; font-weight: 700; font-size: 16px; cursor: pointer;">{{q.n}}</button>
+</sc-for>
+</div>
+<a href="library.html" lang="en" style="display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 20px; border-radius: 12px; background: #14284B; color: #FFFFFF; font-family: 'Mukta Malar', sans-serif; font-weight: 700; font-size: 17px; text-decoration: none; border: 0; cursor: pointer; align-self: flex-start;">Order {{chosen}} copies</a>
+</section>
+<section aria-labelledby="pl-h" style="display: flex; flex-direction: column; gap: 8px; padding: 20px 22px; border-radius: 18px; border: 1px solid #E6E1D6;">
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 15px; font-weight: 700; color: #8B5E1A;">Reading 1 of a 3-week plan</p>
+<h2 id="pl-h" style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.4;">வேதாகமத்தைப் புரிந்து கொள்வது எப்படி?</h2>
+<ol style="margin: 0; padding: 0; list-style: none;">
+<li style="padding: 8px 0; border-top: 1px solid #E6E1D6; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 16px;">வேதாகமத்தைப் புரிந்து கொள்வது எப்படி? <span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 13px; color: #3F5670;">No. 95</span></li>
+<li style="padding: 8px 0; border-top: 1px solid #E6E1D6; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 16px;">உம்முடைய வசனம் முழுவதும் சத்தியம் <span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 13px; color: #3F5670;">No. 94</span></li>
+</ol>
+<a href="study.html" lang="en" style="font-family: 'Mukta Malar', sans-serif; align-self: flex-start; display: inline-flex; align-items: center; min-height: 40px; font-weight: 600;">Start this plan</a>
+</section>
+<section aria-labelledby="nx-h" style="display: flex; flex-direction: column; gap: 8px; padding: 20px 22px; border-radius: 18px; border: 1px solid #E6E1D6;">
+<h2 id="nx-h" lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 18px; font-weight: 700;">Other tracts</h2>
+<ul style="margin: 0; padding: 0; list-style: none;"><li style="padding: 8px 0; border-top: 1px solid #E6E1D6;"><a href="#" style="font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 16px; line-height: 1.5; color: #14284B; text-decoration: none;">மரித்தோரின் உயிர்த்தெழுதல்</a></li><li style="padding: 8px 0; border-top: 1px solid #E6E1D6;"><a href="#" style="font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 16px; line-height: 1.5; color: #14284B; text-decoration: none;">இயேசுவின் இரண்டாம் வருகை</a></li><li style="padding: 8px 0; border-top: 1px solid #E6E1D6;"><a href="#" style="font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 16px; line-height: 1.5; color: #14284B; text-decoration: none;">நியாயத்தீர்ப்பு நாள்</a></li><li style="padding: 8px 0; border-top: 1px solid #E6E1D6;"><a href="#" style="font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 16px; line-height: 1.5; color: #14284B; text-decoration: none;">நரகத்தில் ஐசுவரியவன் - அவன் எப்பொழுதாவது திரும்ப வருவானா?</a></li></ul>
+</section>
+</aside>
+</div>
+<footer style="background: #14284B; color: #FFFFFF;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 32px 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 36px 56px;">
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<span style="align-self: flex-start; display: inline-flex; padding: 10px 14px; border-radius: 14px; background: #FFFFFF;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></span>
+<p style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 600; font-size: 22px; line-height: 1.5;">“உமது வெளிச்சத்தையும், உமது சத்தியத்தையும் அனுப்பியருளும் அவைகள் என்னை நடத்தும்.” <span style="font-family: 'Senthamil 102', 'Mukta Malar', sans-serif; font-weight: 400; font-size: 16px; color: #C9D3E3;">சங்கீதம் 43:3</span></p>
+</div>
+<nav lang="en" aria-label="Footer" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 24px; align-content: start; font-family: 'Mukta Malar', sans-serif; font-size: 17px;">
+<a href="manna.html" style="color: #FFFFFF; padding: 6px 0;">Manna</a>
+<a href="contact.html" style="color: #FFFFFF; padding: 6px 0;">Contact</a>
+<a href="magazine.html" style="color: #FFFFFF; padding: 6px 0;">Magazine</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Request tracts</a>
+<a href="study.html" style="color: #FFFFFF; padding: 6px 0;">Study</a>
+<a href="about.html" style="color: #FFFFFF; padding: 6px 0;">About</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Library</a>
+<a href="#" style="color: #FFFFFF; padding: 6px 0;">YouTube</a>
+<a href="questions.html" style="color: #FFFFFF; padding: 6px 0;">Q &amp; A</a>
+<a href="gallery.html" style="color: #FFFFFF; padding: 6px 0;">Gallery</a>
+</nav>
+</div>
+<div lang="en" style="max-width: 1240px; margin: 0 auto; padding: 18px 32px 36px; border-top: 1px solid rgba(255,255,255,0.18); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-family: 'Mukta Malar', sans-serif; font-size: 15px; color: #C9D3E3;">
+<span>Laymen's Home Missionary Movement – India, Nazareth, Thoothukudi District, Tamil Nadu</span>
+<span>© 2026 Laymen's Home Missionary Movement – India</span>
+</div>
+</footer>
+</div>
+
+</div>
+</template>
+<a class="proto-badge" href="sitemap.html">Prototype · site map</a>
+<script src="assets/js/morphdom-umd.min.js"></script>
+<script src="assets/js/dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { q: 25 };
+}
+renderVals() {
+const s = this.state;
+return {
+qty: [10, 25, 50, 100].map((n) => ({
+n: String(n),
+pressed: s.q === n ? 'true' : 'false',
+bg: s.q === n ? '#14284B' : '#FFFFFF',
+fg: s.q === n ? '#FFFFFF' : '#14284B',
+pick: () => this.setState({ q: n })
+})),
+chosen: String(s.q)
+};
+}
+}
+</script>
+<script>DCLite.mount(typeof Component !== 'undefined' ? Component : null);</script>
+</body>
+</html>

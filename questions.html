@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Q &amp; A — Bible Standard India (prototype)</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+@font-face{font-family:'Senthamil 001';src:url(assets/fonts/Senthamil001.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 015';src:url(assets/fonts/Senthamil015.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 066';src:url(assets/fonts/Senthamil066.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 073';src:url(assets/fonts/Senthamil073.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 076';src:url(assets/fonts/Senthamil076.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 102';src:url(assets/fonts/Senthamil102.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Senthamil 112';src:url(assets/fonts/Senthamil112.woff2) format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+body{margin:0;font-synthesis:none}
+footer a:focus-visible{outline-color:#E3B55B}
+a{color:#14284B}a:hover{color:#8B5E1A}
+button,textarea,input{font:inherit}
+textarea:focus,input:focus,button:focus-visible,a:focus-visible{outline:2px solid #14284B;outline-offset:2px}
+</style>
+</head>
+<body class="site-page">
+<div id="dc-root"></div>
+<noscript><p style="padding: 24px; font-family: sans-serif;">This prototype needs JavaScript to show its pages.</p></noscript>
+<template id="dc-template">
+<div style="height: 100vh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; font-family: 'Senthamil 001', 'Mukta Malar', system-ui, sans-serif; color: #14284B; background: #FFFFFF; font-size: 17px; line-height: 1.7;">
+
+<header lang="en" style="flex: none; background: #FFFFFF; border-bottom: 1px solid #E6E1D6; font-family: 'Mukta Malar', system-ui, sans-serif;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 10px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 36px;">
+<a href="index.html" aria-label="Bible Standard India, home" style="display: inline-flex; align-items: center;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 0 22px; flex: 1 1 560px; font-size: 17px;">
+<a href="index.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Home</a>
+<a href="manna.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Manna</a>
+<a href="magazine.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Magazine</a>
+<a href="study.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Study</a>
+<a href="library.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Library</a>
+<a href="questions.html" aria-current="page" style="padding: 14px 0 10px; color: #14284B; text-decoration: none; font-weight: 700; border-bottom: 3px solid #E3B55B;">Q &amp; A</a>
+<a href="events.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Events</a>
+<a href="gallery.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">Gallery</a>
+<a href="about.html" style="padding: 14px 0 10px; color: #3F5670; text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent;">About</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 4px;">
+<button type="button" aria-label="Search" style="width: 44px; height: 44px; border: 0; border-radius: 10px; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#14284B" stroke-width="1.8"></circle><path d="M16 16 L21 21" stroke="#14284B" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
+<a href="my-notes.html" style="display: inline-flex; align-items: center; gap: 6px; height: 44px; padding: 0 10px; border-radius: 10px; color: #14284B; text-decoration: none; font-size: 16px; font-weight: 500;"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M6 3.5 H14 L19 8.5 V20.5 H6 Z" fill="none" stroke="#14284B" stroke-width="1.6" stroke-linejoin="round"></path><path d="M9 12 H16 M9 15.5 H14" stroke="#14284B" stroke-width="1.6" stroke-linecap="round"></path></svg>My notes</a>
+</div>
+</div>
+</header>
+<div style="flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain;">
+
+<div style="max-width: 1240px; margin: 0 auto; padding: 44px 32px 88px; display: flex; flex-direction: column; gap: 36px;">
+
+<header style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 40px; align-items: center;">
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<h1 lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-weight: 700; font-size: 52px; line-height: 1.1; color: #14284B;">Q &amp; A</h1>
+<p style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 600; font-size: 22px; line-height: 1.45; color: #22324D;">வேதாகமக் கேள்விகளும் பதில்களும்</p>
+<label for="qsearch" lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 16px; font-weight: 600; padding-top: 6px;">Search questions</label>
+<div style="display: flex; align-items: center; gap: 10px; padding: 0 14px; border: 1px solid #CFC5B0; border-radius: 10px; background: #FFFFFF;">
+<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#3F5670" stroke-width="1.8"></circle><path d="M16 16 L21 21" stroke="#3F5670" stroke-width="1.8" stroke-linecap="round"></path></svg>
+<input id="qsearch" type="search" placeholder="எ.கா. ஆத்துமா, நரகம், உயிர்த்தெழுதல்" style="flex: 1; min-width: 0; height: 50px; border: 0; outline: none; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 17px; color: #14284B; background: transparent;">
+</div>
+</div>
+<div aria-hidden="true" style="height: 340px; border-radius: 300px 300px 20px 20px / 200px 200px 20px 20px; background: #F5E6CC; display: flex; align-items: flex-end; justify-content: center; padding: 20px 24px 0; box-sizing: border-box; overflow: hidden;"><svg viewBox="0 0 360 220" width="100%" height="100%" preserveAspectRatio="xMidYMax meet" aria-hidden="true" style="display: block;">
+<g fill="none" stroke="#C99A3E" stroke-width="1.6" opacity="0.55"><path d="M30 214 A90 90 0 0 1 210 214"></path><path d="M150 214 A90 90 0 0 1 330 214"></path><path d="M90 214 A90 90 0 0 1 270 214"></path></g>
+<g stroke="#E3B55B" stroke-width="2.2" stroke-linecap="round"><path d="M180 70 V22"></path><path d="M180 70 L148 30"></path><path d="M180 70 L212 30"></path><path d="M180 70 L122 46"></path><path d="M180 70 L238 46"></path></g>
+<path d="M180 96 C150 80 104 78 70 90 L70 196 C104 184 150 186 180 202 Z" fill="#FFFFFF" stroke="#14284B" stroke-width="3" stroke-linejoin="round"></path>
+<path d="M180 96 C210 80 256 78 290 90 L290 196 C256 184 210 186 180 202 Z" fill="#FFFFFF" stroke="#14284B" stroke-width="3" stroke-linejoin="round"></path>
+<path d="M180 96 V202" stroke="#14284B" stroke-width="3"></path>
+<g stroke="#9AA3B0" stroke-width="2.4" stroke-linecap="round"><path d="M88 112 C112 104 140 104 164 112"></path><path d="M88 130 C112 122 140 122 164 130"></path><path d="M88 148 C112 140 140 140 164 148"></path><path d="M88 166 C112 158 132 158 150 162"></path><path d="M196 112 C220 104 248 104 272 112"></path><path d="M196 130 C220 122 248 122 272 130"></path><path d="M196 148 C220 140 248 140 272 148"></path><path d="M196 166 C214 160 236 158 260 162"></path></g>
+<path d="M70 196 C104 184 150 186 180 202 C210 186 256 184 290 196 L290 206 C256 194 210 196 180 212 C150 196 104 194 70 206 Z" fill="#14284B"></path>
+</svg></div>
+</header>
+
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start;">
+
+<main style="flex: 999 1 600px; min-width: 0; display: flex; flex-direction: column; gap: 40px;">
+
+<section aria-labelledby="start-h" style="display: flex; flex-direction: column; gap: 14px;">
+<h2 id="start-h" lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 18px; font-weight: 700; color: #3F5670;">Start here</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 14px;">
+<a href="tract-what-is-truth.html" style="display: flex; flex-direction: column; gap: 6px; padding: 20px; border: 1px solid #E6E1D6; border-radius: 12px; text-decoration: none; color: #14284B;">
+<span style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.35;">எது சத்தியம்?</span>
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 15px; color: #3F5670;">Answered in a tract, short read</span>
+</a>
+<a href="answer-what-is-the-soul.html" style="display: flex; flex-direction: column; gap: 6px; padding: 20px; border: 1px solid #E6E1D6; border-radius: 12px; text-decoration: none; color: #14284B;">
+<span style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.35;">ஆத்துமா என்றால் என்ன?</span>
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 15px; color: #3F5670;">Answered in a booklet, 12 pages</span>
+</a>
+<a href="questions-soul.html" style="display: flex; flex-direction: column; gap: 6px; padding: 20px; border: 1px solid #E6E1D6; border-radius: 12px; text-decoration: none; color: #14284B;">
+<span style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.35;">மரித்தோர் எங்கே?</span>
+<span style="font-size: 15px; line-height: 1.6; color: #22324D;">நமது அன்பர்கள், நமது அயலகத்தார்: நல்லார், பொல்லார், உயர்ந்தோர், தாழ்ந்தோர் முதலானோர் எங்கே இருக்கிறார்கள்?</span>
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 15px; color: #3F5670;">Answered in a booklet, 12 pages</span>
+</a>
+<a href="questions-soul.html" style="display: flex; flex-direction: column; gap: 6px; padding: 20px; border: 1px solid #E6E1D6; border-radius: 12px; text-decoration: none; color: #14284B;">
+<span style="font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.35;">நரகத்தில் ஐசுவரியவன் - அவன் எப்பொழுதாவது திரும்ப வருவானா?</span>
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 15px; color: #3F5670;">Answered in a tract, short read</span>
+</a>
+</div>
+</section>
+
+<section aria-labelledby="mag-h" style="display: flex; flex-direction: column; gap: 14px;">
+<h2 id="mag-h" lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 18px; font-weight: 700; color: #3F5670;">From the magazine: <span lang="ta" style="font-family: 'Senthamil 001', 'Mukta Malar', sans-serif;">வேதாகம வினா</span></h2>
+<article style="border: 1px solid #E6D8B8; background: #FBF7EE; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 16px;">
+<h3 style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 700; font-size: 30px; line-height: 1.35;">உங்கள் அழைப்பின் ஒரே நம்பிக்கை</h3>
+<div style="display: flex; flex-direction: column; gap: 4px;">
+<span style="font-weight: 600; color: #8B5E1A;">கேள்வி</span>
+<p style="margin: 0; font-size: 18px; line-height: 1.8;">உங்களுக்கு உண்டான அழைப்பினாலே நீங்கள் ஒரே நம்பிக்கைக்கு அழைக்கப்பட்டிருக்கிறீர்கள் என்று வேதாகமம் சொல்வதால் (எபே. 4:4) மேலான அழைப்பு இன்னும் திறந்துதான் இருக்கிறது என்பதை இது நிரூபிக்கவில்லையா?</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px;">
+<span style="font-weight: 600; color: #8B5E1A;">பதில்</span>
+<p style="margin: 0; font-size: 18px; line-height: 1.8;">வெட்கப்படாத ஊழியக்காரர்களாக (2 தீமோ. 2:15) நாம் தேவனால் ஏற்றுக் கொள்ளப்பட வேண்டுமானால், சத்திய வார்த்தையில் நமக்கு கொடுக்கப்பட்டுள்ள தேவனுடைய நோக்கம், கருத்து மற்றும் திட்டத்தைக் கற்றுக் கொள்ளுமளவுக்கு நாம் அதை நிச்சயம் ஜாக்கிரதையாகக் கற்றுக் கொள்ள வேண்டும். அவருடைய இரகசியங்களை (சங். 25:14) நாம் அறிந்து கொள்வதால், பல்வேறான வேத வாக்கியங்களை எப்படி, எப்பொழுது, எங்கே பொருத்திப் பார்க்க வேண்டும் என்பதை அறிந்து கொள்கிறோம்.</p>
+</div>
+<div lang="en" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; font-family: 'Mukta Malar', sans-serif; font-size: 16px;">
+<span style="color: #3F5670;">The Bible Standard, No. 94, July–August 2025</span>
+<a href="magazine-2025.html" style="font-weight: 600;">Read the full answer</a>
+</div>
+</article>
+</section>
+
+</main>
+
+<aside aria-labelledby="ask-h" style="position: sticky; top: 24px; max-height: calc(100vh - 130px); overflow-y: auto; scrollbar-width: thin; flex: 1 1 340px; min-width: 0; max-width: 420px; border: 1px solid #E6E1D6; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 14px; box-sizing: border-box;">
+<h2 id="ask-h" lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 22px; line-height: 1.3;">Ask a question</h2>
+<p lang="en" style="margin: 0; font-family: 'Mukta Malar', sans-serif; font-size: 16px; line-height: 1.55; color: #3F5670;">Write in Tamil or English. Answers of general interest may be added here, without your name.</p>
+<sc-if value="{{notSent}}" hint-placeholder-val="{{true}}">
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<label for="q" lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 16px; font-weight: 600;">Your question</label>
+<textarea id="q" rows="5" value="{{q}}" onChange="{{onQ}}" placeholder="உங்கள் கேள்வியை எழுதுங்கள்…" style="width: 100%; box-sizing: border-box; resize: vertical; padding: 12px 14px; border: 1px solid #CFC5B0; border-radius: 8px; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 16px; line-height: 1.6; color: #14284B;"></textarea>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<label for="ref" lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 16px; font-weight: 600;">Bible passage it relates to <span style="font-weight: 400; color: #3F5670;">(optional)</span></label>
+<input id="ref" type="text" placeholder="எ.கா. எசேக். 18:4" style="height: 46px; padding: 0 14px; border: 1px solid #CFC5B0; border-radius: 8px; font-family: 'Senthamil 001', 'Mukta Malar', sans-serif; font-size: 16px; color: #14284B;">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<label for="nm" lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 16px; font-weight: 600;">Name <span style="font-weight: 400; color: #3F5670;">(optional)</span></label>
+<input id="nm" type="text" autocomplete="name" style="height: 46px; padding: 0 14px; border: 1px solid #CFC5B0; border-radius: 8px; font-size: 16px; color: #14284B;">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<label for="em" lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 16px; font-weight: 600;">Email, for our reply</label>
+<input id="em" type="email" autocomplete="email" style="height: 46px; padding: 0 14px; border: 1px solid #CFC5B0; border-radius: 8px; font-size: 16px; color: #14284B;">
+</div>
+<label lang="en" style="display: flex; gap: 10px; align-items: flex-start; font-family: 'Mukta Malar', sans-serif; font-size: 16px; line-height: 1.5; color: #22324D;"><input type="checkbox" checked="{{pub}}" onChange="{{togglePub}}" style="width: 20px; height: 20px; margin: 1px 0 0;">You may publish my question in Q &amp; A without my name</label>
+<button type="button" onClick="{{send}}" disabled="{{noQ}}" lang="en" style="min-height: 48px; padding: 0 20px; border: 0; border-radius: 8px; background: {{sendBg}}; color: #FFFFFF; font-family: 'Mukta Malar', sans-serif; font-weight: 600; font-size: 16px; cursor: pointer;">Send question</button>
+</div>
+</sc-if>
+<sc-if value="{{sent}}" hint-placeholder-val="{{false}}">
+<div role="status" style="display: flex; flex-direction: column; gap: 8px; padding: 18px; border-radius: 10px; background: #EEF4EA;">
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-weight: 600; color: #2F4A21;">Thank you. Your question has been sent.</span>
+<span lang="en" style="font-family: 'Mukta Malar', sans-serif; font-size: 16px; color: #2F4A21;">We will reply by email. You can also find it under My notes › Questions.</span>
+<button type="button" onClick="{{again}}" lang="en" style="align-self: flex-start; min-height: 40px; padding: 0 14px; border-radius: 8px; border: 1px solid #2F4A21; background: transparent; color: #2F4A21; font-family: 'Mukta Malar', sans-serif; font-weight: 600; cursor: pointer;">Ask another question</button>
+</div>
+</sc-if>
+</aside>
+
+</div>
+</div>
+
+<footer style="background: #14284B; color: #FFFFFF;">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 32px 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 36px 56px;">
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<span style="align-self: flex-start; display: inline-flex; padding: 10px 14px; border-radius: 14px; background: #FFFFFF;"><img src="assets/img/f0af970403ced8f2c9f991c228750d31.png" alt="The Bible Standard India" style="height: 56px; width: auto; display: block;"></span>
+<p style="margin: 0; font-family: 'Senthamil 073', 'Mukta Malar', sans-serif; font-weight: 600; font-size: 22px; line-height: 1.5;">“உமது வெளிச்சத்தையும், உமது சத்தியத்தையும் அனுப்பியருளும் அவைகள் என்னை நடத்தும்.” <span style="font-family: 'Senthamil 102', 'Mukta Malar', sans-serif; font-weight: 400; font-size: 16px; color: #C9D3E3;">சங்கீதம் 43:3</span></p>
+</div>
+<nav lang="en" aria-label="Footer" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 24px; align-content: start; font-family: 'Mukta Malar', sans-serif; font-size: 17px;">
+<a href="manna.html" style="color: #FFFFFF; padding: 6px 0;">Manna</a>
+<a href="contact.html" style="color: #FFFFFF; padding: 6px 0;">Contact</a>
+<a href="magazine.html" style="color: #FFFFFF; padding: 6px 0;">Magazine</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Request tracts</a>
+<a href="study.html" style="color: #FFFFFF; padding: 6px 0;">Study</a>
+<a href="about.html" style="color: #FFFFFF; padding: 6px 0;">About</a>
+<a href="library.html" style="color: #FFFFFF; padding: 6px 0;">Library</a>
+<a href="#" style="color: #FFFFFF; padding: 6px 0;">YouTube</a>
+<a href="questions.html" style="color: #FFFFFF; padding: 6px 0;">Q &amp; A</a>
+<a href="gallery.html" style="color: #FFFFFF; padding: 6px 0;">Gallery</a>
+</nav>
+</div>
+<div lang="en" style="max-width: 1240px; margin: 0 auto; padding: 18px 32px 36px; border-top: 1px solid rgba(255,255,255,0.18); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-family: 'Mukta Malar', sans-serif; font-size: 15px; color: #C9D3E3;">
+<span>Laymen's Home Missionary Movement – India, Nazareth, Thoothukudi District, Tamil Nadu</span>
+<span>© 2026 Laymen's Home Missionary Movement – India</span>
+</div>
+</footer>
+
+</div>
+</div>
+</template>
+<a class="proto-badge" href="sitemap.html">Prototype · site map</a>
+<script src="assets/js/morphdom-umd.min.js"></script>
+<script src="assets/js/dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { q: '', pub: true, sent: false };
+}
+renderVals() {
+const s = this.state;
+const hasQ = s.q.trim().length > 0;
+return {
+q: s.q,
+onQ: (e) => this.setState({ q: e.target.value }),
+pub: s.pub,
+togglePub: () => this.setState({ pub: !s.pub }),
+noQ: !hasQ,
+sendBg: hasQ ? '#14284B' : '#9AA3B0',
+send: () => { if (hasQ) this.setState({ sent: true }); },
+again: () => this.setState({ sent: false, q: '' }),
+sent: s.sent,
+notSent: !s.sent
+};
+}
+}
+</script>
+<script>DCLite.mount(typeof Component !== 'undefined' ? Component : null);</script>
+</body>
+</html>
