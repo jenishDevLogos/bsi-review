@@ -119,3 +119,119 @@ body.phone-page { background: #E9E4D8; }
   body.site-page header nav[aria-label="Main"]::-webkit-scrollbar { display: none; }
   body.site-page header nav[aria-label="Main"] a { white-space: nowrap; }
 }
+
+/* ------------------------------------------------------------------
+   Responsive layer. The pages are drawn for a 1440px screen; these
+   rules adapt them to tablets and phones.
+   ------------------------------------------------------------------ */
+
+/* All sizes: decorative arches never cause sideways scrolling */
+#dc-root > div > div[style*="overflow-y: auto"] { overflow-x: hidden; }
+
+/* Tablets and phones: magazine printed pages and the reading pages stack */
+@media (max-width: 1100px) {
+  body.site-page div[style*="max-width: 1376px"][style*="display: flex"] { flex-direction: column; align-items: stretch !important; }
+  body.site-page main[style*="flex: 0 0 1000px"] { flex: 1 1 auto !important; width: 100%; }
+  body.site-page aside[aria-labelledby="issue-h"] { order: 2; position: static !important; max-height: none !important; overflow: visible !important; max-width: none !important; flex: none !important; }
+}
+
+/* Phones */
+@media (max-width: 760px) {
+  /* Long Tamil words wrap instead of running off the screen */
+  body.site-page #dc-root, body.phone-page #dc-root { overflow-wrap: anywhere; }
+
+  /* Large headings and verses step down to phone sizes */
+  body.site-page #dc-root [style*="font-size: 64px"] { font-size: 40px !important; }
+  body.site-page #dc-root [style*="font-size: 54px"],
+  body.site-page #dc-root [style*="font-size: 52px"],
+  body.site-page #dc-root [style*="font-size: 48px"] { font-size: 34px !important; }
+  body.site-page #dc-root [style*="font-size: 44px"] { font-size: 30px !important; }
+  body.site-page #dc-root [style*="font-size: 40px"],
+  body.site-page #dc-root [style*="font-size: 38px"] { font-size: 28px !important; }
+  body.site-page #dc-root [style*="font-size: 36px"],
+  body.site-page #dc-root [style*="font-size: 34px"],
+  body.site-page #dc-root [style*="font-size: 32px"] { font-size: 26px !important; }
+  body.site-page #dc-root [style*="font-size: 30px"] { font-size: 24px !important; }
+  body.site-page #dc-root [style*="font-size: 28px"] { font-size: 22px !important; }
+  body.site-page #dc-root [style*="font-size: 12px"] { font-size: 13px !important; }
+
+  /* Side gutters: 16px */
+  body.site-page #dc-root [style*="padding: 22px 32px"],
+  body.site-page #dc-root [style*="padding: 40px 32px"],
+  body.site-page #dc-root [style*="padding: 44px 32px"],
+  body.site-page #dc-root [style*="padding: 48px 32px"],
+  body.site-page #dc-root [style*="padding: 56px 32px"],
+  body.site-page #dc-root [style*="padding: 64px 32px"],
+  body.site-page #dc-root [style*="padding: 36px 32px"],
+  body.site-page #dc-root [style*="padding: 28px 32px"],
+  body.site-page #dc-root [style*="padding: 32px 32px"],
+  body.site-page #dc-root [style*="padding: 16px 32px"],
+  body.site-page #dc-root [style*="padding: 18px 32px"],
+  body.site-page #dc-root [style*="padding: 0 32px"] { padding-left: 16px !important; padding-right: 16px !important; }
+  body.site-page #dc-root [style*="padding: 22px 24px"],
+  body.site-page #dc-root [style*="padding: 24px;"],
+  body.site-page #dc-root [style*="padding: 28px;"] { padding-left: 18px !important; padding-right: 18px !important; }
+
+  /* Side panels stop floating and sit in the page flow */
+  body.site-page #dc-root aside[style*="position: sticky"],
+  body.site-page #dc-root nav[style*="position: sticky"] { position: static !important; max-height: none !important; overflow: visible !important; max-width: none !important; flex-basis: 100% !important; }
+  body.site-page #dc-root aside[style*="position: sticky"] { order: 2; }
+
+  /* Year and topic lists become a row of chips that scrolls sideways */
+  body.site-page nav[aria-labelledby="arch-h"],
+  body.site-page nav[aria-labelledby="rail-h"],
+  body.site-page nav[aria-labelledby="tp-h"] { min-width: 0 !important; width: 100%; }
+  body.site-page nav[aria-labelledby="arch-h"] ol,
+  body.site-page nav[aria-labelledby="rail-h"] ol,
+  body.site-page nav[aria-labelledby="tp-h"] ol { flex-direction: row !important; flex-wrap: nowrap; overflow-x: auto; gap: 6px !important; padding-bottom: 6px; scrollbar-width: thin; }
+  body.site-page nav[aria-labelledby="arch-h"] li,
+  body.site-page nav[aria-labelledby="rail-h"] li,
+  body.site-page nav[aria-labelledby="tp-h"] li { flex: none; }
+  body.site-page nav[aria-labelledby="arch-h"] li a,
+  body.site-page nav[aria-labelledby="rail-h"] li a,
+  body.site-page nav[aria-labelledby="tp-h"] li a { white-space: nowrap; border: 1px solid #E6E1D6; overflow-wrap: normal; }
+
+  /* Bigger tap targets for breadcrumbs and links in lists */
+  body.site-page nav[aria-label="Breadcrumb"] a { display: inline-block; padding: 9px 0; }
+  body.site-page aside[aria-labelledby="issue-h"] a { display: inline-block; padding-top: 7px; padding-bottom: 7px; }
+  body.site-page #dc-root li > a:not([style*="display"]) { display: inline-block; padding-top: 6px; padding-bottom: 6px; }
+
+  /* Arch tiles: wider arch so long titles fit */
+  body.site-page #dc-root div[style*="border-radius: 140px 140px 0 0"] { width: 84% !important; padding-left: 10px !important; padding-right: 10px !important; }
+
+  /* Manna day navigation: previous, date, next on one row */
+  body.site-page nav[aria-label="Days"] { display: grid !important; grid-template-columns: auto 1fr auto; text-align: center; }
+  body.site-page nav[aria-label="Days"] > * { justify-content: center; }
+
+  /* Study topics table becomes one card per subject */
+  body.site-page table[style*="min-width: 860px"] { min-width: 0 !important; }
+  body.site-page table[style*="min-width: 860px"] thead { display: none; }
+  body.site-page table[style*="min-width: 860px"],
+  body.site-page table[style*="min-width: 860px"] tbody,
+  body.site-page table[style*="min-width: 860px"] tr,
+  body.site-page table[style*="min-width: 860px"] th,
+  body.site-page table[style*="min-width: 860px"] td { display: block; width: auto !important; }
+  body.site-page table[style*="min-width: 860px"] th { padding-bottom: 4px !important; }
+  body.site-page table[style*="min-width: 860px"] td { padding-top: 6px !important; padding-bottom: 10px !important; }
+  body.site-page table[style*="min-width: 860px"] td::before { display: block; margin-bottom: 6px; font: 700 13px/1.4 'Mukta Malar', system-ui, sans-serif; color: #8B5E1A; }
+  body.site-page table[style*="min-width: 860px"] td:nth-of-type(1)::before { content: "Short · a tract"; }
+  body.site-page table[style*="min-width: 860px"] td:nth-of-type(2)::before { content: "Medium · a magazine article"; }
+  body.site-page table[style*="min-width: 860px"] td:nth-of-type(3)::before { content: "Long · a booklet"; }
+  body.site-page table[style*="min-width: 860px"] td:has(> span[aria-label="None yet"]) { display: none; }
+
+  /* Magazine printed pages: one column, as on the phone design */
+  .mz-body { grid-template-columns: minmax(0, 1fr) !important; padding: 18px 16px 10px !important; }
+  .mz-banner { margin: 16px 12px 0 !important; padding: 18px 30px 16px !important; }
+  .mz-orn { width: 26px !important; height: 26px !important; }
+  .mz-orn-tl, .mz-orn-tr { top: 5px !important; }
+  .mz-orn-bl, .mz-orn-br { bottom: 5px !important; }
+  .mz-orn-tl, .mz-orn-bl { left: 5px !important; }
+  .mz-orn-tr, .mz-orn-br { right: 5px !important; }
+  .mz-title { font-size: 1.5em !important; overflow-wrap: normal; }
+  .mz-col { text-align: start !important; }
+  .mz-courtesy { margin: 4px 12px 10px !important; font-size: 12px !important; }
+  .mz-foot { margin: auto 12px 14px !important; gap: 0 10px !important; font-size: 12px !important; padding: 5px 8px !important; }
+
+  /* Review badge: smaller on phones */
+  .proto-badge { min-height: 34px; padding: 0 12px; font-size: 13px; left: 10px; bottom: 10px; }
+}
